@@ -1,62 +1,52 @@
-# PROGRESS — Role 04 (RAG & Conclusion)
+# PROGRESS - Role 04: RAG and Conclusion
 
-> Read this file at the START of every session. Update it at the END of every phase.
-> Each finished phase also gets its own `phase_reports/PHASE_<N>_REPORT.md`.
-> Do not redo anything marked DONE unless a regression test fails (say so explicitly).
+Read alongside AGENT_BRIEF.md and the architecture. This file tracks work; actual contracts, source evidence and relevant tests must substantiate DONE. Do not redo completed work without a reason.
 
 ## Current status
-- **Current phase:** NOT STARTED
-- **Waiting for user permission to start:** Phase 1
-- **Last updated:** —
 
-## Inputs still needed from the user (ask before Phase 1)
-- [ ] Team's written plan (chat cites pp. 9, 15, 18, 19)
-- [ ] Role 01 `catalog.json` + real variable ids
-- [ ] Role 06 final `ALLOWED_ACTIONS` + the fifth conclusion segment
-- [ ] Role 02/03 real result field names
-- [ ] The two loaded variables + NASA product/version for each
-- [ ] Can the agent reach official NASA pages? (else: who pastes the text)
-- [ ] Final LLM provider/model + key storage
+- Implementation phase: NOT STARTED.
+- Brief revision: v2, aligned with competition architecture on 14 November 2026.
+- This update changes documentation only; no Role 04 implementation/evaluation is claimed.
+- No per-phase approval gate. Continue when implementation is authorized; ask only for unresolved consequential decisions.
+
+## Inputs already available
+
+- Architecture: docs/architecture/PLAN.md and IMPLEMENTATION.md.
+- Target scope and semantic IDs: docs/architecture/scope.v2.json.
+- Existing source registry: data/nasa/runtime_catalog.json; its analysis_ready means ingestion readiness only.
+- Verified measurements: MERRA-2 T2M v5.12.4 and GLDAS SoilMoi0_10cm_inst v2.1, Egypt rectangle, 2001-2024.
+- Official source documents, 315-chunk starter corpus and local retrieval script under data/nasa/.
+
+## Dependencies to discover or resolve with owners
+
+- [ ] Role 03 executable API schemas and explicit legacy-to-semantic variable ID mapping.
+- [ ] Role 05/06 action enum and payload contract; no fixed five-segment requirement.
+- [ ] Role 02 evidence/null reason states and reviewed method configuration.
+- [ ] Role 01 expanded variable-region readiness for precipitation, NDVI and other windows.
+- [ ] Configured provider/model and server-side key setup; does not block local retrieval/templates.
 
 ## Phase tracker
-| Phase | Name | Status | Tests passed | Report file | Approved by user to continue |
-|---|---|---|---|---|---|
-| 1 | Corpus setup & contract lock | NOT STARTED | 0/4 | — | — |
-| 2 | BM25 retrieval & bilingual search | NOT STARTED | 0/4 | — | — |
-| 3 | LLM recommendation & validation | NOT STARTED | 0/7 | — | — |
-| 4 | Interactive conclusion templates | NOT STARTED | 0/6 | — | — |
-| 5 | Final evaluation, disclosure & pitch | NOT STARTED | 0/5 | — | — |
 
-Status values: NOT STARTED / IN PROGRESS / DONE (waiting for approval) / APPROVED.
-
-## Open problems (max 3 fix attempts per problem, then stop and report)
-| # | Phase | Problem | Attempts | Status |
+| Phase | Deliverable | Status | Verification | Report |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| 1 | Corpus and contract alignment | NOT STARTED | NOT RUN | - |
+| 2 | Bilingual retrieval | NOT STARTED | NOT RUN | - |
+| 3 | Provider integration and validation | NOT STARTED | NOT RUN | - |
+| 4 | Interactive conclusion templates | NOT STARTED | NOT RUN | - |
+| 5 | Integrated evaluation and presentation | NOT STARTED | NOT RUN | - |
 
-## Unverified claims (do NOT rely on these until sourced or measured)
-- "Mistral is one of the strongest models for Arabic" — unverified; measure it.
-- "mistral-small-latest answers in about 1 second" — unverified; measure it.
-- Mistral model names / `response_format` / `client.chat.parse` details — check official docs.
-- Corpus size "< 50 KB", "reads in < 1 ms", "retrieval in 0.001 s" — estimates only.
-- Candidate variables/products from the chat (GPM, MERRA-2, GLDAS soil moisture, MODIS NDVI, OMI NO2, ozone, evaporation) — verify each against official NASA pages.
-- Anything else taken from the design chat without an official source.
+Statuses: NOT STARTED / IN PROGRESS / DONE / BLOCKED. Record a concrete dependency for BLOCKED; continue independent work.
 
-## Open questions from the design chat (resolve with the user)
-- Allowed actions: the chat lists `FOCUS_REGION`, `FOCUS_REGIONAL_CHART`, `REVEAL_CELLS`, `OPEN_SPIN_IT`, `OPEN_RECEIPT`, but its example sentence only uses 4 of them (segment 1 uses `FOCUS_REGIONAL_CHART`). Use only the list Role 06 confirms.
-- The conclusion is "5 segments" but the chat example shows 4 → the fifth is unknown.
-- Variable id: the chat uses `gpm_precipitation` as the example id; `precipitation_gpm` and `gpm_imerg_precip` appear only as examples of a *mismatch*. The real id = Role 01's catalog.
-- Result field names (`evidence_state`, `baseline_period`, `analysis_id`, `p_value`, `confidence_interval`, …) are from the chat — confirm with Role 02/03.
-- Which tests are from the chat vs added: see AGENT_BRIEF.md section 5.
+## Open issues
 
-## Phase log
-<!-- Append one entry per finished phase, newest last. Full details go in phase_reports/ -->
+No implementation defects have been evaluated yet. Do not interpret this as evidence of zero defects. Provider capabilities/latency, retrieval quality and current submission requirements remain unmeasured or to be verified. Do not repeat earlier unverified corpus-size or latency claims.
 
-### Phase X — <name>
-- Date/time:
-- Short summary:
-- Report file: phase_reports/PHASE_X_REPORT.md
-- Tests: x/y passed
-- Open problems:
-- Arabic summary sent to user: yes/no
-- User approval to continue: pending
+## Change log
+
+### 14 November 2026 - Brief alignment
+
+Replaced outdated two-variable assumptions, per-phase approval loops and chat-page references. Added per-region/period readiness, semantic numeric grounding, explicit null reasons, variable conclusion segments, current architecture paths, source-aware scientific language and executable-contract reconciliation. Updated tracking without claiming any phase completed.
+
+## Phase report convention
+
+Write phase_reports/PHASE_<N>_REPORT.md after meaningful phase completion. Record revision, changed files, exact checks and PASS/FAIL/NOT RUN outcomes, remaining issues and next actions. A repeated failure calls for diagnosis and a different approach, not blind retries or an automatic halt of unrelated work.
