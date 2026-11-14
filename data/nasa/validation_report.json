@@ -1,0 +1,52 @@
+{
+  "scope": {
+    "bbox": [
+      24,
+      22,
+      36,
+      32
+    ],
+    "start": "2001-01",
+    "end": "2024-12"
+  },
+  "products": {
+    "M2TMNXSLV": {
+      "variable": "T2M",
+      "units": "K",
+      "months": 288,
+      "shape": {
+        "time": 288,
+        "lat": 21,
+        "lon": 19
+      },
+      "finite_values": 114912,
+      "missing_values": 0,
+      "all_months_missing_cells": 0,
+      "partially_missing_cells": 0,
+      "minimum": 277.1464538574219,
+      "maximum": 310.8818054199219,
+      "sha256": "f0bdb8612aae3e2394f19b48b84a07c90c6e654dd5698b0b521946652850e293",
+      "passed": true
+    },
+    "GLDAS_NOAH025_M": {
+      "variable": "SoilMoi0_10cm_inst",
+      "units": "kg m-2",
+      "months": 288,
+      "shape": {
+        "time": 288,
+        "lat": 40,
+        "lon": 48
+      },
+      "finite_values": 484704,
+      "missing_values": 68256,
+      "all_months_missing_cells": 237,
+      "partially_missing_cells": 0,
+      "minimum": 1.9999998807907104,
+      "maximum": 35.30735778808594,
+      "sha256": "47563a751a328e3d7cc2ff73dfc13e14dc5f2830f8e38e77ba3af4c38774773a",
+      "passed": true
+    }
+  },
+  "validated_at": "2026-11-14T02:46:59.243950+00:00",
+  "monthly_to_cube_exact_match": true
+}

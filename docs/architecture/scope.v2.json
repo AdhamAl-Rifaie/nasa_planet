@@ -1,0 +1,289 @@
+{
+  "architecture_revision": "2.0",
+  "region_status": "proposed_freeze_after_coverage_QA_before_trend_inspection",
+  "regions": [
+    {
+      "id": "nile_corridor",
+      "bbox": [
+        29,
+        24,
+        33,
+        32
+      ]
+    },
+    {
+      "id": "morocco_comparison",
+      "bbox": [
+        -10,
+        30,
+        -5,
+        35
+      ]
+    },
+    {
+      "id": "sahel_comparison",
+      "bbox": [
+        -5,
+        12,
+        5,
+        17
+      ]
+    }
+  ],
+  "target_cubes": 12,
+  "target_variable_month_slices": 3456,
+  "entries": [
+    {
+      "variable_id": "air_temperature",
+      "region_id": "nile_corridor",
+      "product_id": "M2TMNXSLV",
+      "version": "5.12.4",
+      "source_variable": "T2M",
+      "bbox": [
+        29,
+        24,
+        33,
+        32
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "verified_parent_cube_available_subset_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "soil_moisture",
+      "region_id": "nile_corridor",
+      "product_id": "GLDAS_NOAH025_M",
+      "version": "2.1",
+      "source_variable": "SoilMoi0_10cm_inst",
+      "bbox": [
+        29,
+        24,
+        33,
+        32
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "verified_parent_cube_available_subset_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "precipitation",
+      "region_id": "nile_corridor",
+      "product_id": "GPM_3IMERGM",
+      "version": "07",
+      "source_variable": null,
+      "bbox": [
+        29,
+        24,
+        33,
+        32
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "vegetation_greenness",
+      "region_id": "nile_corridor",
+      "product_id": "MOD13C2",
+      "version": "061",
+      "source_variable": null,
+      "bbox": [
+        29,
+        24,
+        33,
+        32
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "air_temperature",
+      "region_id": "morocco_comparison",
+      "product_id": "M2TMNXSLV",
+      "version": "5.12.4",
+      "source_variable": "T2M",
+      "bbox": [
+        -10,
+        30,
+        -5,
+        35
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "soil_moisture",
+      "region_id": "morocco_comparison",
+      "product_id": "GLDAS_NOAH025_M",
+      "version": "2.1",
+      "source_variable": "SoilMoi0_10cm_inst",
+      "bbox": [
+        -10,
+        30,
+        -5,
+        35
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "precipitation",
+      "region_id": "morocco_comparison",
+      "product_id": "GPM_3IMERGM",
+      "version": "07",
+      "source_variable": null,
+      "bbox": [
+        -10,
+        30,
+        -5,
+        35
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "vegetation_greenness",
+      "region_id": "morocco_comparison",
+      "product_id": "MOD13C2",
+      "version": "061",
+      "source_variable": null,
+      "bbox": [
+        -10,
+        30,
+        -5,
+        35
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "air_temperature",
+      "region_id": "sahel_comparison",
+      "product_id": "M2TMNXSLV",
+      "version": "5.12.4",
+      "source_variable": "T2M",
+      "bbox": [
+        -5,
+        12,
+        5,
+        17
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "soil_moisture",
+      "region_id": "sahel_comparison",
+      "product_id": "GLDAS_NOAH025_M",
+      "version": "2.1",
+      "source_variable": "SoilMoi0_10cm_inst",
+      "bbox": [
+        -5,
+        12,
+        5,
+        17
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "precipitation",
+      "region_id": "sahel_comparison",
+      "product_id": "GPM_3IMERGM",
+      "version": "07",
+      "source_variable": null,
+      "bbox": [
+        -5,
+        12,
+        5,
+        17
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    },
+    {
+      "variable_id": "vegetation_greenness",
+      "region_id": "sahel_comparison",
+      "product_id": "MOD13C2",
+      "version": "061",
+      "source_variable": null,
+      "bbox": [
+        -5,
+        12,
+        5,
+        17
+      ],
+      "period": [
+        "2001-01",
+        "2024-12"
+      ],
+      "status": "acquisition_pending",
+      "measurement_ready": false,
+      "method_ready": false,
+      "app_available": false
+    }
+  ]
+}

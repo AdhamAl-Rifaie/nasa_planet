@@ -1,0 +1,24 @@
+{
+  "monthly_rows": 288,
+  "first": {
+    "month": "2001-01",
+    "T2M": "12.37",
+    "unit": "C"
+  },
+  "last": {
+    "month": "2024-12",
+    "T2M": "14.24",
+    "unit": "C"
+  },
+  "retrieval_smoke_tests": {
+    "هل الدلتا بتسخن؟": {
+      "top_product": "GLDAS_NOAH025_M",
+      "chunk_id": "GLDAS:guide:p11:1"
+    },
+    "رطوبة التربة": {
+      "top_product": "GLDAS_NOAH025_M",
+      "chunk_id": "GLDAS:guide:p18:0"
+    }
+  },
+  "source_hashes_verified": true
+}

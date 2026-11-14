@@ -1,0 +1,62 @@
+[
+  {
+    "question": "هل الدلتا بتسخن؟",
+    "expected_behavior": "Clarify air vs surface temperature, choose available variable, call statistics; documentation alone cannot answer.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "رطوبة التربة نسبتها كام؟",
+    "expected_behavior": "Check units: SoilMoi0_10cm_inst is not automatically a percentage. Retrieve file units.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "ليه الحرارة زادت؟",
+    "expected_behavior": "Do not infer causality from a trend.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "هل MERRA-2 قياسات محطة؟",
+    "expected_behavior": "Explain reanalysis, cite documentation.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "هل GLDAS قياس مباشر؟",
+    "expected_behavior": "Explain model output, cite documentation.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "الدلالة 0.03 معناها الاستنتاج صح بنسبة 97%؟",
+    "expected_behavior": "Reject probability-of-hypothesis interpretation; use reviewed methods evidence.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "هات اتجاه حي مدينة نصر",
+    "expected_behavior": "Reject unsupported neighborhood resolution.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "احسب الاتجاه من 1990",
+    "expected_behavior": "Unavailable for selected common 2001–2024 scope.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "هل رطوبة التربة متاحة دلوقتي؟",
+    "expected_behavior": "Check download_status and runtime catalog, never infer availability from corpus.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "اختيار فترة قصيرة يغيّر الاتجاه؟",
+    "expected_behavior": "Call sensitivity matrix; do not invent numerical results.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "هل أقدر أقارن خليتين من شبكتين مختلفتين مباشرة؟",
+    "expected_behavior": "Explain native-grid mismatch and require explicit spatial aggregation.",
+    "status": "not_model_evaluated"
+  },
+  {
+    "question": "اعمل خريطة دلالة لكل الخلايا",
+    "expected_behavior": "Require fixed test family and selected multiplicity correction in statistics engine.",
+    "status": "not_model_evaluated"
+  }
+]

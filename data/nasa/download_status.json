@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "state": "measurement_download_complete",
+  "products": {
+    "M2TMNXSLV": {
+      "completed": 288,
+      "expected": 288,
+      "validated": true,
+      "variable": "T2M",
+      "units": "K",
+      "shape": {
+        "time": 288,
+        "lat": 21,
+        "lon": 19
+      },
+      "missing_fraction": 0.0
+    },
+    "GLDAS_NOAH025_M": {
+      "completed": 288,
+      "expected": 288,
+      "validated": true,
+      "variable": "SoilMoi0_10cm_inst",
+      "units": "kg m-2",
+      "shape": {
+        "time": 288,
+        "lat": 40,
+        "lon": 48
+      },
+      "missing_fraction": 0.1234375
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "MERRA2_README.pdf",
+    "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MERRA/MERRA2.README.pdf",
+    "status": "downloaded",
+    "bytes": 1064850
+  },
+  {
+    "file": "MERRA2_Specification.pdf",
+    "url": "https://gmao.gsfc.nasa.gov/media/publications/zbly36ziNFDFbmYmvhQeVqPhUo/Bosilovich785.pdf",
+    "status": "downloaded",
+    "bytes": 421618
+  },
+  {
+    "file": "MERRA2_Reprocessing.pdf",
+    "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MERRA/Records_MERRA-2_Data_Reprocessing_and_Service_Changes.pdf",
+    "status": "downloaded",
+    "bytes": 92500
+  },
+  {
+    "file": "GLDAS_Models.pdf",
+    "url": "https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/GLDAS/GLDAS_LSM_Description.pdf",
+    "status": "downloaded",
+    "bytes": 84314
+  }
+]
