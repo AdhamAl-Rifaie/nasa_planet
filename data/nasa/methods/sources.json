@@ -1,0 +1,17 @@
+[
+  {
+    "file": "pymannkendall.md",
+    "url": "https://raw.githubusercontent.com/mmhs013/pyMannKendall/master/README.md",
+    "downloaded": true
+  },
+  {
+    "file": "scipy_theilslopes.html",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.theilslopes.html",
+    "downloaded": true
+  },
+  {
+    "file": "statsmodels_fdr.html",
+    "url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html",
+    "downloaded": true
+  }
+]

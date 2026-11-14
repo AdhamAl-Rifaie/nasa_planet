@@ -1,0 +1,34 @@
+{
+  "source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=AG&longitude=31.2357&latitude=30.0444&start=2001&end=2024&format=JSON",
+  "retrieved_at": "2026-11-14T02:06:06.285395+00:00",
+  "sha256": "a5da099fed0f90fabf0e18ca33ec0cd678e24a8479f2497244ba940c83256901",
+  "parameters": {
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    }
+  },
+  "header": {
+    "title": "NASA/POWER Source Native Resolution Monthly and Annual",
+    "api": {
+      "version": "v2.10.0",
+      "name": "POWER Monthly and Annual API"
+    },
+    "sources": [
+      "MERRA2"
+    ],
+    "fill_value": -999.0,
+    "time_standard": "LST",
+    "start": "20010101",
+    "end": "20241231"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      31.236,
+      30.044,
+      135.44
+    ]
+  },
+  "warning": "NASA POWER point sample; not the MERRA-2 or GLDAS gridded product ingestion. Excludes annual summary month 13."
+}

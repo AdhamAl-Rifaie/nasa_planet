@@ -1,0 +1,3067 @@
+[
+  {
+    "path": "data/nasa/assemble_cubes.py",
+    "bytes": 1343,
+    "sha256": "bc1d607917dbf2836c1c9c345701849ec07164a9fb68012eeab1c2003a0649e6"
+  },
+  {
+    "path": "data/nasa/download_recoverable.py",
+    "bytes": 2261,
+    "sha256": "efff98cb92b9dca39ed4439599466a9816d42f6281b253d60f6f2fe6c6efa7d8"
+  },
+  {
+    "path": "data/nasa/download_status.json",
+    "bytes": 680,
+    "sha256": "be90476d3294cc91cbca949a2afdb3770a385716e0eff7d47ecbe02a63ee14be"
+  },
+  {
+    "path": "data/nasa/README.md",
+    "bytes": 3697,
+    "sha256": "12e8746fa65c99c0a023020e840ed7cf4f941f077031414b5fc43df5a33834ab"
+  },
+  {
+    "path": "data/nasa/regional_worker.py",
+    "bytes": 1769,
+    "sha256": "0e9dc3985761d004e11e3f98aa4d0705f6dc613699b0924e99b1124aaede1ccc"
+  },
+  {
+    "path": "data/nasa/requirements.txt",
+    "bytes": 109,
+    "sha256": "3535e1cd7bda32f47a913ecf417779dbe63b0187273c8c570fdfe7d1478497b1"
+  },
+  {
+    "path": "data/nasa/runtime_catalog.json",
+    "bytes": 1357,
+    "sha256": "1f56d6c218a90baeb571a0bc90d1c740e4cd2b6d5777edf625f1fc99827fd753"
+  },
+  {
+    "path": "data/nasa/source_lineage.json",
+    "bytes": 145155,
+    "sha256": "9fb39bbef12c1477014a39f383cfff72b3a620c825a92519f8cc3fed1ed6c5c6"
+  },
+  {
+    "path": "data/nasa/validation_report.json",
+    "bytes": 1290,
+    "sha256": "322d584ba4cac21757a42cdfea5db7aac0cc4b462b6e9b3a863c8be7a438388a"
+  },
+  {
+    "path": "data/nasa/docs/GLDAS_Models.pdf",
+    "bytes": 84314,
+    "sha256": "ffc48faa29002476682e42cb3ea0d59a2a9a475d599966de7ac318d24e9e7779"
+  },
+  {
+    "path": "data/nasa/docs/MERRA2_README.pdf",
+    "bytes": 1064850,
+    "sha256": "4cf82170a569803a4b296537d5e836951db82c0856e172a77b62ca8793c0cb0c"
+  },
+  {
+    "path": "data/nasa/docs/MERRA2_Reprocessing.pdf",
+    "bytes": 92500,
+    "sha256": "a5e6ba464ed73eb7c3a46d251f3efe0cbd2c8c295919f873e0bf476a0af2d29a"
+  },
+  {
+    "path": "data/nasa/docs/MERRA2_Specification.pdf",
+    "bytes": 421618,
+    "sha256": "4656eda4a04c6c7b086b7a1b38c8a9e38e5c51931ed8fb661b86bfe801689945"
+  },
+  {
+    "path": "data/nasa/docs/sources.json",
+    "bytes": 840,
+    "sha256": "ad1a0c3b24e1aff569334476231a353dd0f723bc2ebc2a740a3e6aa953908f74"
+  },
+  {
+    "path": "data/nasa/frontend/SoilMoi0_10cm_inst.json",
+    "bytes": 9031995,
+    "sha256": "268c3398dca73f1d42cbc95aa4b9f68809c0079e559705509e702f6be97cf1ee"
+  },
+  {
+    "path": "data/nasa/frontend/T2M.json",
+    "bytes": 2084111,
+    "sha256": "d4ad8f2a514e207365c555def80a85d242c621cae48ce151cf8162e7721b20bd"
+  },
+  {
+    "path": "data/nasa/manifests/GLDAS_NOAH025_M.json",
+    "bytes": 1257267,
+    "sha256": "afb959aed21bd23165f3d447af66c80fef7d9a2ed047ddef3604095c1f154aca"
+  },
+  {
+    "path": "data/nasa/manifests/M2TMNXSLV.json",
+    "bytes": 1279343,
+    "sha256": "483ca65bb785d93f86780722ccb86c4081e705e080b998f183154ad8cedc2ff7"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M_Egypt_2001_2024.nc",
+    "bytes": 2225344,
+    "sha256": "47563a751a328e3d7cc2ff73dfc13e14dc5f2830f8e38e77ba3af4c38774773a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV_Egypt_2001_2024.nc",
+    "bytes": 472763,
+    "sha256": "f0bdb8612aae3e2394f19b48b84a07c90c6e654dd5698b0b521946652850e293"
+  },
+  {
+    "path": "data/nasa/methods/pymannkendall.md",
+    "bytes": 13981,
+    "sha256": "217208246e125cd6cddcae59762831c81af1c2aba9ab221fadb5dcc3de49f7f3"
+  },
+  {
+    "path": "data/nasa/methods/scipy_theilslopes.html",
+    "bytes": 44758,
+    "sha256": "f7c7e27202daf9cd85c1f06b8620253ae69260ea57499dea094b48465c9e20f5"
+  },
+  {
+    "path": "data/nasa/methods/sources.json",
+    "bytes": 509,
+    "sha256": "f8e17ff53281183a55610c63647be171bcdfd6e9f713876a6893dde12c393eeb"
+  },
+  {
+    "path": "data/nasa/methods/statsmodels_fdr.html",
+    "bytes": 88320,
+    "sha256": "ddbb7e7033b40ef704ea6238e356e4652bc4ec7b5f446eef9e75d619a8550223"
+  },
+  {
+    "path": "data/nasa/rag/AI_CONTRACT.md",
+    "bytes": 972,
+    "sha256": "7cfe5348304d58ec42bd615e1afbd503d42b41e98bf194eba29c6d49e3c33004"
+  },
+  {
+    "path": "data/nasa/rag/cairo_temperature_monthly.csv",
+    "bytes": 4891,
+    "sha256": "6df577d16c9d0324b8330db70cff39c364faa2109034381d3ff40d23e5e40feb"
+  },
+  {
+    "path": "data/nasa/rag/catalog.json",
+    "bytes": 1357,
+    "sha256": "1f56d6c218a90baeb571a0bc90d1c740e4cd2b6d5777edf625f1fc99827fd753"
+  },
+  {
+    "path": "data/nasa/rag/corpus.jsonl",
+    "bytes": 483844,
+    "sha256": "c3a254569e6633ce6625be61b2dda625f1e9ee29d3d8c3bf8ac3d12c368e5cd6"
+  },
+  {
+    "path": "data/nasa/rag/evaluation_questions.json",
+    "bytes": 2545,
+    "sha256": "e7192186d08a5054d7f8afbb1688ecb9caf2016f484a71cbf3aef882bfd6f262"
+  },
+  {
+    "path": "data/nasa/rag/README.md",
+    "bytes": 5022,
+    "sha256": "3e23dc4d7d8b9899cc7a21ff5662eb209517410d93a486fda5b331d2f54799aa"
+  },
+  {
+    "path": "data/nasa/rag/retrieve.py",
+    "bytes": 1388,
+    "sha256": "d9e3c6bb37aac9b4d5f56e955c5b870349303e47ab25f3762bd1980ce3aa778a"
+  },
+  {
+    "path": "data/nasa/rag/sample_provenance.json",
+    "bytes": 1004,
+    "sha256": "f78b2d0add871f3763c860ceb79995ba8198e623a08c4449f7f1b7b16abcd44a"
+  },
+  {
+    "path": "data/nasa/rag/validation.json",
+    "bytes": 513,
+    "sha256": "47e945045a3a09ccef37a39cceebbeb0e4264f4d7a985aaf0b707f801897b012"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-01.nc",
+    "bytes": 26806,
+    "sha256": "c8ab4a866b746c68d9c45cba3cf01a6a39d50b22cc13d1475b45c6796e2ea7dc"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-02.nc",
+    "bytes": 26806,
+    "sha256": "bc67f8ffcd86d8a3510f0bd0b4325864656e945f271e99c3ae7555b592967465"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-03.nc",
+    "bytes": 26806,
+    "sha256": "9bf4ca71db2271facac4f84a6f4e681a8386f4106db04e7bd3c7b5896b833b63"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-04.nc",
+    "bytes": 26806,
+    "sha256": "7dce548229785a5b8fa4cd6b3777619321683e617039c9a1566136aa74e1e063"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-05.nc",
+    "bytes": 26806,
+    "sha256": "ee2d2fdb52552433ae14038d46a85129d5742c29cd89ed6e903c4c61b76f1b2b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-06.nc",
+    "bytes": 26806,
+    "sha256": "f51a469e1261157999af0421d0b5a819bc1b27d2b14c6d1fc693b6f9704a7317"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-07.nc",
+    "bytes": 26806,
+    "sha256": "e534951e8f50cdd28a05ab6cf19fd1c303b0d8b67f0b79e325387a549e3233bd"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-08.nc",
+    "bytes": 26806,
+    "sha256": "abc345a23e3b842837d7875a496ab2d9eb9126f2d5a94dbbc3d6a782e9426dcc"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-09.nc",
+    "bytes": 26806,
+    "sha256": "98fb4544fc49554edf11db729d9aa0dc63f0d92da265bc8a22ba4b191f454f3b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-10.nc",
+    "bytes": 26806,
+    "sha256": "189bae12d45e59f14e5d3d8a957fdefb54bc55f774fe023ac89b2e8ea0a98db8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-11.nc",
+    "bytes": 26806,
+    "sha256": "ce04f10c3709d4e4eb3438ef4cf5931417c74090f5f7777411539b5b65a0d365"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2001-12.nc",
+    "bytes": 26806,
+    "sha256": "0c879b41f5980952239bd6ef922287f8cac79ec7ca84bce3c9610072d7f8d110"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-01.nc",
+    "bytes": 26806,
+    "sha256": "782156efa90b098588b7515c408dee71c32d2a807e8c40ff5982789ef35fd25d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-02.nc",
+    "bytes": 26806,
+    "sha256": "d18b0e0f67c5c793880dc6d30d388f74b1ac8597363d73c81b3122293c7a5041"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-03.nc",
+    "bytes": 26806,
+    "sha256": "6d3736b3a34851ced3c5a24b96868ce8111ea2a581a2648e425ed29ed7399a83"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-04.nc",
+    "bytes": 26806,
+    "sha256": "866f9831a550f3b594a3a5c4c4386a99e84aedca6284b96c8f49c65bd73b90ee"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-05.nc",
+    "bytes": 26806,
+    "sha256": "2d2a2cdea9f2d80db72deb1e5548c0d0d51a7da1d0d077caa6a9786f11145d3a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-06.nc",
+    "bytes": 26806,
+    "sha256": "26545bf28f43a9c4de209a8a1ca9c3dc7098fbf46677d55fd1523ed1b7d89184"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-07.nc",
+    "bytes": 26806,
+    "sha256": "ed3c9ec61565965c6725f2034da5d572378c4e3aaec815c4bdf5eded4dcd76a9"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-08.nc",
+    "bytes": 26806,
+    "sha256": "371e4b70c90c6819b9981e39993b9df8fe8ed23680df34050dbc3bae8cdd16da"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-09.nc",
+    "bytes": 26806,
+    "sha256": "ff4d14a04f773e173c28855906105a6f5d9b7f00477ba13e02bdb3e11b30930f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-10.nc",
+    "bytes": 26806,
+    "sha256": "502d0a19e4cf58cf5e63d3ced0fb0baa5a8446cc1cd070a1807800e897fc8b70"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-11.nc",
+    "bytes": 26806,
+    "sha256": "821ea5b0b1108f46274f26d4418232de5d75651089abceb69e40ddfaa08899ac"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2002-12.nc",
+    "bytes": 26806,
+    "sha256": "a900cceec1d1bd0b51760884968367fd06d6fdd3c0f9e11c4e6eae126ecb4e6e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-01.nc",
+    "bytes": 26806,
+    "sha256": "068d696c6a5e7adbfda1aab67ff40c75d83ef44e81712921463d6ea4f211cc10"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-02.nc",
+    "bytes": 26806,
+    "sha256": "282d01aeef2e544b44cce4ade99282710a18022361442faf47fae8e8151acc2c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-03.nc",
+    "bytes": 26806,
+    "sha256": "76f0a215b20dfcec1f0a317caaef35853f5f8f20e6f7ec3f60096fa2b5b3dba3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-04.nc",
+    "bytes": 26806,
+    "sha256": "a46a50c7a62e00d7a895c3cb289419d0c62ca57ef4657934ac5c7ee9dc534a9f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-05.nc",
+    "bytes": 26806,
+    "sha256": "12e0796828d9c796852e09e1cf3e90765fb9accfcaaa456304c57cc27cb13c1f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-06.nc",
+    "bytes": 26806,
+    "sha256": "dec46ba2a6f47a610e72ff68def47a75f485661aea2d528b7a1bb69c922a9ba4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-07.nc",
+    "bytes": 26806,
+    "sha256": "4411bbb943f4f8bcadfac5bfcf28347300a25d559c6fc4accaaa51cab1f86e15"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-08.nc",
+    "bytes": 26806,
+    "sha256": "957d02df2da7b06c7b556658d2356e5b035005b76012bdd045967a6f7a83bbeb"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-09.nc",
+    "bytes": 26806,
+    "sha256": "ab70bfb34d7632b1acc99430227bd2590e388cebfdc7ca788549f9f2473dadba"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-10.nc",
+    "bytes": 26806,
+    "sha256": "f861b8a78f8678c176f330ea70abb0ff3caabed9b748571dbe4c1d274aa1d6d3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-11.nc",
+    "bytes": 26806,
+    "sha256": "49de9126b6e93028b09482490e3cd5fb0ec25592ce6c30bce2836941af00a105"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2003-12.nc",
+    "bytes": 26806,
+    "sha256": "86defaf1f8f139048f8b6da45d85b51708bd17eba783b434727b2e78ba0d6f9c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-01.nc",
+    "bytes": 26806,
+    "sha256": "bfe62cf1ba0a63e5579bd64e718492124fed620f2680fda4ebb915b0bb8ebb1c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-02.nc",
+    "bytes": 26806,
+    "sha256": "45adb1fa5d20302f90c57b9035bfddd85d0d9219fd64d5d3c00f5ada1be842ea"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-03.nc",
+    "bytes": 26806,
+    "sha256": "8f3d1c88e8071032f7897d1e10027330a071901df7d25c89bb31a54c5f271fc2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-04.nc",
+    "bytes": 26806,
+    "sha256": "fa80366ea5635f689f29f4d75ab302a3767bf5241bc05a23e4123f5643324e96"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-05.nc",
+    "bytes": 26806,
+    "sha256": "816efd70000ebacaa41f22c309760e657ac0a44d079e4fc96d134be5995596ca"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-06.nc",
+    "bytes": 26806,
+    "sha256": "ac7c8f37dfa86154a6a059772352aa3f8c5840e4d6bbf6d23214d468fd9c1e66"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-07.nc",
+    "bytes": 26806,
+    "sha256": "cb8862ce8bbac0aec8c885318da7ed80b3d6f99342ac74f47d0b19a9b17c2c77"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-08.nc",
+    "bytes": 26806,
+    "sha256": "50baffe75f164afa23aa2d1ed5ffc900526c45b71998324188299c179d1b840e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-09.nc",
+    "bytes": 26806,
+    "sha256": "df61ca4453845b1db64ba1348f544a0e8bc0175c78bc3a410af405959878b38b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-10.nc",
+    "bytes": 26806,
+    "sha256": "c6ee3282e674ae4f76b636c73c4cd8b5c57b4d2040e1224029b51332f0fba948"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-11.nc",
+    "bytes": 26806,
+    "sha256": "6d357469867024c33a7e645ba6fc3e8dbf4506d1214024de00d3787aebb6a08e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2004-12.nc",
+    "bytes": 26806,
+    "sha256": "a0bbdb3d5c3c964a30672050bb7e8d8148b516612028b53eb61b59b8ef866613"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-01.nc",
+    "bytes": 26806,
+    "sha256": "ca96e61dc8125f1e275ddc7833f70e0573d1e661dd7b60cd97d442071f8d0d8c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-02.nc",
+    "bytes": 26806,
+    "sha256": "e0258df41e096f830d524816a9fe0346fe578c1a11f3a2cd61d1a81e132a2c10"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-03.nc",
+    "bytes": 26806,
+    "sha256": "6c2b30f9687c22e5061cc4fe437f469d61d8fbab48095dbc35368dd181d68669"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-04.nc",
+    "bytes": 26806,
+    "sha256": "05575e7682b2f4a1bc37918178ec8645ff50be237028e402b019d6da8b4e36fe"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-05.nc",
+    "bytes": 26806,
+    "sha256": "106ca2538bdba5693f47ee9eb4267ce177607c4ecd2ed342c191bb40fdc5502d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-06.nc",
+    "bytes": 26806,
+    "sha256": "9a6ba8d1cc8ea00b23390bf960a99be9b3d7e79499de2b992b9f5c32ff53adc5"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-07.nc",
+    "bytes": 26806,
+    "sha256": "93b47c6873137439bfeab2ce54c3d7abb736c04b855298918bafeb164db3d959"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-08.nc",
+    "bytes": 26806,
+    "sha256": "4dc3327fcc784f7a47b22d5aa11757d9c34c8c9972578e0a1b53340d94400001"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-09.nc",
+    "bytes": 26806,
+    "sha256": "fcabc17cc0cb646c8a63858781fb400fc6c4296c206223bfbe6e53f791b0f5bc"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-10.nc",
+    "bytes": 26806,
+    "sha256": "4afafc748afda201f0a7961c8fede53fbe980c3a4e599ceb4bf78cc47c8821ca"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-11.nc",
+    "bytes": 26806,
+    "sha256": "365e50b784f5d25c99da3eb8b307773f5e4c751fe823a46c97d83877ca828c4b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2005-12.nc",
+    "bytes": 26806,
+    "sha256": "d6d537548c81d1aa830f1f1f1a6f33e4477832a0f94107e7cfd89f4fcf7b4135"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-01.nc",
+    "bytes": 26806,
+    "sha256": "8f62bd7198556fd3f9c5660fed7a805b64a7e66b938cea43f2ae8f99ca44c14a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-02.nc",
+    "bytes": 26806,
+    "sha256": "8a3a6aad295e4401e57eadc5708ee16b906eba21e70bc1a8c51a4c82d340462e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-03.nc",
+    "bytes": 26806,
+    "sha256": "ea833653acc7d1986a06cf42eba1a856443a3500b02a02fe61f045d334aad586"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-04.nc",
+    "bytes": 26806,
+    "sha256": "e19f1103257e086c484cba7fb9ae8887331be08b3ddd8c4fc89c7e969416c8bf"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-05.nc",
+    "bytes": 26806,
+    "sha256": "874db2a9ad0de8363b142394ece5fffd88fea3ebf6eafd16b88cb7586bc0f78e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-06.nc",
+    "bytes": 26806,
+    "sha256": "afac7d9cbd96912825be9549afa4b369b430af1a5202fd666a9a9bef1cc9ed61"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-07.nc",
+    "bytes": 26806,
+    "sha256": "74b3d6ad266da9b2fde8b806538d93712f8cd4ddc97de201bf7fa21f0169e880"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-08.nc",
+    "bytes": 26806,
+    "sha256": "aad8f787f92d3e0135451f4f38e021a57aa7af4d67fc540d0fb396e94486be92"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-09.nc",
+    "bytes": 26806,
+    "sha256": "dd02f6f9e8a8af397f90a94c0006d298745d1430a4eff4715f4e741809b3477f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-10.nc",
+    "bytes": 26806,
+    "sha256": "95a49c7259ab05a18a147e8198469662870faf9a51cad472c1fdd0d51db0ae5a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-11.nc",
+    "bytes": 26806,
+    "sha256": "6a8adfb135758d4aa871fe5b4e36e10cf453f2cda1e82ede2f3e64a7a1141eda"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2006-12.nc",
+    "bytes": 26806,
+    "sha256": "6c1561852efbd7b82a1b7237a1198453caa2d41a8e0ec048229ada1bfec158cb"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-01.nc",
+    "bytes": 26806,
+    "sha256": "dcc15b0842a7f5e0534841167307a123a35821c25e8d6099c5ddf9b17b61cf7d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-02.nc",
+    "bytes": 26806,
+    "sha256": "0c1a98cc7099120859b123ff33f4a1145c252d593b69c1cbfbfab391a656b531"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-03.nc",
+    "bytes": 26806,
+    "sha256": "45f332ad942b54ca738204b1982828699686916781a71acbbc9f5ce0d0b2b0fa"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-04.nc",
+    "bytes": 26806,
+    "sha256": "9b7e8287cfcf1e59368177ac5ddc42abd29c5cce16a5e32da73decf03d052e6f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-05.nc",
+    "bytes": 26806,
+    "sha256": "08b550f1ffa630c283aff3c67a5ad1b77b1d84b83e52445f1dcae4c8bb435fdc"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-06.nc",
+    "bytes": 26806,
+    "sha256": "f727200788597306fc7cc7c42d099bbd310edd265cea225c0a12e353537e5d09"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-07.nc",
+    "bytes": 26806,
+    "sha256": "95172af01ea152b099065c6078b7feab8a9e79f5c935c1dd2fbd5819764d844e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-08.nc",
+    "bytes": 26806,
+    "sha256": "0b33d988ca112353c3e4ef4c64f5441194261f4771f1b04655f5cb071057ce43"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-09.nc",
+    "bytes": 26806,
+    "sha256": "034f387e624201ff893c983656878db295d1eb807e3c0b6d1d81869c9894213e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-10.nc",
+    "bytes": 26806,
+    "sha256": "0e7bba5079bf210a96937ccf9e15a4535c7a9566088562652777155f89bfd2ef"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-11.nc",
+    "bytes": 26806,
+    "sha256": "0bae3fe5f512feae3919fdfe9ff05b7784aa01b69b8f137685330c258bd44ad1"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2007-12.nc",
+    "bytes": 26806,
+    "sha256": "02ecc17ed4362cff79ec4ab96464766ab2b227b1b74bd60db54837e004f8741c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-01.nc",
+    "bytes": 26806,
+    "sha256": "a54cd57c0d79651b32cf430fde7cdb244bcf091b275f0043fda8e77bff9863a8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-02.nc",
+    "bytes": 26806,
+    "sha256": "f28338a10c4f1f5d749c7d3a2f26271d796417d343fa1305e54b57690befc738"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-03.nc",
+    "bytes": 26806,
+    "sha256": "ec00dcde308a7fe10f05dcaf92d798b38909ce3a2da8b1f0b4b5ff1f12424f52"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-04.nc",
+    "bytes": 26806,
+    "sha256": "ef507e2ee373606a86b31d9923008359941a23abf5c16f407d4448cf8332ed24"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-05.nc",
+    "bytes": 26806,
+    "sha256": "77b95ab0f66f7966644542d7e96d82b6fae94b4eeeecdefe9bcca5eac658df6b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-06.nc",
+    "bytes": 26806,
+    "sha256": "5f56e6ceaf3fed6c86c9fe8292fdf130ae559a52eade7e4c1d562811b8695649"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-07.nc",
+    "bytes": 26806,
+    "sha256": "04e97f43bdcdd0040327d2529a87c70810b19438242974aef9242c6596577fa1"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-08.nc",
+    "bytes": 26806,
+    "sha256": "7b89528e448b982105e79b1dfe94490c595155ee2a8479637376876008bd217a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-09.nc",
+    "bytes": 26806,
+    "sha256": "0d9aa9d895f62e95387c22919d0818bdfc3f9ddd62cfbe5b89c7e3fa533e7588"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-10.nc",
+    "bytes": 26806,
+    "sha256": "134315b7e72fbf207d2303bb1d4a86649027def73d13bd27fc414be43e77d89b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-11.nc",
+    "bytes": 26806,
+    "sha256": "154405d83da563be887bce951c9d58d38a6fdcbc35d0cc8380db8d3924d9967f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2008-12.nc",
+    "bytes": 26806,
+    "sha256": "70b0f5fbd1f72adb2e5fa64d2f1a0d1ac8df1a63bb75b1279843d844260ec36e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-01.nc",
+    "bytes": 26806,
+    "sha256": "2bce077128c65de0f09c95c03ceb44e04340a1fd75eba2e168d78a7020468a98"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-02.nc",
+    "bytes": 26806,
+    "sha256": "f6a4e925f8c67892c3ea38680df67edb738a1d3e3c5b276c65c3a8db4db51b77"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-03.nc",
+    "bytes": 26806,
+    "sha256": "6bad2acbbc0bf38b13c050bc411308a96d9ef3ca05790eac108970202341d602"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-04.nc",
+    "bytes": 26806,
+    "sha256": "38a001fb22510e1290533b2fadbe5565473cf264fd789cd93c4d3f59e562aeb2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-05.nc",
+    "bytes": 26806,
+    "sha256": "f6d3fbd63b9f99bb40709e70e94bab985168e7538432045f8a548139aee2b953"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-06.nc",
+    "bytes": 26806,
+    "sha256": "8d5edfefe7a805210fdabbd1cf85d34b4ef6d3c88f1de22fcfb7b30b968a9f43"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-07.nc",
+    "bytes": 26806,
+    "sha256": "a000b0f45d00905e557abbf2407ccf1ef6a7cd875865ec9b8c3a78141f7422ca"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-08.nc",
+    "bytes": 26806,
+    "sha256": "bb08eacb1810f6944ff0c7af37f8bad5cfaf9c8e4de22287f5cd974b04214fa4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-09.nc",
+    "bytes": 26806,
+    "sha256": "eba81c74efb3d8532542c244ff94f5d93f72e30e0da28844e087489bf7c43986"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-10.nc",
+    "bytes": 26806,
+    "sha256": "46ca9bfa8f21a18817bf0033cfa0d2cd00d2a06d739e5f342c6a917b0966d511"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-11.nc",
+    "bytes": 26806,
+    "sha256": "0e3940ddefda048a58c955075ee98da5532c476b415479b4ac3b40e7d25661d2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2009-12.nc",
+    "bytes": 26806,
+    "sha256": "8ef5f4a46450e7b54b714fa638e8e77afd94439d1774df05d8f6e7e48e5cabdb"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-01.nc",
+    "bytes": 26806,
+    "sha256": "bf68804f7d1e055d10766c6c3d4421141705ffaeb59e4a627a1e55943ec71318"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-02.nc",
+    "bytes": 26806,
+    "sha256": "a7d5e620ed72fa9fa6363f4f6b0735a34de4f2ad69443b8fd600c5f18655564e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-03.nc",
+    "bytes": 26806,
+    "sha256": "645d8754f0b0882afcfa1602b038a054960db69dc2cde5b0574d8c150e7b40b8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-04.nc",
+    "bytes": 26806,
+    "sha256": "ef653d08770cde780f75360ffc50123dd192315b47aeedd55670ddf7cdb1e88f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-05.nc",
+    "bytes": 26806,
+    "sha256": "63cea4b997158600a1c993446161907bb74c1dbe9f52c39286484e94a1653278"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-06.nc",
+    "bytes": 26806,
+    "sha256": "41013791279293f026f1475725cf808937422a7d79dc9ced1cde3427eee7b9a3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-07.nc",
+    "bytes": 26806,
+    "sha256": "42d9fffb0c7891ad5e71fe3b2d3f1a5de54d0c50d444b269312bfa0bab21a306"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-08.nc",
+    "bytes": 26806,
+    "sha256": "6dbd8eb50aea1b9d9a17093423755fe3ae2638f7dff6ab6e8199216f6da3336a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-09.nc",
+    "bytes": 26806,
+    "sha256": "e7976c0cb260f5cfcd7c996ade03e006e417c3f1790fc1a52d17dd7c0c4e2d55"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-10.nc",
+    "bytes": 26806,
+    "sha256": "f105e421a87009e730c386bd4e7fb36e817a0176e48c3abe0583f326c079f183"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-11.nc",
+    "bytes": 26806,
+    "sha256": "a674bf0f6f2f9a4c240f4430004f49d568478a6b96b3cc02854644d702d9e6e5"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2010-12.nc",
+    "bytes": 26806,
+    "sha256": "13f9ea1a44e84c7103d126cde315c5c307103260cb0bedf8a126f09083c2de0f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-01.nc",
+    "bytes": 26806,
+    "sha256": "f8b28834533f17a3523ab26c2baa18ba5ecffffdee10d7c136ad53bcc725527d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-02.nc",
+    "bytes": 26806,
+    "sha256": "16e2da4d36f7c18e31a13d172cf403a4a7ea9d6c338124790163b6a616d10b07"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-03.nc",
+    "bytes": 26806,
+    "sha256": "4cc3954a8f74acafc84cf02644df941567a7a820a00be64936bbfb7a30c18c59"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-04.nc",
+    "bytes": 26806,
+    "sha256": "01b922cde1f721b48bbe66b061daf3dea980393bc2c5e5d745a08482647e2a67"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-05.nc",
+    "bytes": 26806,
+    "sha256": "9f85da90a81fa2c5f040961abcd698224339c509ba21665c43f86ef212e5d549"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-06.nc",
+    "bytes": 26806,
+    "sha256": "66c6ac153ba07b74305d1b7acedca69f22a3adb857c8c6b4df8a2e329e60917b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-07.nc",
+    "bytes": 26806,
+    "sha256": "2539f144585e033f8a1473c8c9ba587f39ec9ed516f7bd3cdd7c934e08623c8f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-08.nc",
+    "bytes": 26806,
+    "sha256": "f183f9093d490bc47e398967b08d1418d09a7aebf4f5a76aad13220debf10172"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-09.nc",
+    "bytes": 26806,
+    "sha256": "6efb0049724b24cb255811161bbcbcdfd4e7384d945d863c13466f880a77b178"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-10.nc",
+    "bytes": 26806,
+    "sha256": "948294f8dec44f4ea73325f099cd28e8d4e124296f9426376adee45315263769"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-11.nc",
+    "bytes": 26806,
+    "sha256": "f5a41a127ffc7a06e698adb5129ad59cf4e48290d7570472c17c610149176919"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2011-12.nc",
+    "bytes": 26806,
+    "sha256": "4969e3b1aeebccd92a8f0b4e7708c51d7a30d20ff0c12a0c39eadf4ee08504d4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-01.nc",
+    "bytes": 26806,
+    "sha256": "7a6080c427f7f5fb0d9d2e852bea7cc9d2fb6216d66b9c553dc945e6710ce90b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-02.nc",
+    "bytes": 26806,
+    "sha256": "e0769f8b5fb979d651dee739b1861da3c4832cd888b319276b79b37da9234687"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-03.nc",
+    "bytes": 26806,
+    "sha256": "74e2a6daeb5b5cf7a40b77dc33c17a36a6e47f16dbc704ea9bb4dff1dccf3c6f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-04.nc",
+    "bytes": 26806,
+    "sha256": "4bda98c8eab2186f2916cfffdcbfdc87d5ba8634f7a2aadea71d23d685c3c7c3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-05.nc",
+    "bytes": 26806,
+    "sha256": "0d599c2681edd33faa4a368437de40c93caf15bed52556f2c9498fdc9968aaa2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-06.nc",
+    "bytes": 26806,
+    "sha256": "2a9a5f755d9b583d146f00cfab1957acb3217bda16b61885a494d886a6c5cd82"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-07.nc",
+    "bytes": 26806,
+    "sha256": "458001eab7d5e482b4561b6ec9afd40ca5c7c57cbe3ad4a02cc79a320c9ffe98"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-08.nc",
+    "bytes": 26806,
+    "sha256": "228ef062d90ae03979e2578bcafae8300b4d64c5443e5a66b7b3180cc7552411"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-09.nc",
+    "bytes": 26806,
+    "sha256": "b20fe67eabe11cc3e172119a632ffbb3eec5411a24505c5097a1cf961a1a7efa"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-10.nc",
+    "bytes": 26806,
+    "sha256": "0e533cddbcf23cc052d593b924b22cd3da74137c4f8c777597f7db9fda1b14da"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-11.nc",
+    "bytes": 26806,
+    "sha256": "6eb46c1d30a6645cb8168225b039f62510fc1a3778acdd405c48fc8a4c34fdf8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2012-12.nc",
+    "bytes": 26806,
+    "sha256": "935026633a44efe5cb02b9eb8cc0e31def015385dfcd6a7a8b82427d1bc9436e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-01.nc",
+    "bytes": 26806,
+    "sha256": "150977a202d2adc5bc30c78a16abc88fa1723a558c4d52312738cabc552182bf"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-02.nc",
+    "bytes": 26806,
+    "sha256": "8874ad91ddd60086777e74d61536e52d52437a02d16d30c2a6cf43f0dc8f6668"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-03.nc",
+    "bytes": 26806,
+    "sha256": "d3c787e68da29ab902ae7e8f98a6e279123c259c9b304817c2957e131801f58c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-04.nc",
+    "bytes": 26806,
+    "sha256": "ee267f9f2480d6edcd7565f93fce9168c1105d36ba22e4581a30d0ffc42ef033"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-05.nc",
+    "bytes": 26806,
+    "sha256": "c78faa7ae677a68677ec8adcc21478b7cdf5ccb0ecf71ed210091101b86eeff4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-06.nc",
+    "bytes": 26806,
+    "sha256": "cbefe8d7971f3d208ba6c8f0b57328cee995de1a239ac4f4ef5fe0d5aa8a2e63"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-07.nc",
+    "bytes": 26806,
+    "sha256": "b9077de5e46a364ae30b1eca7000ae5397f1c2831eeca264b4633cc8cb24cfdd"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-08.nc",
+    "bytes": 26806,
+    "sha256": "78e147beee6ebc2940b85575fa8f3bcd0d18b85f6f2fe1f37d2086e933214c94"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-09.nc",
+    "bytes": 26806,
+    "sha256": "49f5aec01b0df1ca2fb9ce7eb8894328cac68ef8f855dfba6d7aa2ec1423ab95"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-10.nc",
+    "bytes": 26806,
+    "sha256": "67959f6b2e2f882a790d6af08a4140eea86d8a8557a4af88b261da89cdabb707"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-11.nc",
+    "bytes": 26806,
+    "sha256": "5a4894d4c44d4f89595da623987a6046d0420c3f500e159cb37e2893cb2e17ac"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2013-12.nc",
+    "bytes": 26806,
+    "sha256": "14a1ef302c0d395108c2836644c65f6a4151ed19d25005fef8ceb6c4ffcc4f1a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-01.nc",
+    "bytes": 26806,
+    "sha256": "ded9cee08c80fa0220490c9e9eb372229fb2639167b6398fd4c2a0b9ba83abe1"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-02.nc",
+    "bytes": 26806,
+    "sha256": "92eb85e66eb5badc0d61e138a7d52cffc006f8a0dabe501e77cf6d041cbd7cdf"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-03.nc",
+    "bytes": 26806,
+    "sha256": "181079443437ed6a5e9d5c296af4231868dc786547403dcdd04d6f15f415fbcf"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-04.nc",
+    "bytes": 26806,
+    "sha256": "78a24b481e1d37f44a9d16d74bed745330ea4619d86411f18381d5056e4bf6f2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-05.nc",
+    "bytes": 26844,
+    "sha256": "bd789ac353c94a84c85fb7e580696e2f5c318249b6f0edc7a1764a84342089bb"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-06.nc",
+    "bytes": 26806,
+    "sha256": "4602e33332f3e478e289e9b932974781f851966ec5edd66dce344f9051b3669d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-07.nc",
+    "bytes": 26806,
+    "sha256": "487e7bb96a45115d54d532f35e5b66b471e65c34a24c8b7c7ae8e66c8ccb8f99"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-08.nc",
+    "bytes": 26806,
+    "sha256": "57b07da05a87280762ff5f1d2aa02a0ce80778f2400804e47343ebf28bccc32c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-09.nc",
+    "bytes": 26806,
+    "sha256": "a2a2d7b690177b77ae400267fe41602a95debc384b2de1752a6795dc564f5f3f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-10.nc",
+    "bytes": 26806,
+    "sha256": "be5d681e2d7f170aab9551631d3e258713ca4e7af58fe30061eacf8a6dc3aee0"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-11.nc",
+    "bytes": 26806,
+    "sha256": "5714649ae1f4fdbb4d8a65e9b96519a52581c5f5cc0ae3c4748c969c0800332e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2014-12.nc",
+    "bytes": 26806,
+    "sha256": "a6b7c374afe4c9b31719d84448dd698754fd25a45be2b18ad603b8d1bf4c60ea"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-01.nc",
+    "bytes": 26806,
+    "sha256": "af2c49b9730e208767e131e85aa213e7811093c74ba9c738b7f9979e6ab647d3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-02.nc",
+    "bytes": 26806,
+    "sha256": "ea11592a636074faf4933d8e985f031a2ec711fa32d4f2cee66715c0caceb6b3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-03.nc",
+    "bytes": 26806,
+    "sha256": "f72a912c2a35e2affbec9ed582d342c67b73682afd5e8c58ba8a3f79d256f4f4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-04.nc",
+    "bytes": 26806,
+    "sha256": "cbe820521244cbe1fb5a564a54e962d54ea0af0a05a8f6a6ed5d6d5870222850"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-05.nc",
+    "bytes": 26806,
+    "sha256": "ef85f6a8b1c27f873858557b3974533b4d222105c080361c814e549856f99e75"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-06.nc",
+    "bytes": 26806,
+    "sha256": "b5fea68acd5497324940fe7f202268aac04ffccfa23ece4e690c787267eee294"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-07.nc",
+    "bytes": 26806,
+    "sha256": "c79c5d354e7d5a86271283be4aa590b544fbbed797cc52093d616a22bf0791a7"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-08.nc",
+    "bytes": 26806,
+    "sha256": "20e8db479c4c1fc23bc3cb6bb3c178799ab0a4dcb6628a57b15a08c299fa7d31"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-09.nc",
+    "bytes": 26806,
+    "sha256": "900ff195aa2bf509e06712373dc5c30cd7bef1443bb083585442bd3d71420b37"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-10.nc",
+    "bytes": 26806,
+    "sha256": "bfa65cc9e700a4926fbd642b5573929dac3e499b72dd07695e27ebe1c1c54903"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-11.nc",
+    "bytes": 26806,
+    "sha256": "f77dd5249aa92a63bbcf18f5689619c40f75c783589ddf4e30db2c6914d6dd93"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2015-12.nc",
+    "bytes": 26806,
+    "sha256": "1249c7a36bd193b762590f5c6a045fb5f03480210608085824ad2cad122b300c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-01.nc",
+    "bytes": 26806,
+    "sha256": "8e253d6d1d644518db54aeea086670cb403bfbcc740e63ca905b144da5c2c800"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-02.nc",
+    "bytes": 26806,
+    "sha256": "2cc59423087b08385da80a058a0287f33566ee6cb174d079c4342423fac2827d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-03.nc",
+    "bytes": 26806,
+    "sha256": "6b67b63c7ad142441fada328fb1ff75c69a806a1edb7109e3453e1b0663f010d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-04.nc",
+    "bytes": 26806,
+    "sha256": "77d6bfa43ad11e9f4765a06aae1ca6d81bd33e6bb7cdaeca062eebe193883fe7"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-05.nc",
+    "bytes": 26806,
+    "sha256": "bc30ad780281d701ab281cf4f3068283b6f53ea74352544b484b625178088964"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-06.nc",
+    "bytes": 26806,
+    "sha256": "16c00f2d1f95f4cabc7b0fcb3cb973700a30ea083c8bd6e42177b95837d40935"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-07.nc",
+    "bytes": 26806,
+    "sha256": "4993c6eda46fb67d9d981855f1d569e845c06a5db44d3b169d15f7a8a097b2e7"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-08.nc",
+    "bytes": 26806,
+    "sha256": "213bf770ee2ec4f53b4967ef2c0e5bc1714189a452b370675f411b23f2145299"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-09.nc",
+    "bytes": 26806,
+    "sha256": "a5925c813ab0e5f742714ef2392a36b96bd219c0ba1f7c9c3c6c9c5e1c0dd57b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-10.nc",
+    "bytes": 26806,
+    "sha256": "8707d7c4e702c16c64a65d1f05f28dbe08eafc4b793d48cca79ae2756e8e003a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-11.nc",
+    "bytes": 26806,
+    "sha256": "780518fa57c62e309282442fc403f654e69a5cbad0fab77d911e552748a2f9c8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2016-12.nc",
+    "bytes": 26806,
+    "sha256": "4e3bbe51e7144c6b069b537f029eaca7e9088925a9246597ac0fed2853f762e3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-01.nc",
+    "bytes": 26806,
+    "sha256": "307b0db5437b494277e9f17c2cd2adeebb57a4a68d62b35b5b410f0f1d6910ac"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-02.nc",
+    "bytes": 26806,
+    "sha256": "cfbc422f2598afaaccff11493a1a91ab0947430681da7645661f4d33f8c0ef4f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-03.nc",
+    "bytes": 26806,
+    "sha256": "42574126e0bceb26741899020e638ca473e271a3fbb50ba1c1886420d214a378"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-04.nc",
+    "bytes": 26806,
+    "sha256": "eedcd94e5e69a9929b44539ccd0037261f32f31f1141b10397d3c3589cff5289"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-05.nc",
+    "bytes": 26806,
+    "sha256": "d0343e7ee210dc32cb8c6ef10e278a6edba0a1a2dde96ef67f7bfe52afb4e522"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-06.nc",
+    "bytes": 26806,
+    "sha256": "f071af472070118db336f299317b1f2242d5532bc1437745d1d20f852686d495"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-07.nc",
+    "bytes": 26806,
+    "sha256": "1c8d1adbbabe07251315db08c5374751becf31140a0c6fbad75ec92b25362ca0"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-08.nc",
+    "bytes": 26806,
+    "sha256": "1258832cbb81f84f00e46a3742f3cce99eaa8e0278639e38a4eb04dbce0bb15b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-09.nc",
+    "bytes": 26806,
+    "sha256": "45cce5f10a81326a634a37595c53e02ae3035c38c84bd0766b5e03fb26d0f1ea"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-10.nc",
+    "bytes": 26806,
+    "sha256": "722f41afe66bbd67a3cb5c2ffb775a04b6ac4444070959195f6270b348f734d0"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-11.nc",
+    "bytes": 26806,
+    "sha256": "d6f5d46da30298fa9f79cf6e7222456712f34468cbc37c44eeca702c48e930a2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2017-12.nc",
+    "bytes": 26806,
+    "sha256": "47650281675d87a863b74060b9412ed1c4f7327482194a6e8a452ec10535bf5a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-01.nc",
+    "bytes": 26806,
+    "sha256": "cb5b4ff7ba342d4b4d3d586b025c99aabc156bd37429337fbc809d7b67bd9549"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-02.nc",
+    "bytes": 26806,
+    "sha256": "5444ced382835bab418c3b86e36886667877141609bfdcaee7ef88e6877d8ebf"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-03.nc",
+    "bytes": 26806,
+    "sha256": "c5d6ec4d026fc02ca72ff5b182178d36722b3b80a8b436eb9fda36936861a511"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-04.nc",
+    "bytes": 26806,
+    "sha256": "5fadc13caec0f908b32b435dcf4c9a9a1610857e21ec45a3753c700601452bf7"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-05.nc",
+    "bytes": 26806,
+    "sha256": "03a5878c3b96a33568c22901280847e87dcb8896dbb2e3bfad35fb17d2a9ef6a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-06.nc",
+    "bytes": 26806,
+    "sha256": "9dc2e6963fbbd4aebb2bbd519d2c198b08d3f4235f72bd438c1e3c2da0563f5a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-07.nc",
+    "bytes": 26806,
+    "sha256": "07e3ca3495083febc2ac8a08c10fa62c9b3ec606e8eefa9ead66de784fde951c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-08.nc",
+    "bytes": 26806,
+    "sha256": "624c4f14a9dfb83adca8009291e96b32de758196624de64cbc75d989ac1d1179"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-09.nc",
+    "bytes": 26806,
+    "sha256": "c8303539ed48425ca29a5b61ca872b8c03806a19e0ccfd6c808943aa1a0b112b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-10.nc",
+    "bytes": 26806,
+    "sha256": "5f8958a92d75eac47910524a90cd44b9a9b16160948151f40fa8793588b47092"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-11.nc",
+    "bytes": 26806,
+    "sha256": "f2282f215faeb947b0503266248690339494d66b21a8a5ae779ccb612b366d14"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2018-12.nc",
+    "bytes": 26806,
+    "sha256": "d8d1a76e5e2991df8b19c3347d589fc9c96187beb5004f4d4347fc9564f825fa"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-01.nc",
+    "bytes": 26806,
+    "sha256": "9ce8075b074b83f388bde853c512ca9a68b1a32edce40620639d994617d9fec0"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-02.nc",
+    "bytes": 26806,
+    "sha256": "2f639494f27c18ee4416f838bd9c1afffc5bac79d472088bfe5c2a51e49e9d9d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-03.nc",
+    "bytes": 26806,
+    "sha256": "e503a976c3a6e24347acf2279674b61d5b7e590b59dd5ade331de7127c28892c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-04.nc",
+    "bytes": 26806,
+    "sha256": "34b51b5c1cee97a4148b9368f1ba790c192737f7aa23d36d20bd851cd2c073ef"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-05.nc",
+    "bytes": 26806,
+    "sha256": "a44a1e3c765b03e29f31912d9da4d5a3e3dfff25e2dbe34192a109add68d5137"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-06.nc",
+    "bytes": 26806,
+    "sha256": "ae0da6983afe4025f106cd0b8fc8bc19feaffc3920bce9aab14bf10c1f321354"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-07.nc",
+    "bytes": 26806,
+    "sha256": "a2b18b5f9bd9bc440442fb9433d5ebce3ad295c4486b5537639a9b58a2a296d4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-08.nc",
+    "bytes": 26806,
+    "sha256": "3571450099ebf856c1f092bac0f232f2402c1e756c81e8f3dc1cf58767817909"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-09.nc",
+    "bytes": 26806,
+    "sha256": "d03b08afbbc989439937db13b863110282fdc97dde2f1da7e0bb677b2e5f3a14"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-10.nc",
+    "bytes": 26806,
+    "sha256": "6a431d8b4cb27905a74bc48f889c3751b7adcbb711231c0cd3c7b45a5e25549e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-11.nc",
+    "bytes": 26806,
+    "sha256": "6f5cb62b461e60aec3ea52a2a058d248a831888f73d09071b34cc36bfb26d563"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2019-12.nc",
+    "bytes": 26806,
+    "sha256": "f2ed9fd814875b9e50797374ce4912159e5f372cdc7ef48395429559a295006d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-01.nc",
+    "bytes": 26806,
+    "sha256": "47286f27154f15af7bdfc8a6cd06ed05fb5b06f64d1ab46718555a40a4ce0ce1"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-02.nc",
+    "bytes": 26806,
+    "sha256": "084c5b1d6e26b4fc73e3e0c734db338ce38314b2b73f7470871c729630a20572"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-03.nc",
+    "bytes": 26806,
+    "sha256": "f9db48e88d5f33e1e3e640d458ea85b3d8825a55f5a340db398034233b70c957"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-04.nc",
+    "bytes": 26806,
+    "sha256": "cc8fdd0cdb6f0316a7470ad173ed2f5364ee9d5867f981318362bec14ab5422f"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-05.nc",
+    "bytes": 26806,
+    "sha256": "88e9ef9feebd075dfe5e6f5aa4d61ce597e5ca468ba45a6ff0ea3032c91e8225"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-06.nc",
+    "bytes": 26806,
+    "sha256": "7c0cb57e582ad6db1b87cbe4566cd8f022de498b7a91249966ba650145e20f81"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-07.nc",
+    "bytes": 26844,
+    "sha256": "1bad9acc116fca4069e4cbdc4973db509e81b6476ee10cfd5bd6475baca6d084"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-08.nc",
+    "bytes": 26844,
+    "sha256": "d84500a3c706e2b0270e791e7f18f13cd13826899163082bec7ce6ba22b80dc4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-09.nc",
+    "bytes": 26844,
+    "sha256": "885123b6e1c235cfb804779a3428499eac90d7e0a7c66dae3da56d3ea66a69a9"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-10.nc",
+    "bytes": 26844,
+    "sha256": "dc8f507e07d3c317b1e5c6dfa972063d9480be49cd13947047fffc2ce9f0e1ca"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-11.nc",
+    "bytes": 26844,
+    "sha256": "40b6492ebeaca64a668ea176c50fcdb8217d0ea12df11c491b81327574d80c48"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2020-12.nc",
+    "bytes": 26844,
+    "sha256": "6bbc450dbfad1de55dc52ca9c4076f2e8a5716f19746ad5955aa9f05bfe71c2a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-01.nc",
+    "bytes": 26844,
+    "sha256": "652f2456f4043b213e4cd439d688f3fca09853635d4cd8c6318426a5796d8f21"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-02.nc",
+    "bytes": 26844,
+    "sha256": "7f01533c629a33ecc1289ae5979ed88f449601903f3ab61651314b500ef21823"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-03.nc",
+    "bytes": 26844,
+    "sha256": "14aa1c5fd53079fb2f079f40264f27480d1948e7db742043bdb7bb45d2fa22d2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-04.nc",
+    "bytes": 26844,
+    "sha256": "708c4ac3737c02239fdcbc30156c446f1de6783a46970c42e314f3bd79f13eee"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-05.nc",
+    "bytes": 26844,
+    "sha256": "471654eb59e4eb6f9237e6143052ebda657d010010f253dc2b488c556889d5de"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-06.nc",
+    "bytes": 26844,
+    "sha256": "81d556fee32bf465bd9e790d254c03e3222c0e04c06b5859e85558d2e4c8e24c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-07.nc",
+    "bytes": 26844,
+    "sha256": "b3f8150da72b74425f372b08f2164c6c8abf9f782de7f130a3a5d0d04b60b95c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-08.nc",
+    "bytes": 26844,
+    "sha256": "62d61673837c8b205f486a5948236b3beaeb09b57b99ce16a0e7985332ce8a89"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-09.nc",
+    "bytes": 26844,
+    "sha256": "0cfba8c61a07291ee8bc6478210b2711de9bcc70ae81903198a5e5bdfe648b74"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-10.nc",
+    "bytes": 26844,
+    "sha256": "f3ba83dd20674e4f1deaffd2ae2e2070d35b6beeff0f1cb9890dae5cfc3acb5a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-11.nc",
+    "bytes": 26844,
+    "sha256": "7da36c2b10bad12765f5f70f56beed4add352ee2896089eb0e9e75d9c4d66955"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2021-12.nc",
+    "bytes": 26844,
+    "sha256": "e4fcdee8b42fe004b920729004415c60d3dd42062a8a16b73dba6958b7df0234"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-01.nc",
+    "bytes": 26844,
+    "sha256": "a66acb9810258ca5911963e67a332fc7b6fdf109880fecf9d7c114fa891cceba"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-02.nc",
+    "bytes": 26844,
+    "sha256": "62b03048d01329b09a9953dbf1a03922f1aa7fcf77ad22fb7cfa9ee4e94fe9a9"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-03.nc",
+    "bytes": 26844,
+    "sha256": "b8d8aca7713d831827e8f9af53e112ff0b4f9d05125ca0b8c442911f7cb82bf4"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-04.nc",
+    "bytes": 26844,
+    "sha256": "06951164e350e3479ab231dc51a4c932691e1b8e0d67516b4163fabae1f1d7e9"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-05.nc",
+    "bytes": 26844,
+    "sha256": "5df959c10c1803a25e9fbef0c11e82b12d591a61d33d44a82566b1ea42019a32"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-06.nc",
+    "bytes": 26844,
+    "sha256": "7202da5001e1726b86ea2ec8c8116ccaf48f90ebd03ec346d32ec55b92204152"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-07.nc",
+    "bytes": 26844,
+    "sha256": "b873df9488b89a39a9dc4559d891cf169a02494b06d29c3e75c15d53506ff9e3"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-08.nc",
+    "bytes": 26844,
+    "sha256": "b0c6f259dc0726c46cfb044f455a447e84f265d603e4cb2356ec9c6a46d7466d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-09.nc",
+    "bytes": 26844,
+    "sha256": "a46287ca810dae6004150bb9dae70bbac9a4aa8595ea928d30bada7f259d72c5"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-10.nc",
+    "bytes": 26844,
+    "sha256": "81e92ed17136c1d6ad3dab12b6614ed15eb68dda08cb09c94bd8abdbce29a77a"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-11.nc",
+    "bytes": 26844,
+    "sha256": "75c895f2043cd05e568ce2ffd4d1a8abc5125cee8d927f8c655dc6c0fd44cad8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2022-12.nc",
+    "bytes": 26844,
+    "sha256": "66b47c3c5c9ff1c7382ae53bcce9397cf742b9cbc14ac4311257f941c821d14d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-01.nc",
+    "bytes": 26844,
+    "sha256": "dfe7fad276784e26698417c33503c4003fbd8f2bbaa6c230d4d69b9b4d992ef1"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-02.nc",
+    "bytes": 26844,
+    "sha256": "daf86824f7d44697e7b550fd9e86a55c619dc2b49b1ac3334b0b5aba1946a76b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-03.nc",
+    "bytes": 26844,
+    "sha256": "c791729c5ac296c1fbdfbca1c516a60a0f9c93d1f10e0f3a4fd1db5138c3479c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-04.nc",
+    "bytes": 26844,
+    "sha256": "678cbdc6fe7852e050c0ad12d58af7e32bfc30da25e61c40d3b79371fa840243"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-05.nc",
+    "bytes": 26844,
+    "sha256": "d837d9140a4fd0220c76306d7251ad1a314e37d4bc97f4b40a75af79b4aec66c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-06.nc",
+    "bytes": 26844,
+    "sha256": "d22848e11a7f372a9e90323baae391c86c84c92771ba4ed2a5376b28194f85ee"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-07.nc",
+    "bytes": 26844,
+    "sha256": "f402754421f757792ed877490c176f06c65877f46a8b3a2ea51e3bc5806feaa2"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-08.nc",
+    "bytes": 26844,
+    "sha256": "297a49d46b5558a695281d4c877990b8ac0fbda6d45d18343fd36221cef574af"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-09.nc",
+    "bytes": 26844,
+    "sha256": "04fc4fffb2285fca2cbd55412f721d9f151c724fee9a3f8a6a66e7bc459eb1e5"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-10.nc",
+    "bytes": 26844,
+    "sha256": "9d2f02bfc2ce956f55e264cd647af1f9965d6cab01789301989fac4a544f1621"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-11.nc",
+    "bytes": 26844,
+    "sha256": "ad4831adb182a072f1704441a8d77ec0b7eb3d7382352df492914a0b8fdadf98"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2023-12.nc",
+    "bytes": 26844,
+    "sha256": "f7451c94e0410be73ec771e3b205f0abf26e00039f7d51da047bdf6e055d1c39"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-01.nc",
+    "bytes": 26844,
+    "sha256": "3846865ab6adc8379a25cffc9166e6e44510212e9419600ef8954436e73b8485"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-02.nc",
+    "bytes": 26844,
+    "sha256": "f708ca393d7428e42e01e8ff318ec29ab403f94cd1d65330935abed21f7a892e"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-03.nc",
+    "bytes": 26844,
+    "sha256": "4b038586b256909b13ee2cdf46e806840b0f0baa4d142623fd292a6ecc5d4d92"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-04.nc",
+    "bytes": 26844,
+    "sha256": "3e48786e2fa0080593eac874c854f60eb44707cf7b029ff99e423edc87c0b3d9"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-05.nc",
+    "bytes": 26844,
+    "sha256": "467a4b745c5317a037232062d36310594c926d3a08c052397aeee844f1e5f9d8"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-06.nc",
+    "bytes": 26844,
+    "sha256": "e3cb4f5d130cae6ae91772db9886db75a42e84a54935d818aa2e7f01116d7a2d"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-07.nc",
+    "bytes": 26844,
+    "sha256": "0af8e35cc5fcca9ddbb5fd2299ec434474c7065e93d8ae67ef16e42f4c4df50b"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-08.nc",
+    "bytes": 26844,
+    "sha256": "7dfc7ffddf82ad2c5d7c8299eaf555500ed2870b68ca96fa69657d8f68146364"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-09.nc",
+    "bytes": 26844,
+    "sha256": "86bb3181809c4a4ec4a46affc01dc9c3cec0ccb68e9c880f01d37cddcf6eff07"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-10.nc",
+    "bytes": 26844,
+    "sha256": "84473acfe0cd890b1314ac9b4bfbe2513b00f303d828038deecc8b5db1c1d485"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-11.nc",
+    "bytes": 26844,
+    "sha256": "92b00236da8880b1c662f78b5938d9c8800fca34e1ebd122dc7638b55710583c"
+  },
+  {
+    "path": "data/nasa/measurements/GLDAS_NOAH025_M/2024-12.nc",
+    "bytes": 26844,
+    "sha256": "94ed65044d0f115f3a3f41db424920a8011bca33a2651222d87dc2e7bdf01b14"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-01.nc",
+    "bytes": 18173,
+    "sha256": "42ccc7333cd9204fad00e94f28b07db0cc2c75985e407cb3b9e84c3106ced54d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-02.nc",
+    "bytes": 18173,
+    "sha256": "a49962aa0139b9c72c74455ca48b7638d4bc8f9724eeb2c98552d0200ece2d36"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-03.nc",
+    "bytes": 18173,
+    "sha256": "a4c5099eb7a8b7a1027b326f55b88f0e4b80e9ac061c69131fa474d29f8f5581"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-04.nc",
+    "bytes": 18173,
+    "sha256": "07e21de2fbfd29d3e0815ff4e9985b163dbdd61a71a7746738b761f2c946e38a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-05.nc",
+    "bytes": 18173,
+    "sha256": "acbf506596b50ec1acb28467447a2121c93f344df87171aba6295d1451c05096"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-06.nc",
+    "bytes": 18173,
+    "sha256": "34502d76cfb0ccf3f47f9f0b1ee2a2f9e4f02c0ba40f9614d3bdd69128ec2f5f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-07.nc",
+    "bytes": 18173,
+    "sha256": "cc29a0abac7d454a649be3c8a135619754b7a57b63ca677038eea9028449d61b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-08.nc",
+    "bytes": 18173,
+    "sha256": "a406c78716a126fcdb7157363968957d96bd04b138094f933955cd98858bedc6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-09.nc",
+    "bytes": 18173,
+    "sha256": "e33fcb814f2290e17ebcaa3943eb0fa65e1baf6d6df5270943b329711fe8ab18"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-10.nc",
+    "bytes": 18173,
+    "sha256": "10105e0be092d13557d89673584528b3d8fb50acdfb7c1527f67ec2872a99bf0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-11.nc",
+    "bytes": 18173,
+    "sha256": "7ab97d0a5b9568f01877ba5262629471a70078cda0adc74b4f6719ae2de01528"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2001-12.nc",
+    "bytes": 18173,
+    "sha256": "0d01f88302133b00ca7fe869b22939859e86f7cebcb953389e455a7fcd6400d1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-01.nc",
+    "bytes": 18173,
+    "sha256": "3c2e15ea3ba609d0ec0df05bb7614823e8d7a1f10bec9658f7b1a85216e0104f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-02.nc",
+    "bytes": 18173,
+    "sha256": "7d38e40d8cdd978fabd8163b13c05ddaee00531102a1079968d04700b2ca2a68"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-03.nc",
+    "bytes": 18173,
+    "sha256": "4322fa49b9522cba9ddeb9060ca61014877a5586cd80a0e074f2480ffb67fafd"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-04.nc",
+    "bytes": 18173,
+    "sha256": "ceb97769fc661c57648e3c291dd73e311d8d9242e0b2df76d8ac781dec289ff0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-05.nc",
+    "bytes": 18173,
+    "sha256": "18e1bdbb8ce83b3d14fcb58f97df9846270ab30e46515378f345b4eec1061b81"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-06.nc",
+    "bytes": 18173,
+    "sha256": "19742de4d0ca4744094cb55e845680c6f847ec1428bb9ff6fd10e5fe138ac41c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-07.nc",
+    "bytes": 18173,
+    "sha256": "54f824b857f5ca876df2cf5a1eb9e78cf9580537e98c77139180abc1348924a5"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-08.nc",
+    "bytes": 18173,
+    "sha256": "721ddacca89182f48f7abb3dec869d8940c0cf33d7506caa35e1a9e725b6263b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-09.nc",
+    "bytes": 18173,
+    "sha256": "cbd91b04deb4bc2fbc7362ba73a304c83f16677205c11ee196a6fc853eb25c13"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-10.nc",
+    "bytes": 18173,
+    "sha256": "4bc5e04bb9799cdf34f54eddf03efa8f337d98ef2a4e8c1ed432234e04227241"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-11.nc",
+    "bytes": 18173,
+    "sha256": "ea6b9e88f99e63e8ef2baa0aced42817588440ea1ef26dd1390590d102c42399"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2002-12.nc",
+    "bytes": 18173,
+    "sha256": "4ab5ceec5be5ff72bad5f89e7c833e35b73f0b618548249a709519ec94b7c0ce"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-01.nc",
+    "bytes": 18173,
+    "sha256": "de0958beef4f725acd972084e96b7efe43ae8071279ee0f8a9ed6b6a97c689e8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-02.nc",
+    "bytes": 18173,
+    "sha256": "faa2094fa885222ee8d469f77c6a4b319f92d522796f8c23ef15ca85a34a99ae"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-03.nc",
+    "bytes": 18173,
+    "sha256": "2f9ec2c64a3871b6990ca3a0147725631f07b171eb284b9cd0d4533a7ef7e037"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-04.nc",
+    "bytes": 18173,
+    "sha256": "5f39337383a27ece6ae2ed4558f4a3a53d695c9096d3d1780f53bd37aeea207b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-05.nc",
+    "bytes": 18173,
+    "sha256": "f063b4a3800d2bf5702e52ef991ec186d0bd11b38fd440aad0a696bdcb9a73b4"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-06.nc",
+    "bytes": 18173,
+    "sha256": "2246f39213b5e636de49f25239512e2d9d696d4a0db1e00d40fbb338bc0b7c96"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-07.nc",
+    "bytes": 18173,
+    "sha256": "d21d1e402d4a0385960fd2e3d9edc9de962aa4399288ef033c5629d81d1c2b60"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-08.nc",
+    "bytes": 18173,
+    "sha256": "d020c2bb4f1ce088b560e5ab71988fe77abfd2d8b5ea4f5e5a81a1b530870c33"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-09.nc",
+    "bytes": 18173,
+    "sha256": "36597fd9a9c33de8e0cba668732bef78c072fc324d1c76b50c3e76ad00b64322"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-10.nc",
+    "bytes": 18173,
+    "sha256": "f75191d46fbc9282f285768c235dcc89e050d3024d6a0724d25dd3eaf126021d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-11.nc",
+    "bytes": 18173,
+    "sha256": "d3010406356cc2eae7ca520e0a7732ccb76735d7499352b7dee6f5eb957cb05c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2003-12.nc",
+    "bytes": 18173,
+    "sha256": "780db10c3160a75bc6a1dbfa03607b263402236d0dc81707731d8dcba2de040c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-01.nc",
+    "bytes": 18173,
+    "sha256": "bd85b54e2ef37ace633e225ed1c6598807a37a3a6ccef703a95ed28dcda910a1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-02.nc",
+    "bytes": 18173,
+    "sha256": "7ed824212dec97929f5934fbffeb9dbadb973be02100a255737bc35b7e11e226"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-03.nc",
+    "bytes": 18173,
+    "sha256": "6b7c4ebeb133c0781f5992791ec0c9f95548a30f9c93fb39a7c1581b1a7bae3f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-04.nc",
+    "bytes": 18173,
+    "sha256": "987cd01b79a3f557211d8d8b7d68b591da6a9e8268a803a117479db0f7059f22"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-05.nc",
+    "bytes": 18173,
+    "sha256": "4b4c4e2f4fcd3968859d690b57aef3a42a18c0b137e85aa97d4aa847583bc03a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-06.nc",
+    "bytes": 18173,
+    "sha256": "005e40fe7c89ff91305c4da6f555a1a1b7310e51f471808a195a7a70126cb584"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-07.nc",
+    "bytes": 18173,
+    "sha256": "e551ad7626d9d71eca6993b1d0a8cc338124842a8f7c35273b56895f0c083648"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-08.nc",
+    "bytes": 18173,
+    "sha256": "f669c532a662c3875b432f6220366096785d87325e200705cfb369e61178315e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-09.nc",
+    "bytes": 18173,
+    "sha256": "0a6508984cb8af25cf5c26a56b5065a807c5cf7f3d9307940383425a186c5a5b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-10.nc",
+    "bytes": 18173,
+    "sha256": "8a05f3e1fa8fcf386fd9c7843aaeaa6dba1f451b1431f6f47ed109d7e24b402d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-11.nc",
+    "bytes": 18173,
+    "sha256": "d29ea0f337c51ec3d4e1fe150152b12485caf44c7139882b74c0505be37297f0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2004-12.nc",
+    "bytes": 18173,
+    "sha256": "63f3b4d1459c8b20390c72cf9812a0ee24058627ccba5aec0bb0a08c1a8231ad"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-01.nc",
+    "bytes": 18173,
+    "sha256": "0a92c21ceb0e9036834c5e0ca2b7e0e2d2c8b84a0d5e8e830f8dc5be5993af9b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-02.nc",
+    "bytes": 18173,
+    "sha256": "71b58624aff13c2911bd7cdc35f4f8757813b9c092ceb3337970a956a94ff692"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-03.nc",
+    "bytes": 18173,
+    "sha256": "df1741873d0f0e0c7835999b65c42723787d7dcea2f98aaa84b1f8f1ad47de04"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-04.nc",
+    "bytes": 18173,
+    "sha256": "185794492b40a423184c664fe85ea278007b8b43bdd781dbccb0f98d2dbcfad3"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-05.nc",
+    "bytes": 18173,
+    "sha256": "6904920999993d9c2252b7bc521d7048be870ed74959dc6905e0328e840ae798"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-06.nc",
+    "bytes": 18173,
+    "sha256": "e9dbb12974afbc24f6b0b5fb11bdd12cf58ca20cc5391b4a5d0a5c8b0190b86e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-07.nc",
+    "bytes": 18173,
+    "sha256": "a07574b8bf683c994fa4b2a47eef7b0dd1aeca8e051280edc22475741a60473a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-08.nc",
+    "bytes": 18173,
+    "sha256": "edcaebf41db812f18c81c2d895eb329442b19995300c49ae12e72eac0f5cece8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-09.nc",
+    "bytes": 18173,
+    "sha256": "87b592f3f944729eeda195a576c64f326a43c00a7cfe3bf77452a73708303b8d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-10.nc",
+    "bytes": 18173,
+    "sha256": "6e5070c2c2fd18782a30138dee913995b0c55dd5e0631dbc313e0e12017812e5"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-11.nc",
+    "bytes": 18173,
+    "sha256": "891ababadc5b68fce1b9632c987ab2c6d5be06f9bb45659594017bbf6dfae9f0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2005-12.nc",
+    "bytes": 18173,
+    "sha256": "1e53187ce0dbda9fc4f4796c2406f13fecd292883c1bd2ad93480904f2e3b12b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-01.nc",
+    "bytes": 18173,
+    "sha256": "db1b902f65d14afc904b2b37b119389fd3dfb6d242b05631026c4a2f7db1d50d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-02.nc",
+    "bytes": 18173,
+    "sha256": "eda6917aa46db422583e6c9229e8937b6fae9d4e621d3658b420e22291ed061e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-03.nc",
+    "bytes": 18173,
+    "sha256": "3eac5259367ee6b586e6d4f8d8a85b9164f0fd22363f4db0fc531db53c684180"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-04.nc",
+    "bytes": 18173,
+    "sha256": "e10c040acc65a1dff4657c6830717253b43c47bbc29465637c704f15b5e4ab70"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-05.nc",
+    "bytes": 18173,
+    "sha256": "895eb66c8f1dffc330082fa585b27baae8e9bb53b1e7cac03cee533e4922c9f3"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-06.nc",
+    "bytes": 18173,
+    "sha256": "c6b001e26b566320524186037daa8fcd24688ccab3e471d4fd00ff8a837804aa"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-07.nc",
+    "bytes": 18173,
+    "sha256": "8a9e182188aab97866430573cb7a98d0c27bb6c0aa88c7b3a6cb47d00f83d325"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-08.nc",
+    "bytes": 18173,
+    "sha256": "bef2f3722ade0d1ed336d2ed6ef8532aa260a626227871f7be090fd889357139"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-09.nc",
+    "bytes": 18173,
+    "sha256": "3fe52fd36facafe274834a10a61db47119cd81f68ba4609cbc0ad1f50cff19eb"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-10.nc",
+    "bytes": 18173,
+    "sha256": "bc32e6c67503d34a70a840a52d39bf984e888e751b6c424bfe0e336607f650b6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-11.nc",
+    "bytes": 18173,
+    "sha256": "8d2ebc1b5380c3c7c84a998c13f1a693b57ab80e6baf66891e2518c3fb780f95"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2006-12.nc",
+    "bytes": 18173,
+    "sha256": "665a3950bcde2a43179b94e38c104ac0bf8ffedfa98ba47c2f66ba894ae988e1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-01.nc",
+    "bytes": 18173,
+    "sha256": "ba4c9cd666f16646bdec31349756ecdc0ce0edf7e374f1eca853e5f019a985b0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-02.nc",
+    "bytes": 18173,
+    "sha256": "9dd815c21ec999c310d6b77bd97b0027114b477950630a27f11743d5a9727d40"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-03.nc",
+    "bytes": 18173,
+    "sha256": "ec000042b903c42c4f915f9747267a31cf291f2f61e2d50fe03b7d0af51bb4f0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-04.nc",
+    "bytes": 18173,
+    "sha256": "add26024c26f58a4335940402c121bd2784b31311429b5695ed7c80e2a088c30"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-05.nc",
+    "bytes": 18173,
+    "sha256": "0c248dca2ce2682e96e0790f9721a1537d6f5344d5fd3d605063ba305fe1750c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-06.nc",
+    "bytes": 18173,
+    "sha256": "10e28a00069709379fbf781ee6a56c07e9fba983869c7dae4ced5920d247ea57"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-07.nc",
+    "bytes": 18173,
+    "sha256": "866977b85a0731b9f768fdf8166b6da47975011085d6b3bbfadf88c10d7f212d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-08.nc",
+    "bytes": 18173,
+    "sha256": "5e40e0cb8bf9c1e920dff0948bd398cbab3ebe1dc734ebf782666db88e6a2428"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-09.nc",
+    "bytes": 18173,
+    "sha256": "a37b215ecfbe82743cb66fe33c25cced17dab935b5b55e4bf091a493a1df6b9d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-10.nc",
+    "bytes": 18173,
+    "sha256": "6ebf436d89924e1cafef35532cdb1411589048e067311dfaa53ac038fa8edff8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-11.nc",
+    "bytes": 18173,
+    "sha256": "88b58702b614c48b7bfe440ef88f0c81ef6f3ef81fc3b48ceea67620a1e5e3cb"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2007-12.nc",
+    "bytes": 18173,
+    "sha256": "21608b3fc8bdf75e71d3ff5490d9af15b1d1e8dc8e4e7028b28c25ec653b91a0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-01.nc",
+    "bytes": 18173,
+    "sha256": "8ff988424b7d109b462a948e8ec1256ee9e4fb71796b7aa1dc18d8a3a5b7120f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-02.nc",
+    "bytes": 18173,
+    "sha256": "30cb4b2d7b465a3b3565aea56fab7f9370c91982555f289ac5fe3b44becb214b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-03.nc",
+    "bytes": 18173,
+    "sha256": "e7f8112e6d632af84337b8b356b539f4a279d92799a1b0c53c26fdd89420af33"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-04.nc",
+    "bytes": 18173,
+    "sha256": "e28ff50ee570ae61c8e1e0a09f25d3cb9863f8835273d323e017fea26717e543"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-05.nc",
+    "bytes": 18173,
+    "sha256": "f0eda373e3c681cf85291cb86def3afd7a7a1b9c4c3d75c84d1c6ad4b02c08b9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-06.nc",
+    "bytes": 18173,
+    "sha256": "d002f5bc6d95ebb520913a6bb4dc6fe47c5d971d1d16abbbc3a629bb2904449a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-07.nc",
+    "bytes": 18173,
+    "sha256": "36a0e02216e24530d450c4d2348a14efd64b6b587f0b0d1178b7b97dbcf8ec91"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-08.nc",
+    "bytes": 18173,
+    "sha256": "91663d4c59f12d76acbd6b36a481839eed408b3d04a2cde2467ea42b1ce8d539"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-09.nc",
+    "bytes": 18173,
+    "sha256": "3642678aeb55f11eba9f5513171dc8200d1a7de1e91017605f5586e6c57fb41c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-10.nc",
+    "bytes": 18173,
+    "sha256": "b56d77a1e54a6e4b5e5954324bc2fb3a5651f4624e2fbf3ad41ad8c5e9012c0e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-11.nc",
+    "bytes": 18173,
+    "sha256": "ba9013f3154a9bfb4b54e4da7aaacb22d722b6fffb6caca4939521e22693f6c9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2008-12.nc",
+    "bytes": 18173,
+    "sha256": "8f6dc42dd182a49eff30fb38522c0e660fd4494ca003a26a1824a92ec364a35e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-01.nc",
+    "bytes": 18173,
+    "sha256": "d019672e0e0c706baf39381888db6efdc0287111d9a9632c6a8d2f5466e71e86"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-02.nc",
+    "bytes": 18173,
+    "sha256": "1aaf7003f84fb69164f3210398c78ea6c1aa8640a94a0e8dabaab8ed14e87988"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-03.nc",
+    "bytes": 18173,
+    "sha256": "94c00a718edeb242072a93dcdc11b398fac6ef78f0a1fd29b5d82fba5742636f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-04.nc",
+    "bytes": 18173,
+    "sha256": "c61949bfd826ad507bdec07e5bbe553f05ed7d78d04ee88349df7e7d7c10fe94"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-05.nc",
+    "bytes": 18173,
+    "sha256": "75e1031ddfe5e01c93bec4f83db6fb1c1dbc55879fdcb95915f393e329e6fe15"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-06.nc",
+    "bytes": 18173,
+    "sha256": "ef258eace4c7723fdd96e5d5ecf7674df8dd6b571cb49736b95aa6894dfee373"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-07.nc",
+    "bytes": 18173,
+    "sha256": "0e1938b02c29728686120e0619f4b8124f09a6952bf47cab4dc472fbfdd5fcde"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-08.nc",
+    "bytes": 18173,
+    "sha256": "cba0c4cface28bd5dd80fb4c062fa5be9fe92d2a2ecc6a3db619ef0b5c5b841c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-09.nc",
+    "bytes": 18173,
+    "sha256": "daa1bcaff9662bb914a628493505360f83bea4459b8201f9f6eb13a085e17fb2"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-10.nc",
+    "bytes": 18173,
+    "sha256": "bb237a200bd6f80b1afe93855d46c56ffffd1f3fcc6a854160802816c6b30186"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-11.nc",
+    "bytes": 18173,
+    "sha256": "420cb794fed87b61f3f0049fcc509b24df58165c1b8d1788c353d63a5dfc4bc0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2009-12.nc",
+    "bytes": 18173,
+    "sha256": "66dbff9c68c422a21a35cc7963bfacb5c7c9cec2c3277003c1f2016798ef2cc1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-01.nc",
+    "bytes": 18173,
+    "sha256": "dda703e05478b030003f496d3c703aaceeba5ba64ec2df70cd5fc77a47484c7d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-02.nc",
+    "bytes": 18173,
+    "sha256": "d37bbf5c21658902e52127733d9e09bb387d5f08e677dfc6582c81ff9bdb55b7"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-03.nc",
+    "bytes": 18173,
+    "sha256": "1f27c7069c0f9a50c11ae667efaf01bc81440e316fbd0e1fbe80e48164c74f1f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-04.nc",
+    "bytes": 18173,
+    "sha256": "1c44164c88684034625ee434cb9536c3d92d1db83817e998d2554d75f0b870d9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-05.nc",
+    "bytes": 18173,
+    "sha256": "725eff6c9a7fd84b462fb44e55ab2483b4675412ecf331e5ca4a7e3e715a227b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-06.nc",
+    "bytes": 18173,
+    "sha256": "81d9d5ad2aeda1ee58ae9e0ab352b31890fe31325c5a99c8eefb70d18713b851"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-07.nc",
+    "bytes": 18173,
+    "sha256": "e6994ea9ae14ca814976965c4e2846ab86d023056baecf4f2c08e1afdfcd1f9b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-08.nc",
+    "bytes": 18173,
+    "sha256": "01a04880d185b21fae20df72307566ee913008b4a3398f297993e4aec1ab534f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-09.nc",
+    "bytes": 18173,
+    "sha256": "2689292037823aa634ebdc80cadf94b55c3c57cd99532fc5214b0de4a1c96af6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-10.nc",
+    "bytes": 18173,
+    "sha256": "5da242dd66c47fe1fce9b0d034531860c6908283d30a97f9527612b0f29a342a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-11.nc",
+    "bytes": 18173,
+    "sha256": "e8fd18e0d08a9d159654f02d7d724cc0bea529025e201979c75cffdc0c434fb9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2010-12.nc",
+    "bytes": 18173,
+    "sha256": "3763c3f2284529ec3f002fcb341a3f8d6d9a3a448c7a6faefb6d52df58b9ae13"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-01.nc",
+    "bytes": 18173,
+    "sha256": "b35c7b52725339d1a7af27a193cdfb4656dac605ea707a648f8e14933ec6f126"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-02.nc",
+    "bytes": 18173,
+    "sha256": "d11091063811f60284f611b7699d21f038c1ba46442648feb972dabf138cc1de"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-03.nc",
+    "bytes": 18173,
+    "sha256": "2625a48f26cc8fb4043178d3fcbe8d66883e0e5608c539aedeed383f8ba04a6a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-04.nc",
+    "bytes": 18173,
+    "sha256": "e35a07bb38ea65d218b2dafb980b0b51a4d768bd6ce57215994fe39b3bf612e2"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-05.nc",
+    "bytes": 18173,
+    "sha256": "4bf41cd7c69012bebe1a9f62b70067775544db4e79262ce137f3c992c8dcb2cc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-06.nc",
+    "bytes": 18173,
+    "sha256": "2f7b5837b149b5718280ef1c919e9b230a53315bed5fd635ac1cec8a05854ecc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-07.nc",
+    "bytes": 18173,
+    "sha256": "61c09d72b278d04054e91fd02cb10e855d8a94db47b846a0abb440a55bea395f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-08.nc",
+    "bytes": 18173,
+    "sha256": "8c922dbd83dd08c76923e89e3c71092bed44f0d3dc3d9877058ccf3454928ca8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-09.nc",
+    "bytes": 18173,
+    "sha256": "66bb3ee486d6dc501b49b79f0416e2b8a2403ea20399eb612586adf6081ac87d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-10.nc",
+    "bytes": 18173,
+    "sha256": "5b196da761f788bc2a6c84bc9b47406115edca181747e82497230d417378076f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-11.nc",
+    "bytes": 18173,
+    "sha256": "d3781ca1f93dce1be509f7d27b927dee1bc3f9633bac91bd38fe61ebadd13aea"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2011-12.nc",
+    "bytes": 18173,
+    "sha256": "d20f0926811fe42f99013f89e20c201f491b76a14dfdc0ebca731929a8155dc0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-01.nc",
+    "bytes": 18173,
+    "sha256": "dfa755d1851f54c30417de712d88897accaeff1bf4669e8a4bc6e7cb512d4f02"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-02.nc",
+    "bytes": 18173,
+    "sha256": "e4711693ab0b4c8ebe75eb571b00ca5f0c8fa529ad28909b104fbaf411517de9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-03.nc",
+    "bytes": 18173,
+    "sha256": "04929c2a127cc13e6f73e4fa0fe504a481c37d17b10b7d20f406daceace11cbc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-04.nc",
+    "bytes": 18173,
+    "sha256": "05ce62dd61d10ef6327a1126c9135fd64b3539e449016704082e94c6970664ee"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-05.nc",
+    "bytes": 18173,
+    "sha256": "e79807b9936fc784339a7ca2f64f66148933768701003985c938c0d58c895f31"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-06.nc",
+    "bytes": 18173,
+    "sha256": "6da333dd0b4eb162f0485c2b443801d7f5e09371ea6e0e211da37389521454de"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-07.nc",
+    "bytes": 18173,
+    "sha256": "7d74d5348f722f831a23a854728a70e7f194ce5bc94d926353e0c92de91a6c22"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-08.nc",
+    "bytes": 18173,
+    "sha256": "22cb5946fa1d47762d4566d8fd04feaa94824b5f2c5ecbabd9b35f0c0cf217b7"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-09.nc",
+    "bytes": 18173,
+    "sha256": "5815ff73bb211b76fed4ec48dc73fc5b501fedfed9d096fcaedf29692018e2ef"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-10.nc",
+    "bytes": 18173,
+    "sha256": "ce7080c89d7bc7ecd58cb0c63347f2fd1477cb4d49f40467b14c35baefbeb7a3"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-11.nc",
+    "bytes": 18173,
+    "sha256": "601d602a605a205073641f643bd75faede7f8d640d2d1c25cbc65ebd15ceee8b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2012-12.nc",
+    "bytes": 18173,
+    "sha256": "8781f8d2ede103bf2df5c60d4f815193b495bf79cf70ddd97183d669dc407467"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-01.nc",
+    "bytes": 18173,
+    "sha256": "535d9569b9c3e02e17677ab17373e2b5110da66847f38f8e0554540e449f1b32"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-02.nc",
+    "bytes": 18173,
+    "sha256": "460b490ee080dbee21542658625e600885b48df8594fde885a48fa07e333ddea"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-03.nc",
+    "bytes": 18173,
+    "sha256": "b480e9e694b964addf90b56df549883cc986d9f5ec4f4259dd5feffa67560156"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-04.nc",
+    "bytes": 18173,
+    "sha256": "6cd0ffb179f5fc341705e12fdc8b04c4cb127ea955a23ad546c42ffac68709b9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-05.nc",
+    "bytes": 18173,
+    "sha256": "22675109019e20bdf473f3382f9b9758886446e9fd7edffadf837e401afdf6e9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-06.nc",
+    "bytes": 18173,
+    "sha256": "a763330be0edd834fc90bd6c30aeed5fe0f3eafce61816b0854786ae4e215367"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-07.nc",
+    "bytes": 18173,
+    "sha256": "1e4aacc69a3428f573d8c351ef4353f8d6d684b757446347f9a87b61b586d7a0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-08.nc",
+    "bytes": 18173,
+    "sha256": "7a480851142ec15eab923a4b7acc3b15573be9fc3100b0529a7c853368d02635"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-09.nc",
+    "bytes": 18173,
+    "sha256": "5351b6f6f3e7cfb1c05b51763fb28b775dd421b02d4e989f2179920ac7f26249"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-10.nc",
+    "bytes": 18173,
+    "sha256": "5eecbe84602b97e6e823ce2f25b9d6967782f95cb0ca6198419880fd0282a328"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-11.nc",
+    "bytes": 18173,
+    "sha256": "04d8b95d2cc38eb77bde2e2300ed3627b398f16cf064dd3df63f0dc9f4f8a0f0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2013-12.nc",
+    "bytes": 18173,
+    "sha256": "bb5f548a482f6a6127203d1630867c94fd901acb764ef6ba59207cc8651726d6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-01.nc",
+    "bytes": 18173,
+    "sha256": "67e59ef37688c0d5bedce6cda840d817b13edfd1b1a2c56ebc2f95aaef395cd6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-02.nc",
+    "bytes": 18173,
+    "sha256": "727e85e719d646ecb3447906a4dcf1453ffd0ec5c00dc7160b19e00987993ca9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-03.nc",
+    "bytes": 18173,
+    "sha256": "cc753b8ec2b7943aef4236003376ce0bea5217a126193074ab14cb54bd3cef72"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-04.nc",
+    "bytes": 18173,
+    "sha256": "889151384669ff1cffec88ffec1e1a21902ad08e7cd492a9be8fb161921c816c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-05.nc",
+    "bytes": 18173,
+    "sha256": "80b09d72e17e2e8263b31cd9bb7c6b9824392e155ff0460c06cb387b0ba0cc9e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-06.nc",
+    "bytes": 18173,
+    "sha256": "948778d4d75ea14e5363d1261664708df7a868ce5bb419c3783e77248e719e48"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-07.nc",
+    "bytes": 18173,
+    "sha256": "c4e91058207daacf90bdda50343e2988d6ba57ac5c5caef7557d7d648180321d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-08.nc",
+    "bytes": 18173,
+    "sha256": "ecf81d357ab05c4ba7ad3a77ef014854beecfd6295faaa248ad0a3446c82b01c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-09.nc",
+    "bytes": 18173,
+    "sha256": "0fcd115c049c4636082a68ed1a01b8449caa2940c255038d776944e952911450"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-10.nc",
+    "bytes": 18173,
+    "sha256": "bc2e4176ecb7f643a73cc54a587c808c51a0ce8bcb90b0cd673833fc714bc6c7"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-11.nc",
+    "bytes": 18173,
+    "sha256": "8006729a248452f1d5d7f4f12557d41a1810d34b38a8d21fcd17c4f729d50c1a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2014-12.nc",
+    "bytes": 18173,
+    "sha256": "00c9c97ec6e192bdc81973775f8901309e628e6634980028759c4cc043dc1a05"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-01.nc",
+    "bytes": 18173,
+    "sha256": "0cd5d6eade885719ae52b9d1b870a2771e9f31220583346b20666eb1c60879d4"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-02.nc",
+    "bytes": 18173,
+    "sha256": "b51efa104de66cfb9b92646c601dff878d598ef2c4ce3a81d99e429ffea6a88e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-03.nc",
+    "bytes": 18173,
+    "sha256": "7a9960f82f8b393042f4826afe84ed9839efb37b31f2b826581252564e87327c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-04.nc",
+    "bytes": 18173,
+    "sha256": "6356a6f9f31445e1a4cb8f9d5b146d9c3efa407e334646cd71b06e4f757fbb95"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-05.nc",
+    "bytes": 18173,
+    "sha256": "f0c88a90de3f9187be8a1b299708aec219a90f1e40a2d711bee2ae4e221bbd14"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-06.nc",
+    "bytes": 18173,
+    "sha256": "03213af00f6e01082e46d80bc64e332a8c958178e8bf47f4d5cc5b9f8ea7d98e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-07.nc",
+    "bytes": 18173,
+    "sha256": "7b621701df8b1c9a447b30ab821a3aa99b942f3779ce741321e073e69dc5bef8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-08.nc",
+    "bytes": 18173,
+    "sha256": "a5d9d1fb63a73cd712ae2853fd8fd6dba6295f7b2711b883275d5a10172710e6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-09.nc",
+    "bytes": 18173,
+    "sha256": "87b15fa10dc540cfedce45838c341b86c6cf1e52936361172f179e6ceef53149"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-10.nc",
+    "bytes": 18173,
+    "sha256": "9d444d9de3998fc8df421f214b17e57e218977c7f3044702e86dfc8132417efc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-11.nc",
+    "bytes": 18173,
+    "sha256": "5fe4491997e9057dd71b319395dc0f5d014261ef4d9d445562192f0f59436145"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2015-12.nc",
+    "bytes": 18173,
+    "sha256": "c202fa484f77ce70165787e3337c161862ff9f252a138c70544cba8948a73998"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-01.nc",
+    "bytes": 18173,
+    "sha256": "094829cfd8eaec9479aa5526d1356777b31da7a86bb41c88d9f3ef3ff795ad71"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-02.nc",
+    "bytes": 18173,
+    "sha256": "059ef4366f340bffe576129e497f9d48732f5eb24468dfdf9b085204b9cba57d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-03.nc",
+    "bytes": 18173,
+    "sha256": "1c4b2267c07f78f755b7af77bdd5d7eae27a55a718f741aaffd6e0af5d0e787d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-04.nc",
+    "bytes": 18173,
+    "sha256": "cb6970b2328d82596a41169f878989c14d4d8ca5841766ac2873a20e978133dd"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-05.nc",
+    "bytes": 18173,
+    "sha256": "896c188def4490df381b7ccea6c6d723d6a077fd23521b3f094195445bcb9c05"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-06.nc",
+    "bytes": 18173,
+    "sha256": "057803d966cb96dc2338586545034c033d273a945690077051c66c15b8f7b001"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-07.nc",
+    "bytes": 18173,
+    "sha256": "32804506791dcec46f377fbb06eae3a0be968901b29a9cab6bc9c719827d434c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-08.nc",
+    "bytes": 18173,
+    "sha256": "a38eb1598ce0615395cb188b4681beb1f9100bf01a05484626fc022f362e4255"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-09.nc",
+    "bytes": 18173,
+    "sha256": "024e5f5e0babfe0a94e69367354be9fd391dd7f8317f308f83c8d803975c0db1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-10.nc",
+    "bytes": 18173,
+    "sha256": "202fe639f6fe5c258ebc2725b0345f36fa337dfdec064a310d1902e189f7f26a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-11.nc",
+    "bytes": 18173,
+    "sha256": "e7115a17fb457e7459e664fb2d08f92abbab89c00cb0b56c3f19a8d44f4a02a5"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2016-12.nc",
+    "bytes": 18173,
+    "sha256": "5ffab6dfb9e3c698fc59125eab1aedfbf85d5a15115f6b782fa7e94658a63c16"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-01.nc",
+    "bytes": 18173,
+    "sha256": "9642053e7866936b6f5c8f36ba49d340b684da456282e2d82a9d9481398f6297"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-02.nc",
+    "bytes": 18173,
+    "sha256": "5f9d04e6a061bc7f2af0cd7dc9be265e4a7725bee62496d9957a2fcdef2d0670"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-03.nc",
+    "bytes": 18173,
+    "sha256": "5ee0a47ce3acc04328de556bf6fb904ee31a348f14494e610af9e704234880f8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-04.nc",
+    "bytes": 18173,
+    "sha256": "b88b6d0828925b4f488db002fbf7357268da449809bba54b6eed1237eb7c28df"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-05.nc",
+    "bytes": 18173,
+    "sha256": "70e04e156a1c29bd6f55e79d4408008ce68f032b7facf7dc98e5b5afd0232ea9"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-06.nc",
+    "bytes": 18173,
+    "sha256": "75ad39a36ff89693f7bfd904339c1e99f4a0dbcec1b78f659d0de313c4630143"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-07.nc",
+    "bytes": 18173,
+    "sha256": "13a53ede75d20b901383378ddc799b824a771f80ef3e111cb98821429d038b6d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-08.nc",
+    "bytes": 18173,
+    "sha256": "47249167da44db77608b12db339208e7b12788849c583ae3b63a6cb906399133"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-09.nc",
+    "bytes": 18173,
+    "sha256": "5c71270706d32f5d7d447273d20b730ed18b1a271fd9eef94c6b0703625f0561"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-10.nc",
+    "bytes": 18173,
+    "sha256": "3c27c366a2f8f0191a2b46a3708616fccd7693daa77c9e36addf84321cf5e335"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-11.nc",
+    "bytes": 18173,
+    "sha256": "34b6aa22a7715bec2759911c9c5b0b8c7114d2811abd57244d807af8bd5f617b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2017-12.nc",
+    "bytes": 18173,
+    "sha256": "a802e437fdc4aea0cd5cbea9f1f3c388f490f9974b21d24258417949f61d9dda"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-01.nc",
+    "bytes": 18173,
+    "sha256": "29616e4517e06299a62615368cb970642106d3de124dadff451a25940624f02d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-02.nc",
+    "bytes": 18173,
+    "sha256": "cf360c0dbfe19f80777aa4096d8bda54bf42f115e3f85d00b7f56594bcd11f99"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-03.nc",
+    "bytes": 18173,
+    "sha256": "91408b67d56a75906d58c678aa156bbccfd170af7bd8e24649f557b97e8cc8af"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-04.nc",
+    "bytes": 18173,
+    "sha256": "908c2fe3cd5ec8f63560d1f43870eea31cb0ad535d7a66973ad9d6d415b37149"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-05.nc",
+    "bytes": 18173,
+    "sha256": "5359820d1e82921c8c255bf8caddd517f6829dae9dc0bd4d98f452b078f12c41"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-06.nc",
+    "bytes": 18173,
+    "sha256": "978bcf2c78c00ec949326d5dac0d2f9b9273b724969f7670e472fc6f54eb01f1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-07.nc",
+    "bytes": 18173,
+    "sha256": "c40ae47a8a8fb6968b7bf3839d176730a865b05c8dc21e9faca813abfa72ea2e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-08.nc",
+    "bytes": 18173,
+    "sha256": "73b5272376f48c9e4af5a6c8ce8cda80c9090aa53077c826327a31a763fbc0fa"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-09.nc",
+    "bytes": 18173,
+    "sha256": "1796de4d95bc7ad97d268ebfae03849b062dd7f44fa3a64cea914e61daa67e92"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-10.nc",
+    "bytes": 18173,
+    "sha256": "1b00f8ec126ee12aebc77df3cebbca4b7e5a81d395f4a3f41066e2e499a0a16a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-11.nc",
+    "bytes": 18173,
+    "sha256": "2282088baa86f5f592152af053f32828072fab86f13013f773225a0738ae9f7c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2018-12.nc",
+    "bytes": 18173,
+    "sha256": "953b5bcd5bd02bd409c090463557bfc4962ce1596da4374281d2771e155182ea"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-01.nc",
+    "bytes": 18173,
+    "sha256": "465a0db88ce193ff15bc8887d21b1a83126b3caecf87a488d601495a130c825b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-02.nc",
+    "bytes": 18173,
+    "sha256": "9878477e868f2c92a2daa4588783035a2c5f779da046adb173b0480de4bdacb6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-03.nc",
+    "bytes": 18173,
+    "sha256": "fe6fbf934c31dee61c89e5c98815b65e97ab67b67b201f16aa4a7681791dbd53"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-04.nc",
+    "bytes": 18173,
+    "sha256": "6bb14c1ef95e7c71a1b7319f8638cdccb25441facbe2de12911c88e5a92f1416"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-05.nc",
+    "bytes": 18173,
+    "sha256": "68eee06132080d7a041c40c2318f1cb406982a2ba668e3ce799eeec3d7a284bc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-06.nc",
+    "bytes": 18173,
+    "sha256": "a4eb57dcde83ea810a3dc839f64c057b1373fa4684f739e2f7c1a529df2dedbf"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-07.nc",
+    "bytes": 18173,
+    "sha256": "6c2d3b25d1dbfa89e47da974fb1a42b95cd0b273dd53f2d6c4cd15038562054e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-08.nc",
+    "bytes": 18173,
+    "sha256": "7fa436d27a939adc411d08d9bf01adc3fe6935db07ab2c2ea0071cf462a75403"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-09.nc",
+    "bytes": 18173,
+    "sha256": "47cbd4a21c82e0f0a0b7ffd948841bf6b6f63b6bb852242e1db157786f556a3a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-10.nc",
+    "bytes": 18173,
+    "sha256": "d8c0319ac4d6dd0d8e6da128dd5427b5d45101c02badb711beb22e36aa6bdeef"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-11.nc",
+    "bytes": 18173,
+    "sha256": "df2bd9b468f43e3141a3852d46c133678b759ef58f9dba74622be62a6b285aec"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2019-12.nc",
+    "bytes": 18173,
+    "sha256": "1828f9875d3bf53e9a341b7650236f8c86d0810c0c47506838ad7f674631e9c0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-01.nc",
+    "bytes": 18173,
+    "sha256": "e8d46db997c1e1f5356b3ebdb0cbbac07697cc282d3fd21384d34985d3a25d8b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-02.nc",
+    "bytes": 18173,
+    "sha256": "facca9a312faedd9e0156057d9938e801d0344c68c6991536c7bfdcb3c1b2afd"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-03.nc",
+    "bytes": 18173,
+    "sha256": "819e4353c498d61dc9c4ddac3c1c46b7d621727d984626e03990b66cd329b282"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-04.nc",
+    "bytes": 18173,
+    "sha256": "223f060f8fefa79c2a551fd98efa38defbd48122ada9b5823a86eb7d39f1a814"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-05.nc",
+    "bytes": 18173,
+    "sha256": "4bffef0ee6567c426a8e20bb2b5cb26bb03783f89c17931c8c802ca74670cd44"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-06.nc",
+    "bytes": 18173,
+    "sha256": "675dbe7cc07d9d9476329d7d96126d827af9f0f22ab3eac198d9772ff32390c4"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-07.nc",
+    "bytes": 18173,
+    "sha256": "6725222a8702ff8939df2fd67877b6ed5a3846bea463ab052593eae64ce0220c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-08.nc",
+    "bytes": 18173,
+    "sha256": "005fa9cffe9c45b50e11e69e29d104fa4b697dd5d1f28b6dcb010c2c607db9d1"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-09.nc",
+    "bytes": 18173,
+    "sha256": "f4efb7f6e3a499531c083264aa93329b0cc0547be09cfb3c1343098d1bf0ce09"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-10.nc",
+    "bytes": 18173,
+    "sha256": "adde83275b4453359f32c95239ed1d503941ce87e64169343fda359a6354e27a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-11.nc",
+    "bytes": 18173,
+    "sha256": "f0a46de380d5f596f010bb1c7c889e4f01366812552884d75b2a38f70388a22b"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2020-12.nc",
+    "bytes": 18173,
+    "sha256": "2f95bef54de72fda563a974ad2233c79e778e1cd5aa5577ec6572de086f151bd"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-01.nc",
+    "bytes": 18173,
+    "sha256": "e240035c2ab4938193998c266cc9a10bc26334fc91b5209bb60a4f8bc0232744"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-02.nc",
+    "bytes": 18173,
+    "sha256": "75c68dfefa74e2456670df9ae9ee36f134cc392a681352da9b0c88d2d66d2476"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-03.nc",
+    "bytes": 18173,
+    "sha256": "0c320e08071020aa50fb5d8655ad9ef9fee20a65efe6e3e6592b23a155189c1e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-04.nc",
+    "bytes": 18173,
+    "sha256": "c2590274dfbab260bd3a3e3ee43c0ab4c455f6cde17e5890921209b37914d224"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-05.nc",
+    "bytes": 18173,
+    "sha256": "9968c5a5d2fbd4ca9fc4d1a268f6d676c843aeca22a9d267e6006ed15f1e422d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-06.nc",
+    "bytes": 18173,
+    "sha256": "c5a08c158f7beec087f5e7dfc96e047b35db975bbe4f1cd27fb4833db98128ed"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-07.nc",
+    "bytes": 18173,
+    "sha256": "1896398f61b3792a155ab141a3615885c68ffefa2c081a06af1921cab4a94547"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-08.nc",
+    "bytes": 18173,
+    "sha256": "3edf1e93d9890e1b3e12650e3ee75c410bfd2caf0d72d34447fdf0a33237b9af"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-09.nc",
+    "bytes": 18173,
+    "sha256": "9912b42e31dc40741ab4b12ea536a4a8718bd16d5905e5d7543041f78dfe6e2d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-10.nc",
+    "bytes": 18173,
+    "sha256": "52fafd9d99af66334078db02e48b9c872008fa95138737f5587898cfaab44f24"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-11.nc",
+    "bytes": 18173,
+    "sha256": "30b6345e28e23d3804a1952a28ef6b4ec5566081f8f3b9c7ec1140e21342a76e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2021-12.nc",
+    "bytes": 18173,
+    "sha256": "20435c7e8d2694352895e52877260b18fe417f8a43aa9655edbfa786103b755d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-01.nc",
+    "bytes": 18173,
+    "sha256": "646fe755093c5a94e6be9ba1930d9dfde27ce8baf01cfa6f16e5d417c7949986"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-02.nc",
+    "bytes": 18173,
+    "sha256": "0a41b586af8073bec01b435795f88bee5989e4bb5974d7ed6a6c9c074c344e6d"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-03.nc",
+    "bytes": 18173,
+    "sha256": "c7bce45c3087c370d4db2842813fdd0515a5bb861d777c6a7ee7082501f833dc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-04.nc",
+    "bytes": 18173,
+    "sha256": "ca82990b21b092e5941ca59eff43798b93f21ddc87844b98e3283e313d7fc4ec"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-05.nc",
+    "bytes": 18173,
+    "sha256": "185395a64d285c13b5081c760475734e2cadaa61c185ab314b2ae1f3adaab273"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-06.nc",
+    "bytes": 18173,
+    "sha256": "c1c4dd01faf76bfd4033d7bf3644342d2cca1cfc3fb33ea45bfac3c88d0d5b4e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-07.nc",
+    "bytes": 18173,
+    "sha256": "333d4a1628bd4c5cb692dadc00481f5eb13b9d467a7342a5e06332e9cf6996b0"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-08.nc",
+    "bytes": 18173,
+    "sha256": "c6bd1ae2153b05221bf568f35d5eaee730fe14d6c967b560cd8be8206f7fb746"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-09.nc",
+    "bytes": 18173,
+    "sha256": "e0522a7ce416fe5a98cc02d9d127420d0064365668b0956566e7c54840279e06"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-10.nc",
+    "bytes": 18173,
+    "sha256": "523b846b756c76d2438f5ceb042bc4734c2875fe266ad3265a6f1dc5970c2b34"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-11.nc",
+    "bytes": 18173,
+    "sha256": "011cf36ed8554f4419aea45b04e29a8cde316330801ebbbd18421a4387edb865"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2022-12.nc",
+    "bytes": 18173,
+    "sha256": "b1b319366a5ddb7bfa7ad7286d6522e4e83618556fe3328df847cc84cee617fc"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-01.nc",
+    "bytes": 18173,
+    "sha256": "c9e1b6b5b041970e00305b4c5106c23cee60a4fb06fc107530535676b8ff71c8"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-02.nc",
+    "bytes": 18173,
+    "sha256": "a4d7f4f22c3d7856e2f75aa95073cf911a7362eb214d85fc87661c39868611d5"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-03.nc",
+    "bytes": 18173,
+    "sha256": "6461818201d4b6d4c6a7f42004f76d09978ac02a09312648be10bbc187768da4"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-04.nc",
+    "bytes": 18173,
+    "sha256": "99e0f930bf1c179767acbf7b7580ef2c7bc50b9a65c8e1b82b0e5bced2570d37"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-05.nc",
+    "bytes": 18173,
+    "sha256": "faf7146fad59c30a8ca8ca6bda2ffac8150c2791e8e0c35074fe806871278067"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-06.nc",
+    "bytes": 18173,
+    "sha256": "876d1c0916f3e255bec3385730b8d02babc29e2656d2c47eb869e62d6b35fb85"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-07.nc",
+    "bytes": 18173,
+    "sha256": "a41e6e2cc7468b8d331edabb70ae5b4b95c41cb463287d3cd9df1f79be00a4de"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-08.nc",
+    "bytes": 18173,
+    "sha256": "c8b814aaaf294447be554e80f19d4fd742199160e7afe4e04607e7721945955c"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-09.nc",
+    "bytes": 18173,
+    "sha256": "1058e0bc6fe8eb822db7c2640e4e50a0392cbad514b263a0c08a5d8bf293f970"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-10.nc",
+    "bytes": 18173,
+    "sha256": "b30c48ef1f0147e63e3edd3b366a0a8bf0cdd2afd130b8bc2c6f4c08e8747fc6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-11.nc",
+    "bytes": 18173,
+    "sha256": "0c75adb694cebaca9a79c5ac238839a60597144628b418612406f58effbc57c6"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2023-12.nc",
+    "bytes": 18173,
+    "sha256": "c2fb3de84677b5009b52e24fa6ff6e7af618bedbb7bdb2a49b88196eb85605aa"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-01.nc",
+    "bytes": 18173,
+    "sha256": "a7ae61fc349b03b526d92453f0756f5252005d6893f73923442eab2cc409403e"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-02.nc",
+    "bytes": 18173,
+    "sha256": "c2006dcfc48b1b9def3df8c09341b46e6e10b87778a69980a4c578c12ac5a446"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-03.nc",
+    "bytes": 18173,
+    "sha256": "6088dee3d8f74a9cae58ba256b94b14aa3e46f728d5b6375ee17a30f7c05bd0f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-04.nc",
+    "bytes": 18173,
+    "sha256": "6427cf575759268a03f8e2360ae7e332c878e2661abc026cdda00ca79f7550e4"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-05.nc",
+    "bytes": 18173,
+    "sha256": "1333f891dddbae58bf5776924c43cc9fc9d8910405f2b088f726b428f78bd131"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-06.nc",
+    "bytes": 18173,
+    "sha256": "3327c451fdf2b478a8567e120765c1572b804559f8728f93c9746d91df83378f"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-07.nc",
+    "bytes": 18173,
+    "sha256": "6527367a9e4d07d3bb6b85069f2538d11ce5e0ede921dcb493bbed35792cd4f3"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-08.nc",
+    "bytes": 18173,
+    "sha256": "67e26b68a76f57f7947dfdac8050e58ca6e9684f569768302f965488d9d37412"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-09.nc",
+    "bytes": 18173,
+    "sha256": "1cb900831d08596c083883fc74c88aa49c777b298cbb40b880a691978484e90a"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-10.nc",
+    "bytes": 18173,
+    "sha256": "4fad0f8153cf8772e0aa66a55e62287ccb3dea85e897ee3c3e644f44bf7751bb"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-11.nc",
+    "bytes": 18173,
+    "sha256": "74129fddaa388c5c91e7908f19c1e3f19d3e296d7f6de63e565a9324ba01a066"
+  },
+  {
+    "path": "data/nasa/measurements/M2TMNXSLV/2024-12.nc",
+    "bytes": 18173,
+    "sha256": "55c0e50d9128aae0c4a11b55007073d27dd4be4585020f750d19390cf74ca0e6"
+  },
+  {
+    "path": "data/nasa/rag/sources/GLDAS_NOAH025_M.json",
+    "bytes": 44193,
+    "sha256": "54408f2aedeb7100b4592d1c13f78118860785eb18d2c5f70f10f2e9fb0a6e24"
+  },
+  {
+    "path": "data/nasa/rag/sources/M2TMNXSLV.json",
+    "bytes": 34774,
+    "sha256": "3ee6dff37aa2ceb4ebd55f8c97e7991de719b5ae09603f4728a948604b919908"
+  },
+  {
+    "path": "data/nasa/rag/sources/POWER_Cairo_monthly.json",
+    "bytes": 5140,
+    "sha256": "a5da099fed0f90fabf0e18ca33ec0cd678e24a8479f2497244ba940c83256901"
+  },
+  {
+    "path": "data/nasa/rag/sources/README_GLDAS2.pdf",
+    "bytes": 1056697,
+    "sha256": "8e60f5f354ef42c758761127aa5cadbf037aa4c3a826d3548d8aac96c3fdc2be"
+  }
+]
