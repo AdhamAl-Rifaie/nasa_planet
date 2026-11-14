@@ -15,6 +15,7 @@ Read alongside AGENT_BRIEF.md and the architecture. This file tracks work; actua
 - Target scope and semantic IDs: docs/architecture/scope.v2.json.
 - Existing source registry: data/nasa/runtime_catalog.json; its analysis_ready means ingestion readiness only.
 - Verified measurements: MERRA-2 T2M v5.12.4 and GLDAS SoilMoi0_10cm_inst v2.1, Egypt rectangle, 2001-2024.
+- Verified measurements (expanded): GPM IMERG precipitation V07 and MOD13C2 NDVI V061, plus Morocco/Sahel T2M/soil moisture and Nile subset cubes. 12/12 cubes, 2,880/2,880 monthly subsets verified.
 - Official source documents, 315-chunk starter corpus and local retrieval script under data/nasa/.
 
 ## Dependencies to discover or resolve with owners
@@ -22,7 +23,7 @@ Read alongside AGENT_BRIEF.md and the architecture. This file tracks work; actua
 - [ ] Role 03 executable API schemas and explicit legacy-to-semantic variable ID mapping.
 - [ ] Role 05/06 action enum and payload contract; no fixed five-segment requirement.
 - [ ] Role 02 evidence/null reason states and reviewed method configuration.
-- [ ] Role 01 expanded variable-region readiness for precipitation, NDVI and other windows.
+- [x] Role 01 expanded variable-region readiness: DONE 14 Nov 2026. All 12 variable x region cubes verified and in-repo (see data/nasa/validation_regional_report.json and docs/architecture/scope.v2.json: every entry status=verified_cube_ready, measurement_ready=true). Precipitation (GPM_3IMERGM V07) and NDVI (MOD13C2 V061 with QA fields) now cover Nile/Morocco/Sahel; Morocco/Sahel T2M and soil moisture added; Nile windows subset from verified Egypt parent cubes.
 - [ ] Configured provider/model and server-side key setup; does not block local retrieval/templates.
 
 ## Phase tracker

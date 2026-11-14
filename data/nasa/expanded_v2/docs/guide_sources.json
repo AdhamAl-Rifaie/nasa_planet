@@ -1,0 +1,16 @@
+[
+  {
+    "file": "MOD13_User_Guide_V61.pdf",
+    "source_url": "https://lpdaac.usgs.gov/documents/621/MOD13_User_Guide_V61.pdf",
+    "bytes": 2473386,
+    "sha256": "7440d485fef25e85c19752c553989d7af33698f2f606cc0b50cf298012f85a0a",
+    "status": "downloaded"
+  },
+  {
+    "file": "IMERG_V07_ATBD.pdf",
+    "source_url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_V07_ATBD_final.pdf",
+    "bytes": 3526898,
+    "sha256": "c2746d55c4637895e94b54a8a086958ab5fd96b5d5a7a087eb144f4cf645b168",
+    "status": "downloaded"
+  }
+]

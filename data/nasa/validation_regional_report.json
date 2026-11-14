@@ -1,0 +1,246 @@
+{
+  "generated": "2026-11-14",
+  "scope": "4 variables x 3 regions x 288 months (2001-01..2024-12)",
+  "monthly_subset_verification": {
+    "files_checked": 2880,
+    "bad_files": 0,
+    "month_completeness": "288/288 per set, no gaps, no extras",
+    "checks": [
+      "open+read every file",
+      "expected variables present",
+      "finite-data check",
+      "grid shape match vs bbox-derived windows"
+    ]
+  },
+  "cube_validation": {
+    "GLDAS_NOAH025_M_Morocco_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        30.0,
+        34.75,
+        20
+      ],
+      "lon": [
+        -10.0,
+        -5.25,
+        20
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        -9999.0,
+        42.66454315185547
+      ]
+    },
+    "GLDAS_NOAH025_M_Nile_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        24.125,
+        31.875,
+        32
+      ],
+      "lon": [
+        29.125,
+        32.875,
+        16
+      ],
+      "finite_frac": 0.8965,
+      "range": [
+        1.9999998807907104,
+        32.41978073120117
+      ]
+    },
+    "GLDAS_NOAH025_M_Sahel_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        12.0,
+        16.75,
+        20
+      ],
+      "lon": [
+        -5.0,
+        4.75,
+        40
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        1.9999998807907104,
+        41.38508224487305
+      ]
+    },
+    "GPM_3IMERGM_Morocco_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        30.0,
+        34.9,
+        50
+      ],
+      "lon": [
+        -10.0,
+        -5.1,
+        50
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        0.0,
+        0.5560000538825989
+      ]
+    },
+    "GPM_3IMERGM_Nile_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        24.0,
+        31.9,
+        80
+      ],
+      "lon": [
+        29.0,
+        32.9,
+        40
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        0.0,
+        0.42000001668930054
+      ]
+    },
+    "GPM_3IMERGM_Sahel_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        12.0,
+        16.9,
+        50
+      ],
+      "lon": [
+        -5.0,
+        4.9,
+        100
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        0.0,
+        0.6570000052452087
+      ]
+    },
+    "M2TMNXSLV_Morocco_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        30.0,
+        34.5,
+        10
+      ],
+      "lon": [
+        -10.0,
+        -5.625,
+        8
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        272.630126953125,
+        310.5342102050781
+      ]
+    },
+    "M2TMNXSLV_Nile_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        24.0,
+        32.0,
+        17
+      ],
+      "lon": [
+        29.375,
+        32.5,
+        6
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        280.88787841796875,
+        309.0633544921875
+      ]
+    },
+    "M2TMNXSLV_Sahel_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        12.0,
+        16.5,
+        10
+      ],
+      "lon": [
+        -5.0,
+        4.375,
+        16
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        289.7999572753906,
+        311.13885498046875
+      ]
+    },
+    "MOD13C2_Morocco_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        30.05,
+        35.0,
+        100
+      ],
+      "lon": [
+        -10.0,
+        -5.05,
+        100
+      ],
+      "finite_frac": 0.7281,
+      "range": [
+        -0.1939999908208847,
+        0.882099986076355
+      ]
+    },
+    "MOD13C2_Nile_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        24.05,
+        32.0,
+        160
+      ],
+      "lon": [
+        29.0,
+        32.95,
+        80
+      ],
+      "finite_frac": 0.906,
+      "range": [
+        -0.19999998807907104,
+        0.8496999740600586
+      ]
+    },
+    "MOD13C2_Sahel_2001_2024.nc": {
+      "months": 288,
+      "lat": [
+        12.05,
+        17.0,
+        100
+      ],
+      "lon": [
+        -5.0,
+        4.95,
+        200
+      ],
+      "finite_frac": 1.0,
+      "range": [
+        -0.09879999607801437,
+        0.8431999683380127
+      ]
+    }
+  },
+  "value_range_notes": {
+    "T2M": "Kelvin (MERRA-2), 272.6..311.1 across regions",
+    "SoilMoi0_10cm_inst": "kg m-2 (GLDAS), land-only cells; sea masked",
+    "precipitation": "mm/hr monthly mean rate (IMERG V07); mm/month = value * hours_in_month",
+    "NDVI": "real NDVI = raw * 0.0001, fill(-3000)->NaN, valid [-0.2, 1.0]; QA fields kept raw"
+  },
+  "nile_note": "Nile T2M/SoilMoi cubes are subsets of the verified Egypt parent cubes; Nile GPM/MODIS from regional DAP4 subsets.",
+  "grid_definitions": {
+    "M2TMNXSLV": "lat -90..90 step 0.5, lon -180..180 step 0.625",
+    "GLDAS_NOAH025_M": "lat -60..90 step 0.25, lon -180..180 step 0.25",
+    "GPM_3IMERGM": "lat/lon 0.1 deg global; files store (time, lon, lat), cubes transposed to (time, lat, lon)",
+    "MOD13C2": "0.05 deg CMG; rows top-down from 90N; cubes flipped to ascending lat"
+  }
+}
