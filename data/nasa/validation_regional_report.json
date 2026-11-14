@@ -25,11 +25,13 @@
         -5.25,
         20
       ],
-      "finite_frac": 1.0,
+      "finite_frac": 0.7175,
       "range": [
-        -9999.0,
+        5.8709716796875,
         42.66454315185547
-      ]
+      ],
+      "missing_cells_all_months": 113,
+      "source_fill_masked": -9999
     },
     "GLDAS_NOAH025_M_Nile_2001_2024.nc": {
       "months": 288,
