@@ -43,6 +43,32 @@ Units and grids:
 
 All cubes use dims (time, lat, lon) with ascending lat/lon. Missing fractions per cube are in validation_regional_report.json; ocean and land-only model masks are expected, not errors.
 
+## Role 01 artifacts (data ownership)
+
+- `preprocess.py` — the only supported entry point for analysis code: `load_cube(product, window)`, `apply_qa(ds, product, mode)`, `regional_series(ds, product)`. `python preprocess.py --all` regenerates every artifact below.
+- `qa_policy.json` — QA rules per product with the observed distributions that justify them. Key decisions: IMERG quality index is reported, never used as an exclusion filter (observed medians 5-7 on a 0-100 scale); MODIS uses MODLAND QA bits with default and strict modes.
+- `coverage_report.json` — per cube: months, valid fraction, per-month min/median/max, all-missing and partial cells, value range, SHA-256.
+- `regional_lineage.json` — 3,456 entries (4 products x 3 windows x 288 months) with SHA-256, byte size and source granule id per monthly file.
+- `study_windows.geojson` — the three windows with bbox, native grid per product, period and limitations.
+- `docs/roles/MEMBER_1.md` — the role's deliverable table, decisions and handoffs.
+
+## Role 02 artifacts (statistics)
+
+- `analysis/trend.py` — the single implementation for evidence cards **and** spatial maps: seasonal Mann-Kendall with Hamed-Rao correction, Theil-Sen slope on anomalies, block-residual bootstrap interval, BH-FDR for maps, period sensitivity.
+- `analysis/method_config.json` — frozen `method_revision m2-1.0.0`: alpha, coverage rules, block length, seed, replicate count, FDR family, Spin It window set.
+- `analysis/test_trend.py` — 9 synthetic checks (known slope, null, seasonality, AR(1), missingness, insufficient data, FDR, map, sensitivity). Run it before trusting any number.
+- `analysis/reference_comparison.py` / `.json` — agreement with scipy, pyMannKendall and NASA POWER.
+- `analysis/evidence_cards.json` — 12 cards: slope, interval, p, coverage, diagnostics, Spin It.
+- `analysis/spatial_trends/*.npz` + `spatial_summary.json` — per-cell slope, p, FDR decision, valid months, dependence factor on the native grid.
+- `analysis/INTERPRETATION.md` — the reviewed wording for Members 3, 4, 5 and 6.
+
+```bash
+cd data/nasa/analysis
+python test_trend.py            # 9/9 must pass
+python trend.py --all-cards     # regenerate cards
+python trend.py --spatial       # regenerate maps
+```
+
 ## Scope limits
 This is the complete numeric source dataset for the stated two-variable, one-domain, 24-year scope, not all NASA data. There are no rainfall, NO2, global, neighborhood-level or administrative-boundary datasets here. Land-only model output has masked cells; use the validation report. Spatial coverage is limited to grid-cell centers inside the rectangle. Source model/reanalysis errors remain; ingestion checks do not prove physical truth.
 

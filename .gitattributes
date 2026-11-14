@@ -5,3 +5,10 @@ data/nasa/** -text -whitespace
 *.pdf binary
 docs/** text eol=lf
 README.md text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
