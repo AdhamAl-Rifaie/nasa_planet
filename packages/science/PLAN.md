@@ -8,6 +8,13 @@ study is complete; see [PHASE_4_REPORT.md](phase_reports/PHASE_4_REPORT.md).
 Status: **DONE_WAITING_APPROVAL** for the research checkpoint, with **scientific
 calibration FAILED**. The tested candidate is rejected for release. Phase 4
 scientific acceptance is not met; Phase 5 remains **NOT_STARTED**.
+
+Follow-up research: [comparison checkpoint](phase_reports/PHASE_4_FOLLOWUP_REPORT.md).
+Adjusted MK and feasible AR(1) regression were specified before pilot evaluation,
+then tested on independent holdout runs at 20/24 years, with seasonal patterns,
+correlated nulls, known trends and interval coverage. Both fail release screens.
+The failed bootstrap reference and validated slopes are unchanged. Ninety tests
+pass; scientific acceptance remains unmet. Continue Phase 4, not Phase 5.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.

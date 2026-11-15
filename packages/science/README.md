@@ -1,5 +1,10 @@
 # Statistics workspace
 
+Latest: [Phase 4 follow-up](phase_reports/PHASE_4_FOLLOWUP_REPORT.md) compares
+adjusted Mann-Kendall and AR(1) regression on fresh holdout simulations. Both
+fail calibration; 90 software tests pass. Inference remains disabled, all
+previous artifacts are preserved, and Phase 5 has not started.
+
 New to weather data? Start with [Stage 2 explained](STAGE_2_EXPLAINED.md),
 the plain-language guide to variables, units, preparation, output fields,
 coverage percentages, figures and actual examples.

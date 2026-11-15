@@ -85,6 +85,13 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Latest: [Phase 4 follow-up](phase_reports/PHASE_4_FOLLOWUP_REPORT.md).
+  Prespecified adjusted MK and AR(1) regression both fail fresh holdout screens
+  (24/36 and 29/36 scenarios respectively). Ninety software tests pass. The
+  independent-data bootstrap diagnosis finds underestimated sampling spread,
+  including before detrending; known-noise oracle resampling nearly recovers it.
+  All 105 prior artifacts are unchanged. Inference stays disabled; no Phase 5.
+  Evidence: [pilot/holdout/diagnosis](phase_reports/PHASE_4_FOLLOWUP.json).
 - User instructed "go to step 4"; authorization is recorded in
   [PHASE_3_APPROVAL.md](phase_reports/PHASE_3_APPROVAL.md). The previous stop at
   Phase 3 is superseded for inference research. No method release is assumed.
