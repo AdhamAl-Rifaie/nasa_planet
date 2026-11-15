@@ -1,5 +1,5 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 (Sahel QA/coverage checkpoint)
+Last updated: 2026-11-15 (Sahel preprocessing notebook comparison)
 Current phase: PHASE 2
 Current status: DONE_WAITING_APPROVAL
 
@@ -50,15 +50,25 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 - Completed the requested Sahel QA/coverage supplement with six more controlled
   tests (44 total), separate experimental arrays, three inspected figures,
   monthly/seasonal flag distributions and a Stage 3 handoff recommendation.
+- Added and executed **0. Preprocessing: compare the three Sahel NDVI outputs**
+  in [02_preprocessing.ipynb](notebooks/02_preprocessing.ipynb): strict 100%,
+  standard 100%, experimental standard 95%, source context, regional/seasonal
+  plots, footprint maps, monthly data and diagnostic cell-value examples.
+  All earlier notebook cells and their embedded outputs are preserved exactly.
+  Three new figures use a separate derived folder. Refresh just this section with
+  `.\.venv\Scripts\python.exe tools/run_science_preprocessing.py --sahel-only`.
 
 ## Current task / next action
 - Stage 2 Sahel QA review complete under the user's explicit request. See
   [the checkpoint](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md): monthly/seasonal
   detailed QA, geographic selection, regional series, and separate strict/standard
   95%/90% valid-month experiments. No imputation, default change or inference.
-- All 44 original policy/source/output/report/notebook files checked by SHA-256
-  remain unchanged. Original strict/standard masks and means were reproduced
-  read-only; six review artifacts live in a separate ignored derived folder.
+- The checkpoint preserved 44 original files. Under the subsequent explicit
+  notebook-comparison request, the presentation notebook now has an added section;
+  all 43 original non-notebook hashes and all six experimental artifact hashes
+  still match. Original strict/standard masks and means are unchanged. The review
+  tool permits notebook presentation edits between runs while preserving its
+  current bytes during each run and enforcing every data/policy/report hash.
 - Recommend strict 100% as unchanged default/control, standard 100% as a fixed
   comparison and standard 95% as experimental sensitivity for Stage 3 development.
   Defer standard 90% from the core comparison (only two extra cells); retain strict

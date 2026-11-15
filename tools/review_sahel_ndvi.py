@@ -201,7 +201,15 @@ def main():
     # An initial manifest persists across reruns: never silently reset history.
     snapshot_path = OUT / "preserved_originals.json"
     if snapshot_path.exists():
-        if json.loads(snapshot_path.read_text()) != preserved:
+        historical = json.loads(snapshot_path.read_text())
+        # The user authorized adding comparison displays to this notebook after
+        # the checkpoint. It is presentation, not an input to QA calculations.
+        # Preserve its current bytes within every run, but permit edits between
+        # runs. Historical snapshots remain untouched; all data/policy/report
+        # hashes still have to match the first review run exactly.
+        presentation = "packages/science/notebooks/02_preprocessing.ipynb"
+        if {k: v for k, v in historical.items() if k != presentation} != {
+                k: v for k, v in preserved.items() if k != presentation}:
             raise ValueError("An original artifact changed since the first review run")
     else:
         write_json(snapshot_path, preserved)
