@@ -1,4 +1,6 @@
 /* Shared product surfaces: observatory blue, vegetation green, paper evidence. */
+.landing .story-section{padding-bottom:80px!important;min-height:640px!important}
+@media(max-width:760px){.landing .story-section{padding-bottom:55px!important;min-height:0!important}}
 .landing .section-actor{position:absolute;left:36%;bottom:12px;width:210px;height:162px;pointer-events:none;z-index:3;contain:layout paint}
 .section-actor svg{display:block;width:100%;height:100%;overflow:visible}
 .section-actor [data-part]{transform-box:view-box}
