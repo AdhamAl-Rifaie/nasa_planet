@@ -4,7 +4,7 @@ This is the new landing page and analysis workspace. The previous static UI
 remains at `/app/`; the backend root serves the React build at `/product/`.
 
 The landing hero, three story chapters, and investigation console share an
-astrobotany observatory art direction. The section character has been removed.
+astrobotany observatory art direction. Small canvas sprite characters remain anchored to the planting section and chart card; scroll changes their animation frames. The three explanatory sections use the reference layout with a split map/setup panel, period slider, and evidence receipt flowing into the Earth-horizon closing section.
 The
 hero image is decorative. All headings, methods, numbers, and results are
 React elements. On a phone, a right swipe on the hero opens the investigation,

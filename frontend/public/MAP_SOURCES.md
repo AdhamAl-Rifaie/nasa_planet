@@ -11,3 +11,5 @@ https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admi
 The map uses a geographic linear projection and places each NASA trend raster over its returned bounding box. Geographic context does not increase the scientific resolution of that raster.
 
 `expedition-landscape.png`: AI-generated decorative landscape, not Earth observation data.
+
+`earth-horizon-footer.png`: AI-generated decorative Earth horizon used behind the landing evidence and closing sections; not a geographic map or scientific observation.

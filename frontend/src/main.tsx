@@ -44,6 +44,7 @@ import {
 } from "./api";
 import "./style.css";
 import "./product-theme.css";
+import "./reference-layout.css";
 
 const REGIONS: { id: RegionId; en: string; ar: string; caption: string }[] = [
   {
@@ -204,6 +205,7 @@ function SceneHeader({
 }
 
 function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
+  const [previewYear,setPreviewYear]=useState(2001);
   const dragStart = useRef<number | null>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [dragProgress, setDragProgress] = useState(0);
@@ -321,6 +323,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
               ? "Our explorer starts with a real place, not a headline. Select an area and compare its NASA observations with nearby regions; one average can hide opposite local trends."
               : "يبدأ المستكشف بمكان حقيقي، لا بعنوان جاهز. اختر منطقة وقارن رصد NASA فيها بالمناطق المجاورة؛ قد يخفي المتوسط اتجاهات محلية متعاكسة."}
           </p>
+          <ul className="chapter-benefits"><li><MapPinned/><div><strong>Choose a place</strong><span>Select a study region or draw an area.</span></div></li><li><Layers3/><div><strong>Choose a NASA variable</strong><span>Explore temperature, rainfall, soil moisture and vegetation.</span></div></li><li><Sparkles/><div><strong>Load the time series</strong><span>Follow monthly observations through time.</span></div></li></ul>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Compare regions" : "قارن المناطق"}{" "}
             <ArrowUpRight size={18} />
@@ -329,7 +332,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
         <div className="story-visual region-visual">
           <div className="observatory-title"><Satellite size={20}/> Earth observatory <span>01 / Choose data</span></div>
           <div className="observatory-map"><GeoBackdrop/><span className="place-pin"><MapPinned size={25}/> Nile Corridor</span><small>NASA Blue Marble · Natural Earth boundaries</small></div>
-          <div className="observatory-controls"><span>Explore the connected Earth system</span><div>Temperature · Rainfall · Soil moisture · Vegetation</div><button onClick={onLaunch}>Choose your study area <ArrowRight size={17}/></button></div>
+          <div className="observatory-controls"><label>Place</label><button className="preview-field" onClick={onLaunch}><MapPinned size={16}/> Nile Corridor, Egypt <ChevronDown size={14}/></button><label>NASA variable</label><button className="preview-field" onClick={onLaunch}><Globe2 size={16}/> Air temperature <ChevronDown size={14}/></button><p>MERRA-2 · Monthly observations<br/>2001–2024 · Reanalysis</p><button onClick={onLaunch}>Load time series <ArrowRight size={17}/></button></div>
           <div className="visual-foot">
             <span>{lang === "en" ? "ARRIVE / SELECT A PLACE" : "الوصول / اختيار المكان"}</span>
             <span>{lang === "en" ? "PLANT ONE QUESTION" : "ازرع سؤالًا"}</span>
@@ -357,17 +360,19 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
             />
             <path
               className="chart-path"
-              d="M15 255 L63 217 L110 222 L159 183 L205 199 L251 157 L298 167 L347 118 L392 135 L440 94 L486 108 L535 68 L579 85 L628 42 L682 49"
+              d="M15 245L30 168L45 228L60 205L75 242L90 140L105 214L120 187L135 207L150 160L165 222L180 120L195 183L210 155L225 198L240 135L255 174L270 98L285 164L300 141L315 183L330 112L345 152L360 82L375 148L390 128L405 165L420 102L435 133L450 65L465 127L480 110L495 149L510 92L525 118L540 49L555 110L570 96L585 135L600 72L615 99L630 35L645 94L660 73L682 100"
             />
+            <path d="M15 218L682 83" stroke="#ecaa65" strokeWidth="3"/>
             <rect
-              x="195"
+              x={(previewYear-2001)/23*550}
               y="10"
-              width="320"
+              width={680-(previewYear-2001)/23*550}
               height="280"
               className="window-focus"
             />
             <path d="M195 18V290 M515 18V290" className="window-guide" />
           </svg>
+          <label className="preview-range">Time window <span>{previewYear} — 2024</span><input aria-label="Illustrative time window start" type="range" min="2001" max="2018" value={previewYear} onChange={e=>setPreviewYear(Number(e.target.value))}/></label>
           <div className="window-labels">
             <span>{lang === "en" ? "FULL PERIOD" : "الفترة الكاملة"}</span>
             <span>{lang === "en" ? "SELECTED WINDOW" : "الفترة المختارة"}</span>
@@ -378,18 +383,20 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
         </div>
         <div className="story-text">
           <div className="eyebrow">02 / {lang === "en" ? "TIME" : "الزمن"}</div>
-          <h2>{lang === "en" ? "WILL THE TREND HOLD?" : "هل يصمد الاتجاه؟"}</h2>
+          <h2>{lang === "en" ? "Challenge a trend by changing the time window" : "اختبر الاتجاه بتغيير الفترة الزمنية"}</h2>
           <p>
             {lang === "en"
               ? "Rain changes by the hour; an Earth-system trend needs years. Change the start and end dates to see whether your conclusion survives a different window."
               : "المطر يتغير كل ساعة؛ اتجاه نظام الأرض يحتاج سنوات. غيّر بداية الفترة ونهايتها لتعرف هل يصمد الاستنتاج أم يعتمد على نافذة مختارة."}
           </p>
+          <ul className="chapter-benefits"><li><Clock3/><div><strong>Adjust the time window</strong><span>Compare alternative start and end dates.</span></div></li><li><Layers3/><div><strong>See how the trend changes</strong><span>Inspect the slope and uncertainty together.</span></div></li><li><ShieldCheck/><div><strong>Assess robustness</strong><span>Check whether the conclusion survives your choices.</span></div></li></ul>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Test a time window" : "اختبر فترة زمنية"}{" "}
             <ArrowUpRight size={18} />
           </button>
         </div>
       </section>
+      <div className="evidence-finale">
       <section id="sources" className="story-section evidence">
         <div className="story-text">
           <div className="eyebrow">
@@ -401,6 +408,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
               ? "The answer is more than a number. Inspect the source, trend method, confidence interval, valid coverage and limitations; then carry them with the claim."
               : "الإجابة أكثر من رقم. افحص المصدر وطريقة الاتجاه ومجال الثقة والتغطية الصالحة والقيود، ثم احتفظ بها مع الاستنتاج."}
           </p>
+          <ul className="chapter-benefits"><li><BookOpen/><div><strong>See the complete receipt</strong><span>Keep sources and methods with the result.</span></div></li><li><ShieldCheck/><div><strong>Understand the uncertainty</strong><span>Read the interval, significance and coverage.</span></div></li><li><Layers3/><div><strong>Know the boundaries</strong><span>Check resolution and limitations before drawing conclusions.</span></div></li></ul>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Open the evidence lab" : "افتح معمل الدليل"}{" "}
             <ArrowUpRight size={18} />
@@ -441,6 +449,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           {lang === "en" ? "Launch explorer" : "افتح المستكشف"}{" "}
           <ArrowUpRight size={20} />
         </button>
+      </div>
       </div>
       <footer>
         <span>ASTRAVERD</span>
