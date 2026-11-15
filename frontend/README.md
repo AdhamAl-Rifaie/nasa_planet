@@ -3,6 +3,13 @@
 This is the new landing page and analysis workspace. The previous static UI
 remains at `/app/`; the backend root serves the React build at `/product/`.
 
+The landing hero, three illustrated story chapters, and investigation console
+share an astrobotany observatory art direction. The chapter illustration and
+console background live in `public/story-scenes-v2.png` and
+`public/mission-control-bg.png`. All headings, navigation, methods, numbers,
+and results are React elements rather than text embedded in those images.
+On a phone, the investigation has a fixed four-stage navigator.
+
 ## Develop
 
 ```powershell

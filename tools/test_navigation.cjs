@@ -5,6 +5,7 @@ const { chromium } = require('C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRu
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('http://127.0.0.1:4173/');
   await page.screenshot({ path: '../product_mobile_navigation.png' });
+  await page.screenshot({ path: '../product_mobile_landing_full_v2.png', fullPage: true });
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw Error('mobile horizontal overflow');
   await page.getByRole('link', { name: /Scroll down to learn how it works/i }).click();
   await page.waitForTimeout(700);
@@ -15,6 +16,14 @@ const { chromium } = require('C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRu
   await page.getByRole('button', { name: /Open the investigation/i }).click();
   if (!(await page.locator('.workspace-grid').isVisible())) throw Error('explorer not opened');
   await page.screenshot({ path: '../product_mobile_workspace.png' });
+  await page.locator('.mission-steps a').nth(1).click();
+  await page.waitForTimeout(500);
+  if (!(await page.locator('#observe').isVisible())) throw Error('observe navigation failed');
+  await page.locator('.mission-steps a').first().click();
+  await page.waitForTimeout(500);
+  await page.getByRole('button', { name: /Analyse this area/i }).click();
+  await page.waitForSelector('.result-body');
+  await page.screenshot({ path: '../product_mobile_result_v2.png', fullPage: true });
   if (errors.length) throw Error(errors.join('; '));
   console.log('mobile navigation, story, explorer and responsive width passed');
   await browser.close();

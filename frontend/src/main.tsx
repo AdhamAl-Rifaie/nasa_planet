@@ -679,6 +679,7 @@ function SpatialMap({
     const p = point(e),
       s = start.current;
     start.current = null;
+    setSelection(null);
     const [w, south, east, north] = spatial.bbox;
     const x0 = Math.min(s.x, p.x),
       x1 = Math.max(s.x, p.x),
@@ -694,6 +695,8 @@ function SpatialMap({
   };
   return (
     <div className="spatial-wrap">
+      <div className="map-coordinate map-coordinate-top">{spatial.bbox[3].toFixed(2)}° N</div>
+      <div className="map-coordinate map-coordinate-bottom">{spatial.bbox[1].toFixed(2)}° N</div>
       <div
         className="spatial-plot"
         style={{
@@ -736,6 +739,11 @@ function SpatialMap({
             }}
           />
         ) : null}
+      </div>
+      <div className="map-grid-note">
+        <span>{lang === "en" ? "NATIVE GRID" : "الشبكة الأصلية"}</span>
+        <strong>{spatial.grid.lon.length} × {spatial.grid.lat.length}</strong>
+        <small>{lang === "en" ? "Cells shown at source resolution" : "الخلايا بدقة المصدر"}</small>
       </div>
       <div className="map-corner">
         {lang === "en" ? "DRAG TO SELECT AREA" : "اسحب لاختيار منطقة"}
@@ -913,8 +921,25 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
             </button>
           </div>
         </div>
+        <div className="mission-strip" aria-label={lang === "en" ? "Investigation workflow" : "خطوات التحقيق"}>
+          <div className="mission-symbol"><Leaf size={24} /></div>
+          <div className="mission-intro">
+            <span>{lang === "en" ? "INVESTIGATION / 001" : "التحقيق / 001"}</span>
+            <strong>{lang === "en" ? "One planet. Many possible stories." : "كوكب واحد. روايات متعددة."}</strong>
+          </div>
+          <div className="mission-steps">
+            {(["configure", "observe", "signal", "verify"] as const).map((target, i) => (
+              <a href="#explore" key={target} onClick={(event) => {
+                event.preventDefault();
+                document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}>
+                <b>0{i + 1}</b> {lang === "en" ? ["FRAME", "OBSERVE", "QUESTION", "VERIFY"][i] : ["الإطار", "الرصد", "التساؤل", "التحقق"][i]}
+              </a>
+            ))}
+          </div>
+        </div>
         <div className="workspace-grid">
-          <aside className="control-rail">
+          <aside id="configure" className="control-rail">
             <div className="rail-heading">
               <span>
                 01 / {lang === "en" ? "BUILD YOUR ANALYSIS" : "جهّز تحليلك"}
@@ -1051,7 +1076,7 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
                 : "الأرقام ناتجة عن طريقة التحليل المعتمدة على الخادم."}
             </p>
           </aside>
-          <div className="analysis-center">
+          <div id="observe" className="analysis-center">
             <div className="panel-title">
               <div>
                 <span className="eyebrow">
@@ -1104,7 +1129,7 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
                 {lang === "en" ? "No data" : "لا توجد بيانات"}
               </span>
             </div>
-            <div className="series-panel">
+            <div id="signal" className="series-panel">
               <div className="series-heading">
                 <div>
                   <span className="eyebrow">
@@ -1134,7 +1159,7 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
               </div>
             </div>
           </div>
-          <aside className="evidence-rail">
+          <aside id="verify" className="evidence-rail">
             <div className="evidence-heading">
               <span className="eyebrow">
                 04 / {lang === "en" ? "THE EVIDENCE" : "الدليل"}
