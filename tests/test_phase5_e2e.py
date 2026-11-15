@@ -360,7 +360,9 @@ KEY_PATTERNS = [
     re.compile(r"AIza[0-9A-Za-z_\-]{20,}"),
     re.compile(r"sk-[A-Za-z0-9]{20,}"),
     re.compile(r"gsk_[A-Za-z0-9]{20,}"),
-    re.compile(r"(?:GEMINI|MISTRAL)_API_KEY\s*=\s*\S"),
+    # Keep the match on one line so an intentionally empty .env.example value
+    # cannot consume the next line and look like a configured secret.
+    re.compile(r"(?:GEMINI|MISTRAL)_API_KEY[ \t]*=[ \t]*[^ \t\r\n`]{20,}"),
 ]
 TEXT_SUFFIXES = {
     ".py", ".md", ".json", ".jsonl", ".txt", ".html", ".csv", ".ini", ".cfg",
