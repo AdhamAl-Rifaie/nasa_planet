@@ -1,6 +1,12 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.3, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.4, 15 November 2026. Working branch: `codex/ml-statistics`.
+
+Current checkpoint: Stage 2 approval is recorded in
+[PHASE_2_APPROVAL.md](phase_reports/PHASE_2_APPROVAL.md). Phase 3 descriptive
+estimation is implemented and validated; see
+[PHASE_3_REPORT.md](phase_reports/PHASE_3_REPORT.md). Status:
+**DONE_WAITING_APPROVAL**. Phase 4 remains **NOT_STARTED**.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.
@@ -135,12 +141,12 @@ progress and implementation scope intact. Source data are immutable; explicit
 metadata corrections/mappings are versioned separately. Do not merge either
 remote application branch as part of a data-loader change.
 
-The user explicitly authorized Stage 2 after the completed input checkpoint.
-Its preparation implementation and tests are now complete; the candidate
-policy and its spatial exclusions are awaiting owner review. Report the Stage 2
-checkpoint before starting Stage 3. Major method changes and inference release
-still require explicit review. Keep tests/reports honest about implemented,
-failed, pending and unreviewed work.
+The user explicitly approved the Stage 2 checkpoint and authorized Phase 3 on
+15 November 2026. The separate approval record preserves the existing preparation
+policy and data bytes, including their historical status metadata. Phase 3 is
+complete for the descriptive scope and stops at its checkpoint for review.
+Major method changes and inference release still require explicit review. Keep
+tests/reports honest about implemented, failed, pending and unreviewed work.
 
 ## Stage 2 implemented preparation policy
 
@@ -204,7 +210,8 @@ This supplement changes the proposed handoff, not the existing default policy.
   review. No missing-value reconstruction, default promotion or inference release
   is authorized by the experimental coverage policies.
 
-Stage 3 remains **NOT_STARTED** pending the checkpoint decision.
+Historical pre-approval state: Stage 3 was NOT_STARTED pending this checkpoint.
+The later approval record and Phase 3 report supersede that advancement gate.
 
 ### Standard 95% monthly/annual review (completed)
 
@@ -222,10 +229,26 @@ regional annual estimate in 2015 (0.003971 NDVI). Preserve both definitions as
 explicitly labeled sensitivity evidence; never fill incomplete cell-years or
 silently substitute one annual estimate for the other. Standard 100% remains the
 constant-footprint comparison and strict 100% remains the default/control.
-No new coverage cutoff, default promotion or Phase 3 implementation is implied.
+No new coverage cutoff or default promotion was implied by that review alone.
 
-Review the Stage 2 policy, support maps and QA sensitivity table. Once the next
-checkpoint is authorized, start Stage 3: review/repair the shared Theil–Sen
-estimator, use explicit elapsed years, exercise the inherited annual-unit bug,
-and validate regional/cell slope recovery. No inference release is authorized
-by a preparation checkpoint.
+### Phase 3 implementation checkpoint (completed)
+
+The user authorized this work after approving Stage 2. Candidate
+`config/trend_policy.json` records exact median-pair Theil-Sen slopes, mandatory
+calendar-month/12 and actual-year elapsed coordinates, shared scalar/grid guards,
+missing-pair omission without time compression, and no inference. The three-point
+minimum is a computational guard inherited from the reviewed core, not an approved
+scientific record-length threshold. Raw monthly, existing calendar-month-anomaly
+and complete annual inputs remain distinct descriptive estimands.
+
+All twelve strict regional/grid cases plus separate Sahel Standard 100% and
+experimental Standard 95% are evaluated. Standard 95%'s 5,157 incomplete cell-years
+stay missing; its annual cell estimates use 14–24 complete years at their actual
+calendar positions. The default and Stage 2 inputs remain unchanged.
+
+72 tests and 210 independent slope-only reference comparisons pass. The annual
+factor-of-twelve and scalar/grid length-policy regressions are addressed in the
+new shared library; the remote legacy inference wrappers remain unmodified.
+The Phase 3 report records limitations, units, preparation sensitivity, original
+hashes, source/code versions and reproduction commands. Stop for review before
+Phase 4; no uncertainty or significance method has been released.

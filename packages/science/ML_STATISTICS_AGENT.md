@@ -8,6 +8,13 @@ it does not certify an inference method.
 
 ## Read first
 
+Current authorization: Stage 2 approval and Phase 3 scope are recorded in
+`phase_reports/PHASE_2_APPROVAL.md`. The Phase 3 descriptive implementation is
+complete; read `phase_reports/PHASE_3_REPORT.md` and stop for checkpoint review.
+Phase 4/inference is not authorized. PLAN.md revision 2.4 and PROGRESS.md supersede
+the historical pre-approval phase status below. Stage 2 policy/data bytes remain
+unchanged; Strict 100% is still default and Standard 95% remains experimental.
+
 Read this brief, `PLAN.md`, `PROGRESS.md`, the latest phase report, actual
 source/tests, and `docs/architecture/scope.v2.json` from the repository root.
 Root `AGENT_BRIEF.md` and root `PROGRESS.md` concern Role 04 (RAG); keep their

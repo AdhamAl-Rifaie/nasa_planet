@@ -1,23 +1,34 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 (Standard 95% monthly/annual checkpoint)
-Current phase: PHASE 2
+Last updated: 2026-11-15 (Phase 3 checkpoint complete)
+Current phase: PHASE 3
 Current status: DONE_WAITING_APPROVAL
 
-Current plan: [PLAN.md](PLAN.md), revision 2.3. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.4. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
 |---|---|---|---|---|
 | 0 Input/plan alignment | DONE | 5/5 revised acceptance checks | [Replan report](phase_reports/PHASE_0_REPLAN_REPORT.md) | Current implementation request covered first input work |
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
-| 2 Time series and QA | DONE_WAITING_APPROVAL | Original implementation complete; 51 combined tests pass | [Original report](phase_reports/PHASE_2_REPORT.md), [latest monthly/annual checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md) | Recommendations ready; three policies available; default unchanged; Stage 3 decision pending |
-| 3 Trend estimation | NOT_STARTED | 0/5 | ? | No |
+| 2 Time series and QA | DONE | Original implementation complete; 51 tests passed before Phase 3 | [Latest checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md), [approval](phase_reports/PHASE_2_APPROVAL.md) | User explicitly approved advancement; default unchanged |
+| 3 Trend estimation | DONE_WAITING_APPROVAL | 5/5 acceptance checks; 72 tests pass; 210 reference comparisons pass | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md) | Stop for review; Phase 4 not authorized |
 | 4 Significance | NOT_STARTED | 0/7 | ? | No |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
 | 6 Integration | NOT_STARTED | 0/7 | ? | No |
 | 7 Final review | NOT_STARTED | 0/6 | ? | No |
 
 ## Verified completed work
+- Phase 3 exact descriptive Theil-Sen kernel, explicit elapsed-year coordinates,
+  shared scalar/grid guards and missing-pair preservation are implemented.
+- Twelve strict cases, separate Sahel Standard 100% and experimental Standard 95%
+  have regional monthly/annual slopes and native-grid cell outputs. The original
+  Stage 2 full-reference calendar-month anomalies provide a separate regional
+  sensitivity, with no new preparation baseline or inference choice.
+- 72 tests pass (21 new trend checks); 210 SciPy slope-only comparisons agree
+  within a maximum absolute difference 5.56e-17. Fourteen grid files were reopened
+  and checked; 72 Stage 2 files remain unchanged by SHA-256.
+- Executed [03_trend_validation.ipynb](notebooks/03_trend_validation.ipynb) and
+  inspected the continuous slope maps and separate Sahel policy comparisons.
 - Separate branch `codex/ml-statistics`, originally based on main `ecf3908`.
 - Twelve regional cubes, four variables, three rectangles, 288 ordered months
   each. Available coverage and reference period: 2001-01..2024-12.
@@ -44,7 +55,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   288 months, 24 years, fixed support/weights, source/artifact hashes verified.
 - Strict MODIS preparation and a three-region standard-mode comparison are
   recorded. Policy remains candidate_pending_owner_review; no release flags changed.
-- Combined suite: 38 tests pass (16 earlier input tests, 21 original Stage 2
+- Original Stage 2 suite: 38 tests passed (16 earlier input tests, 21 original Stage 2
   checks and one diagnostic-metadata regression).
 - Executed 02_preprocessing.ipynb and visually inspected all four diagnostics.
 - Completed the requested Sahel QA/coverage supplement with six more controlled
@@ -64,6 +75,24 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- User approval of Stage 2 and Phase 3 authorization are recorded in
+  [PHASE_2_APPROVAL.md](phase_reports/PHASE_2_APPROVAL.md). Earlier pending-review
+  entries below are historical; this instruction supersedes the advancement gate.
+- Phase 3 is complete for the authorized descriptive scope. Review
+  [PHASE_3_REPORT.md](phase_reports/PHASE_3_REPORT.md),
+  [results](phase_reports/PHASE_3_RESULTS.json),
+  [reference/preservation checks](phase_reports/PHASE_3_VALIDATION.json), and
+  [tests/regressions](phase_reports/PHASE_3_TESTS.json). Stop here for review.
+- Sahel NDVI regional raw-monthly / annual slopes (NDVI per year): strict 100%
+  +0.000538262 / +0.000973724; standard 100% +0.000603252 / +0.000953649;
+  experimental standard 95% +0.000567989 / +0.000901538. These are descriptive,
+  without statistical significance or a claim of policy equivalence.
+- Standard 95% annual cell slopes use 14–24 complete years; 5,157 incomplete
+  cell-years remain missing. Its changing-support regional annual mean and its
+  complete-cell-year regional diagnostic remain explicitly separate estimands.
+- The three-point guard is computational only. Scientific minimum-record,
+  dependence, uncertainty and multiplicity decisions remain pending review.
+  No p-values, intervals, significance classes or readiness promotions generated.
 - Latest evidence: [Standard 95% monthly/annual checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md),
   [all 288 monthly coverage records](phase_reports/SAHEL_NDVI_STANDARD95_MONTHLY_COVERAGE.md),
   and [full JSON](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.json).
@@ -95,8 +124,8 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 - Standard 95% eligibility retains 99.9751% of native-cell area; monthly observed
   area reaches a minimum 94.6698% of selected area in 2015-07. Carry the changing
   monthly footprint and seasonal missingness into any downstream interpretation.
-- Stage 3 will review/repair the shared estimator with explicit elapsed years,
-  known-trend tests and no significance release.
+- The planned Stage 3 estimator repair is now completed at the local library
+  boundary; historical remote-branch probe reports remain unchanged.
 - Reuse/repair existing engine code only after relevant tests pass. Final
   HTTP adapter/schema reconciliation is a Phase 6 gate and does not block
   local validated-input work.
@@ -126,7 +155,8 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   retained NDVI area fractions: Nile 57.50%, Morocco 30.62%, Sahel 14.69% of
   selected full native cells. Standard fractions: 90.29%, 63.48%, 82.59%.
   Do not present those subsets as unqualified whole-rectangle coverage.
-- Intended slope: Theil?Sen with explicit elapsed-year axis; pending Phase 3.
+- Descriptive slope: exact Theil-Sen with mandatory explicit elapsed-year axes;
+  candidate descriptive-ts-1.0 is awaiting Phase 3 checkpoint review.
 - Inference, alpha, FDR: no new method frozen or released. Existing m2-1.0.0
   remains an inherited candidate requiring independent review.
 - API: documented /v1 architecture; existing remote branch payloads differ.
