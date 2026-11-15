@@ -1,6 +1,6 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.1, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.2, 15 November 2026. Working branch: `codex/ml-statistics`.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.
@@ -178,6 +178,33 @@ trend evidence. Review the choice before downstream inference; do not call
 the retained series an unqualified whole-rectangle average.
 
 ## Next concrete implementation
+
+### Stage 2 Sahel QA review supplement (completed before Stage 3)
+
+The user authorized a review of the 82.59% standard versus 14.69% strict retained
+area and experimental 95%/90% cell-month eligibility. Evidence and recommendations
+are in [SAHEL_NDVI_POLICY_CHECKPOINT.md](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md).
+This supplement changes the proposed handoff, not the existing default policy.
+
+- Preserve all original preparation outputs and policy bytes. The isolated
+  `qa_policy_review.py` module and `tools/review_sahel_ndvi.py` reproduce 100%
+  baselines and prepare strict/standard × 95%/90% experiments in a separate folder.
+- Define 95%/90% as at least 274/260 original QA-valid months out of 288 per cell.
+  Keep reference eligibility static; renormalize monthly weights only over
+  actually observed eligible cells, retaining missing NDVI and monthly support.
+- Detailed CMG flags, calendar-month/season QA distributions, per-cell seasonal
+  completeness, geographic selection and series differences must accompany review.
+  Monthly regional completeness does not imply constant contributing geography.
+- Proposed Stage 3 inputs: unchanged strict-100% default/control; standard-100%
+  fixed-footprint comparison; experimental standard-95% coverage sensitivity.
+  Defer standard-90% from the core set; strict relaxed cases remain stress diagnostics.
+- Before interpreting slopes, keep footprint identities fixed across windows,
+  compare common support, inspect seasonal gaps and changing monthly geography.
+  Additional detailed-QA or monthly-area thresholds require explicit versioned
+  review. No missing-value reconstruction, default promotion or inference release
+  is authorized by the experimental coverage policies.
+
+Stage 3 remains **NOT_STARTED** pending the checkpoint decision.
 
 Review the Stage 2 policy, support maps and QA sensitivity table. Once the next
 checkpoint is authorized, start Stage 3: review/repair the shared Theil–Sen

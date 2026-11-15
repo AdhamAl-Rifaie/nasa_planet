@@ -1,16 +1,16 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 04:33 Africa/Cairo
+Last updated: 2026-11-15 (Sahel QA/coverage checkpoint)
 Current phase: PHASE 2
 Current status: DONE_WAITING_APPROVAL
 
-Current plan: [PLAN.md](PLAN.md), revision 2.1. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.2. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
 |---|---|---|---|---|
 | 0 Input/plan alignment | DONE | 5/5 revised acceptance checks | [Replan report](phase_reports/PHASE_0_REPLAN_REPORT.md) | Current implementation request covered first input work |
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
-| 2 Time series and QA | DONE_WAITING_APPROVAL | 6/6 implementation checks; 38 combined tests pass | [Report](phase_reports/PHASE_2_REPORT.md) | Policy/Stage 3 review pending |
+| 2 Time series and QA | DONE_WAITING_APPROVAL | Original implementation complete; 44 combined tests pass after QA review | [Original report](phase_reports/PHASE_2_REPORT.md), [Sahel checkpoint](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md) | Recommendations ready; default unchanged; Stage 3 decision pending |
 | 3 Trend estimation | NOT_STARTED | 0/5 | ? | No |
 | 4 Significance | NOT_STARTED | 0/7 | ? | No |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
@@ -47,10 +47,25 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 - Combined suite: 38 tests pass (16 earlier input tests, 21 original Stage 2
   checks and one diagnostic-metadata regression).
 - Executed 02_preprocessing.ipynb and visually inspected all four diagnostics.
+- Completed the requested Sahel QA/coverage supplement with six more controlled
+  tests (44 total), separate experimental arrays, three inspected figures,
+  monthly/seasonal flag distributions and a Stage 3 handoff recommendation.
 
 ## Current task / next action
-- Stage 2 implementation checkpoint complete. Review candidate prep-1.0.0,
-  strict/standard MODIS sensitivity and fixed-support representation before Stage 3.
+- Stage 2 Sahel QA review complete under the user's explicit request. See
+  [the checkpoint](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md): monthly/seasonal
+  detailed QA, geographic selection, regional series, and separate strict/standard
+  95%/90% valid-month experiments. No imputation, default change or inference.
+- All 44 original policy/source/output/report/notebook files checked by SHA-256
+  remain unchanged. Original strict/standard masks and means were reproduced
+  read-only; six review artifacts live in a separate ignored derived folder.
+- Recommend strict 100% as unchanged default/control, standard 100% as a fixed
+  comparison and standard 95% as experimental sensitivity for Stage 3 development.
+  Defer standard 90% from the core comparison (only two extra cells); retain strict
+  relaxed cases as diagnostics. These are recommendations, not policy approval.
+- Standard 95% eligibility retains 99.9751% of native-cell area; monthly observed
+  area reaches a minimum 94.6698% of selected area in 2015-07. Carry the changing
+  monthly footprint and seasonal missingness into any downstream interpretation.
 - Stage 3 will review/repair the shared estimator with explicit elapsed years,
   known-trend tests and no significance release.
 - Reuse/repair existing engine code only after relevant tests pass. Final
