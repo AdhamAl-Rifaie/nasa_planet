@@ -3,7 +3,7 @@ Last updated: 2026-11-15 (Phase 4 research checkpoint; calibration failed)
 Current phase: PHASE 4
 Current status: DONE_WAITING_APPROVAL (research checkpoint; scientific acceptance not met)
 
-Current plan: [PLAN.md](PLAN.md), revision 2.5. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.6. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
@@ -12,7 +12,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
 | 2 Time series and QA | DONE | Original implementation complete; 51 tests passed before Phase 3 | [Latest checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md), [approval](phase_reports/PHASE_2_APPROVAL.md) | User explicitly approved advancement; default unchanged |
 | 3 Trend estimation | DONE | 5/5 acceptance checks; 72 tests passed; 210 reference comparisons passed | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md), [approval](phase_reports/PHASE_3_APPROVAL.md) | User authorized Phase 4 |
-| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 85 software tests pass; null/coverage gates FAIL | [Phase 4 checkpoint](phase_reports/PHASE_4_REPORT.md) | Candidate rejected for release; further Phase 4 research needed; no Phase 5 authorization |
+| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 99 software tests pass; scientific release gates unmet | [Latest diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md) | Further Phase 4 research needed; inference disabled; no Phase 5 |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
 | 6 Integration | NOT_STARTED | 0/7 | ? | No |
 | 7 Final review | NOT_STARTED | 0/6 | ? | No |
@@ -85,6 +85,14 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Latest: [double-bootstrap diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
+  Eight independent caches per length/grid, fixed and fresh 1,000-record panels,
+  fine/expanded grids, boundary and misspecification stresses confirm remaining
+  failures. 99 software tests pass. Original-grid Gaussian .7 null means are
+  6.94%/6.49% false positives and 93.03%/93.49% coverage at n=20/24. Inference
+  estimates a regression coefficient, not the realized Sen descriptive statistic;
+  no regression interval may be silently relabelled as a Sen interval. Keep
+  release disabled and continue Phase 4; no Phase 5. Prior artifacts preserved.
 - Latest: [dependence-uncertainty research](phase_reports/PHASE_4_UNCERTAINTY_REPORT.md).
   REML small-sample t, refitted parametric bootstrap-t and a separately specified
   double-bootstrap correction use independent pilot/final streams. Alpha remains

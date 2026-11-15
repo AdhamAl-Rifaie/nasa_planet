@@ -1,6 +1,12 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.5, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.6, 15 November 2026. Working branch: `codex/ml-statistics`.
+
+Latest authorized continuation: [double-bootstrap diagnostics](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
+Independent repeated caches, grid/boundary and model stresses do not establish
+release suitability. Inference targets a model-specific regression coefficient;
+keep it separate from existing Sen descriptive estimates. 99 software tests pass;
+scientific acceptance is unmet. Criteria stay unchanged; Phase 5 is not started.
 
 Current checkpoint: the user approved advancement from Phase 3 in
 [PHASE_3_APPROVAL.md](phase_reports/PHASE_3_APPROVAL.md). Phase 4's first research

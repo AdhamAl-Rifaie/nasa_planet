@@ -1,5 +1,10 @@
 # Statistics workspace
 
+Latest checkpoint: [double-bootstrap diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
+Repeated cache/grid/misspecification experiments confirm remaining failures;
+regression inference and Sen descriptions have distinct estimands. 99 tests pass,
+but inference remains disabled. NASA data and all prior artifacts are preserved.
+
 Newest research: [short-record dependence uncertainty](phase_reports/PHASE_4_UNCERTAINTY_REPORT.md).
 REML and refitted/double parametric bootstrap substantially improve calibration,
 but no candidate passes all required scenarios. 94 tests pass; inference remains

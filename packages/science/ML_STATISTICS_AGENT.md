@@ -8,6 +8,11 @@ it does not certify an inference method.
 
 ## Read first
 
+Newest checkpoint: `phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md`. Repeated
+cache/grid/misspecification tests still do not support scientific release. Keep
+model-specific regression inference separate from Sen descriptions. Do not
+advance Phase 5 or enable inference; read PLAN.md 2.6 and current PROGRESS.md.
+
 Latest authorized continuation: read `phase_reports/PHASE_4_UNCERTAINTY_REPORT.md`.
 REML and refitted parametric simulation research is complete for the tested
 candidates, with remaining holdout failures. Keep inference disabled, do not
