@@ -135,17 +135,52 @@ progress and implementation scope intact. Source data are immutable; explicit
 metadata corrections/mappings are versioned separately. Do not merge either
 remote application branch as part of a data-loader change.
 
-Current user authorization is to adapt the plan and use these data to advance
-the solution. Proceed through input alignment and the first validated-data
-checkpoint under that authorization. After Phase 1, report evidence and request
-the next checkpoint as specified by the statistics brief. Major method changes
-and inference release still require explicit review. Keep tests/reports honest
-about implemented, failed, pending and unreviewed work.
+The user explicitly authorized Stage 2 after the completed input checkpoint.
+Its preparation implementation and tests are now complete; the candidate
+policy and its spatial exclusions are awaiting owner review. Report the Stage 2
+checkpoint before starting Stage 3. Major method changes and inference release
+still require explicit review. Keep tests/reports honest about implemented,
+failed, pending and unreviewed work.
+
+## Stage 2 implemented preparation policy
+
+`config/preparation_policy.json` records candidate `prep-1.0.0`; it is not a
+NASA-prescribed statistical policy or an approved inference method.
+
+- Bounding boxes select native cell centres inclusively inside a registered
+  rectangle; reject wrapping, reversed axes, outside coverage and empty selections.
+- Weight full selected native cells by spherical solid angle. Do not imply
+  exact polygon-intersection area; the selected footprints can extend beyond
+  the bbox edges. Keep native grids separate.
+- Default strict MODIS QA accepts good MODLAND bits and good reliability only;
+  standard mode explicitly admits marginal observations for comparison. Both
+  exclude historical-fill/cloud/snow/unproduced observations. The CMG high bits
+  are geospatial flags, not the snow/shadow interpretation of finer products.
+- Retain IMERG quality/error fields without inventing a cutoff or quality
+  weighting. Keep soil moisture nonnegative and temperature finite. Missing
+  values stay missing; QA never imputes values or rescales NDVI.
+- Regional and per-cell analysis series use cells valid after QA in every
+  registered reference month. That set stays fixed for shorter requested periods.
+  Report monthly QA coverage and retained support fractions for both cell count
+  and selected native-cell area. A nonempty set permits preparation, not a
+  guarantee of representative coverage or enough evidence for a trend.
+- Annual rainfall sums twelve monthly amounts. Other annual summaries use
+  calendar-day weights across twelve monthly values. Incomplete/missing years
+  stay missing. Year coordinates contain actual years, not monthly indices.
+- Monthly anomalies subtract the matching calendar-month mean over the same
+  full registered reference; the baseline does not change silently with a query.
+
+The strict NDVI fixed-support area fractions are 57.50% (Nile), 30.62%
+(Morocco) and 14.69% (Sahel), measured over selected full native cells. Standard
+QA retains 90.29%, 63.48% and 82.59%, respectively, while admitting marginal
+observations. These are preparation sensitivity results, not uncertainty or
+trend evidence. Review the choice before downstream inference; do not call
+the retained series an unqualified whole-rectangle average.
 
 ## Next concrete implementation
 
-Build a loader consuming `scope.v2.json`, retain source/processed field identity,
-test the real Nile precipitation cube and all twelve metadata contracts, and
-verify calendar-aware precipitation conversion on leap/non-leap month fixtures.
-Execute an exploration notebook with a sample map and cell series. This first
-checkpoint prepares inputs; it does not establish a climate trend.
+Review the Stage 2 policy, support maps and QA sensitivity table. Once the next
+checkpoint is authorized, start Stage 3: review/repair the shared Theil–Sen
+estimator, use explicit elapsed years, exercise the inherited annual-unit bug,
+and validate regional/cell slope recovery. No inference release is authorized
+by a preparation checkpoint.

@@ -1,4 +1,4 @@
-# ML/Statistics Agent ? data-aligned brief v2.1
+# ML/Statistics Agent - data-aligned brief v2.1
 
 Updated 15 November 2026 under the user's instruction to adapt the plan to the
 available data and advance the solution. The canonical work plan is `PLAN.md`
@@ -88,12 +88,11 @@ remaining scientific/integration dependencies listed. Keep the earlier blocked
 report as historical evidence; do not retroactively mark its old criteria passed.
 
 Work one phase at a time, write meaningful tests, run relevant regressions,
-inspect outputs, and write phase reports plus progress updates. Current user
-instructions authorize replanning and the first real-data implementation
-checkpoint. After Phase 1, stop and request the next phase as the original
-checkpoint protocol specifies. Consequential scientific changes and inference
-release require explicit review; routine reversible implementation within an
-authorized phase does not need repeated confirmation.
+inspect outputs, and write phase reports plus progress updates. The user has
+explicitly authorized Stage 2. Its candidate preparation policy and results
+must be reviewed at the Stage 2 checkpoint before starting Stage 3. Consequential
+scientific changes and inference release require explicit review; routine
+reversible implementation within an authorized phase needs no repeated confirmation.
 
 After three unsuccessful fixes for the same failing check, record the evidence
 and request the missing decision rather than blindly retrying. Distinguish a
