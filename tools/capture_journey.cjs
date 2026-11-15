@@ -6,11 +6,15 @@ const path = require('node:path');
   const context = await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:1,recordVideo:{dir:'../journey-video',size:{width:390,height:844}}});
   const page = await context.newPage();
   await page.goto('http://127.0.0.1:4173/');
-  await page.locator('.scroll-journey').waitFor({state:'attached',timeout:15000});
+  await page.locator('.section-actor').first().waitFor({state:'attached',timeout:15000});
   await page.addStyleTag({content:'html { scroll-behavior:auto !important }'});
-  for (const [selector,delay] of [['.region-visual',220],['.window-visual',30],['.receipt-visual',30]]) {
-    await page.evaluate(({selector,delay}) => {const el=document.querySelector(selector);scrollTo({top:el.getBoundingClientRect().top+scrollY-innerHeight*.58+delay,behavior:'instant'});},{selector,delay});
-    await page.waitForTimeout(1550);
+  for (const scene of ['plant','umbrella','wave']) {
+    const top=await page.locator(`[data-scene="${scene}"]`).evaluate(el=>el.getBoundingClientRect().top+scrollY);
+    for(let step=0;step<=40;step++){
+      await page.evaluate(y=>scrollTo({top:y,behavior:'instant'}),top-700+step*11);
+      await page.waitForTimeout(35);
+    }
+    await page.waitForTimeout(700);
   }
   const video=page.video();
   await context.close();

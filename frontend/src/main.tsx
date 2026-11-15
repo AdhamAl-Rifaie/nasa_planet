@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ScrollJourney } from "./ScrollJourney";
+import { ScrollJourney } from "./SectionActors";
 import { GeoBackdrop, mapExtent } from "./GeoBackdrop";
 import { createRoot } from "react-dom/client";
 import {

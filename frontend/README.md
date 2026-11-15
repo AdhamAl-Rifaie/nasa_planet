@@ -5,8 +5,10 @@ remains at `/app/`; the backend root serves the React build at `/product/`.
 
 The landing hero, three story chapters, and investigation console share an
 astrobotany observatory art direction. The character in the chapters is a
-canvas sprite. Page scroll controls its travel between chapter anchors; a
-separate animation clock advances the plant, umbrella, and wave frames. The
+small articulated SVG researcher in a fixed stage inside each section.
+Scroll advances a short local walk and the plant, umbrella, or wave action.
+Joint transforms are interpolated per animation frame, replacing the old
+four-frame sprites. No character travels between sections. The
 hero image is decorative. All headings, methods, numbers, and results are
 React elements. On a phone, a right swipe on the hero opens the investigation,
 and the investigation has a fixed four-stage navigator.
