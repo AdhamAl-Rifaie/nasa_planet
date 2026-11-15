@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { ScrollJourney } from "./ScrollJourney";
 import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
@@ -123,9 +124,9 @@ function SceneHeader({
           setPage("home");
           scrollTo({ top: 0, behavior: "smooth" });
         }}
-        aria-label="Trend Detective home"
+        aria-label="AstraVerd home"
       >
-        <span className="logo-mark">✦</span> TREND DETECTIVE
+        <span className="logo-mark">✦</span> ASTRAVERD
       </button>
       <nav className={menu ? "open" : ""} aria-label="Main navigation">
         <button
@@ -200,107 +201,9 @@ function SceneHeader({
   );
 }
 
-function ScrollCompanion() {
-  const ref = useRef<HTMLCanvasElement>(null);
-  useEffect(() => {
-    const canvas = ref.current,
-      ctx = canvas?.getContext("2d");
-    if (!canvas || !ctx) return;
-    const reduce = matchMedia("(prefers-reduced-motion: reduce)");
-    const frames = ["astrobotanist-walk-a.png", "astrobotanist-walk-b.png"].map(
-      (name) => {
-        const image = new Image();
-        image.src = `${import.meta.env.BASE_URL}${name}`;
-        image.decode().catch(() => {});
-        return image;
-      },
-    );
-    let frameId = 0,
-      target = 0,
-      progress = 0,
-      last = 0,
-      width = 0,
-      height = 0;
-    const resize = () => {
-      width = innerWidth;
-      height = innerHeight;
-      const dpr = Math.min(devicePixelRatio || 1, 2);
-      canvas.width = Math.round(width * dpr);
-      canvas.height = Math.round(height * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.imageSmoothingEnabled = false;
-    };
-    const sample = () => {
-      const first = document.getElementById("story"),
-        lastSection = document.getElementById("sources");
-      if (!first || !lastSection) return;
-      const from = first.offsetTop - height * 0.5,
-        to = lastSection.offsetTop + lastSection.offsetHeight - height * 0.5;
-      target = Math.max(
-        0,
-        Math.min(1, (scrollY - from) / Math.max(1, to - from)),
-      );
-    };
-    const draw = (now: number) => {
-      frameId = 0;
-      if (document.hidden || reduce.matches) return;
-      frameId = requestAnimationFrame(draw);
-      const dt = last ? Math.min(100, now - last) : 16;
-      last = now;
-      progress += (target - progress) * (1 - Math.exp(-dt / 150));
-      ctx.clearRect(0, 0, width, height);
-      const start = document.getElementById("story")?.offsetTop || 0,
-        end = document.getElementById("sources");
-      if (
-        scrollY < start - height * 0.65 ||
-        !end ||
-        scrollY > end.offsetTop + end.offsetHeight - height * 0.35
-      )
-        return;
-      const image = frames[Math.floor(now / 360) % 2];
-      if (!image.complete || !image.naturalWidth) return;
-      const h = width < 650 ? 76 : 105,
-        w = (h * image.naturalWidth) / image.naturalHeight;
-      const x = width < 650 ? width - w - 6 : width - w - 20 - progress * 45;
-      const y =
-        height *
-          (width < 650 ? 0.72 - progress * 0.25 : 0.76 - progress * 0.34) -
-        h;
-      ctx.globalAlpha = 0.88;
-      ctx.drawImage(image, x, y, w, h);
-      ctx.globalAlpha = 1;
-    };
-    const resume = () => {
-      last = 0;
-      if (!document.hidden && !reduce.matches && !frameId)
-        frameId = requestAnimationFrame(draw);
-    };
-    const visibility = () => {
-      if (document.hidden) {
-        cancelAnimationFrame(frameId);
-        frameId = 0;
-      } else resume();
-    };
-    resize();
-    sample();
-    resume();
-    addEventListener("resize", resize, { passive: true });
-    addEventListener("scroll", sample, { passive: true });
-    document.addEventListener("visibilitychange", visibility);
-    reduce.addEventListener("change", visibility);
-    return () => {
-      cancelAnimationFrame(frameId);
-      removeEventListener("resize", resize);
-      removeEventListener("scroll", sample);
-      document.removeEventListener("visibilitychange", visibility);
-      reduce.removeEventListener("change", visibility);
-    };
-  }, []);
-  return <canvas ref={ref} className="scroll-companion" aria-hidden="true" />;
-}
-
 function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
   const dragStart = useRef<number | null>(null);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [dragProgress, setDragProgress] = useState(0);
   const finishDrag = (clientX: number) => {
     if (dragStart.current !== null && clientX - dragStart.current > 85) onLaunch();
@@ -309,8 +212,17 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
   };
   return (
     <main className="landing">
-      <ScrollCompanion />
-      <section className="hero" aria-labelledby="hero-title">
+      <ScrollJourney />
+
+      <section className="hero" aria-labelledby="hero-title"
+        onTouchStart={(event) => { touchStart.current = { x: event.touches[0].clientX, y: event.touches[0].clientY }; }}
+        onTouchEnd={(event) => {
+          if (!touchStart.current) return;
+          const dx = event.changedTouches[0].clientX - touchStart.current.x;
+          const dy = event.changedTouches[0].clientY - touchStart.current.y;
+          if (dx > 95 && Math.abs(dy) < 65) onLaunch();
+          touchStart.current = null;
+        }}>
         <div
           className="hero-art"
           role="img"
@@ -367,7 +279,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           <span className="rail-icon"><ArrowRight size={19} /></span>
           <span className="rail-copy">
             <strong>{lang === "en" ? "INVESTIGATE" : "ابدأ التحقيق"}</strong>
-            <small>{lang === "en" ? "DRAG RIGHT OR TAP" : "اسحب لليمين أو اضغط"}</small>
+            <small>{lang === "en" ? "SWIPE RIGHT ANYWHERE" : "اسحب يمين الشاشة"}</small>
           </span>
         </button>
         <a className="scroll-hint" href="#story">
@@ -380,6 +292,18 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
             : "مشهد مرسوم وليس بيانات مقاسة"}
         </span>
       </section>
+      <section className="science-band" aria-labelledby="science-band-title">
+        <div>
+          <span className="eyebrow">{lang === "en" ? "THE MISSION" : "المهمة"}</span>
+          <h2 id="science-band-title">{lang === "en" ? "From Earth data to a claim you can defend." : "من بيانات الأرض إلى استنتاج يمكن الدفاع عنه."}</h2>
+          <p>{lang === "en" ? "Choose a place and a NASA variable. AstraVerd tests the trend, shows how the answer changes with time and location, and keeps the evidence attached." : "اختر مكانًا ومتغيرًا من NASA. تختبر AstraVerd الاتجاه، وتكشف أثر اختيار الزمن والمكان، وتربط النتيجة بدليلها."}</p>
+        </div>
+        <div className="science-flow">
+          <div><Satellite size={22}/><strong>{lang === "en" ? "Observe" : "ارصد"}</strong><span>MERRA-2 · GPM · GLDAS · MODIS</span></div>
+          <div><Layers3 size={22}/><strong>{lang === "en" ? "Test" : "اختبر"}</strong><span>{lang === "en" ? "Monthly series · slope · significance" : "قيم شهرية · ميل · دلالة"}</span></div>
+          <div><ShieldCheck size={22}/><strong>{lang === "en" ? "Verify" : "تحقق"}</strong><span>{lang === "en" ? "Methods · limits · evidence receipt" : "الطريقة · القيود · إيصال الدليل"}</span></div>
+        </div>
+      </section>
       <section id="story" className="story-section average">
         <div className="story-text">
           <div className="eyebrow">
@@ -387,13 +311,13 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           </div>
           <h2>
             {lang === "en"
-              ? "WHAT THE AVERAGE HIDES"
-              : "ما الذي يخفيه المتوسط؟"}
+              ? "WHERE DOES IT CHANGE?"
+              : "أين يحدث التغير؟"}
           </h2>
           <p>
             {lang === "en"
-              ? "The same variable can move in opposite directions across places. Explore the map before trusting a single regional headline."
-              : "قد يتحرك المتغير نفسه في اتجاهين مختلفين بين المناطق. افحص الخريطة قبل أن تثق في عنوان واحد."}
+              ? "Our explorer starts with a real place, not a headline. Select an area and compare its NASA observations with nearby regions; one average can hide opposite local trends."
+              : "يبدأ المستكشف بمكان حقيقي، لا بعنوان جاهز. اختر منطقة وقارن رصد NASA فيها بالمناطق المجاورة؛ قد يخفي المتوسط اتجاهات محلية متعاكسة."}
           </p>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Compare regions" : "قارن المناطق"}{" "}
@@ -401,27 +325,9 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           </button>
         </div>
         <div className="story-visual region-visual">
-          <div className="pixel-planet">
-            <div className="green-zone" />
-            <div className="amber-zone" />
-            <svg
-              viewBox="0 0 600 240"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M10 184 C110 166 140 150 210 126 S322 83 400 75"
-                stroke="#b6f571"
-              />
-              <path
-                d="M205 125 C290 134 348 155 420 177 S535 196 590 213"
-                stroke="#f6ae78"
-              />
-            </svg>
-          </div>
           <div className="visual-foot">
-            <span>↗ {lang === "en" ? "REGION A" : "المنطقة أ"}</span>
-            <span>↘ {lang === "en" ? "REGION B" : "المنطقة ب"}</span>
+            <span>{lang === "en" ? "ARRIVE / SELECT A PLACE" : "الوصول / اختيار المكان"}</span>
+            <span>{lang === "en" ? "PLANT ONE QUESTION" : "ازرع سؤالًا"}</span>
           </div>
           <span className="concept-note">
             {lang === "en" ? "CONCEPTUAL ILLUSTRATION" : "رسم توضيحي"}
@@ -467,11 +373,11 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
         </div>
         <div className="story-text">
           <div className="eyebrow">02 / {lang === "en" ? "TIME" : "الزمن"}</div>
-          <h2>{lang === "en" ? "CHANGE THE WINDOW" : "غيّر نافذة الزمن"}</h2>
+          <h2>{lang === "en" ? "WILL THE TREND HOLD?" : "هل يصمد الاتجاه؟"}</h2>
           <p>
             {lang === "en"
-              ? "Move the start and end dates. Spin It reveals when a striking trend depends on a narrow slice of time."
-              : "غيّر تاريخ البداية والنهاية. تكشف Spin It متى يعتمد الاتجاه الظاهر على جزء ضيق من الزمن."}
+              ? "Rain changes by the hour; an Earth-system trend needs years. Change the start and end dates to see whether your conclusion survives a different window."
+              : "المطر يتغير كل ساعة؛ اتجاه نظام الأرض يحتاج سنوات. غيّر بداية الفترة ونهايتها لتعرف هل يصمد الاستنتاج أم يعتمد على نافذة مختارة."}
           </p>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Test a time window" : "اختبر فترة زمنية"}{" "}
@@ -484,11 +390,11 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           <div className="eyebrow">
             03 / {lang === "en" ? "PROOF" : "الدليل"}
           </div>
-          <h2>{lang === "en" ? "FOLLOW THE EVIDENCE" : "اتبع الدليل"}</h2>
+          <h2>{lang === "en" ? "SHOW YOUR EVIDENCE" : "أظهر الدليل"}</h2>
           <p>
             {lang === "en"
-              ? "Every result carries its source, method, uncertainty, coverage and limitations. Keep the complete picture with the claim."
-              : "كل نتيجة مرتبطة بمصدرها وطريقتها وعدم اليقين والتغطية والقيود. احتفظ بالصورة الكاملة مع الاستنتاج."}
+              ? "The answer is more than a number. Inspect the source, trend method, confidence interval, valid coverage and limitations; then carry them with the claim."
+              : "الإجابة أكثر من رقم. افحص المصدر وطريقة الاتجاه ومجال الثقة والتغطية الصالحة والقيود، ثم احتفظ بها مع الاستنتاج."}
           </p>
           <button onClick={onLaunch} className="text-link">
             {lang === "en" ? "Open the evidence lab" : "افتح معمل الدليل"}{" "}
@@ -532,7 +438,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
         </button>
       </div>
       <footer>
-        <span>TREND DETECTIVE</span>
+        <span>ASTRAVERD</span>
         <span>
           {lang === "en"
             ? "Independent Space Apps project. NASA products are credited with every analysis."
@@ -869,9 +775,9 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
         <div className="sidebar-brand">
           <span className="logo-mark">✦</span>
           <div>
-            TREND
+            ASTRA
             <br />
-            DETECTIVE
+            VERD
           </div>
         </div>
         <div className="sidebar-nav">
@@ -894,7 +800,7 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
         <div className="workspace-top">
           <div>
             <div className="breadcrumb">
-              TREND DETECTIVE <span>/</span>{" "}
+              ASTRAVERD <span>/</span>{" "}
               {lang === "en" ? "EXPLORER" : "المستكشف"}
             </div>
             <h1>
@@ -1459,3 +1365,4 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </React.StrictMode>,
 );
+

@@ -526,6 +526,99 @@ select:focus-visible,
   color: #93a9c2;
   border-top: 1px solid #53698855;
 }
+.landing { position:relative; }
+.scroll-journey {
+  position:absolute;
+  z-index:6;
+  top:0;
+  left:0;
+  width:230px;
+  height:320px;
+  opacity:0;
+  pointer-events:none;
+  will-change:transform;
+  transition:opacity .25s ease;
+}
+.journey-sprite {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  opacity:0;
+  filter:drop-shadow(0 16px 16px #02081780);
+  transition:none;
+}
+.journey-sprite.visible { opacity:1; }
+.journey-canvas {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  filter:drop-shadow(0 14px 14px #02081780);
+}
+.scroll-journey[data-pose="idle"] .journey-canvas { animation:journey-breathe 2.8s ease-in-out infinite alternate; }
+.scroll-journey[data-pose="umbrella"] .journey-canvas { animation:journey-umbrella 3.4s ease-in-out infinite alternate; }
+.scroll-journey[data-pose="idle"] .journey-sprite.visible { animation:journey-breathe 2.8s ease-in-out infinite alternate; }
+.scroll-journey[data-pose="plant"] .journey-sprite.visible { animation:journey-plant 2.6s ease-in-out infinite alternate; }
+.scroll-journey[data-pose="umbrella"] .journey-sprite.visible { animation:journey-umbrella 3.4s ease-in-out infinite alternate; }
+.scroll-journey[data-pose="wave"] .journey-sprite.visible { animation:journey-wave 1.5s ease-in-out infinite alternate; }
+.journey-shuttle {
+  position:absolute;
+  z-index:-1;
+  left:-75px;
+  bottom:-5px;
+  width:106px;
+  height:100px;
+  opacity:0;
+  filter:drop-shadow(0 8px 10px #0009);
+}
+.journey-shuttle svg { width:100%; height:100%; }
+.scroll-journey[data-pose="idle"] .journey-shuttle { opacity:1; animation:shuttle-arrive 2s ease-out both; }
+.journey-rain {
+  position:absolute;
+  z-index:3;
+  inset:-30px -35px;
+  opacity:0;
+  background:repeating-linear-gradient(110deg,transparent 0 24px,#a3d7ed6d 25px 26px,transparent 27px 40px);
+  mask-image:linear-gradient(transparent,#000 18% 88%,transparent);
+  pointer-events:none;
+}
+.scroll-journey[data-pose="umbrella"] .journey-rain { opacity:.52; animation:journey-rain .65s linear infinite; }
+.journey-earth {
+  position:absolute;
+  z-index:-1;
+  width:270px;
+  height:135px;
+  left:-20px;
+  bottom:-19px;
+  border-radius:50% 50% 0 0;
+  background:radial-gradient(ellipse at 50% 0,#60b59b,#205f81 46%,#0d315d 78%);
+  box-shadow:0 -6px 22px #63c6e891;
+  opacity:0;
+}
+.scroll-journey[data-pose="wave"] .journey-earth { opacity:1; }
+@keyframes journey-breathe { from {transform:translateY(0)} to {transform:translateY(-4px)} }
+@keyframes journey-plant { from {transform:translateY(0) rotate(-.5deg)} to {transform:translateY(2px) rotate(.5deg)} }
+@keyframes journey-umbrella { from {transform:rotate(-1deg)} to {transform:rotate(1deg)} }
+@keyframes journey-wave { from {transform:rotate(-2deg) translateY(0)} to {transform:rotate(2deg) translateY(-4px)} }
+@keyframes shuttle-arrive { from {transform:translateY(-110px);opacity:0} to {transform:translateY(0);opacity:1} }
+@keyframes journey-rain { from {background-position:0 -45px} to {background-position:-22px 58px} }
+.region-visual { background:radial-gradient(circle at 55% 75%,#164b5b,#08152d 72%); }
+.region-visual::before { display:block; background:radial-gradient(ellipse at 50% 135%,#325b79 0 44%,transparent 45%),linear-gradient(#102a47,#07152d); }
+.window-visual { background:linear-gradient(155deg,#0d304a,#071428); }
+.window-visual svg { display:block; opacity:.62; }
+.receipt-visual { background:radial-gradient(ellipse at 60% 115%,#195775,#07172d 66%); }
+@media (max-width:620px) {
+  .scroll-journey { width:150px; height:220px; }
+  .journey-shuttle { left:-43px; width:70px; }
+  .journey-earth { width:175px; height:92px; left:-10px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .journey-sprite.visible,.journey-canvas,.journey-shuttle,.journey-rain { animation:none !important; }
+  .journey-rain { display:none; }
+}
 .workspace {
   background: #081224;
   min-height: 100vh;
@@ -1719,13 +1812,7 @@ select:focus-visible,
   box-shadow: 0 25px 80px #0009, inset 0 0 0 5px #80ddd40c;
 }
 .story-visual::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('/story-scenes-v2.png');
-  background-repeat: no-repeat;
-  background-size: auto 300%;
-  background-position: 50% 0%;
+  display:none;
 }
 .story-visual::after {
   content: "";
@@ -1736,8 +1823,7 @@ select:focus-visible,
 }
 .region-visual .pixel-planet,
 .window-visual svg { display: none; }
-.window-visual::before { background-position: 50% 50%; }
-.receipt-visual::before { background-position: 50% 100%; }
+.window-visual::before,.receipt-visual::before { display:none; }
 .window-visual { justify-content: space-between; }
 .monitor-head,
 .window-labels,
@@ -1763,6 +1849,87 @@ select:focus-visible,
 .receipt-row { height: 52px; }
 .receipt-dashes { width: 24%; }
 .concept-note { z-index: 4; }
+.story-actor { position:absolute; inset:0; z-index:1; overflow:hidden; }
+.story-actor svg { display:block; width:100%; height:100%; }
+.story-actor svg { transition: transform .12s linear; transform:translateY(calc(var(--journey, 0) * -12px)); }
+.actor-body { transform-origin:352px 365px; }
+.actor-shuttle { transform-origin:90px 320px; }
+.actor-seedling { transform-origin:450px 360px; }
+.actor-umbrella { transform-origin:339px 310px; }
+.actor-wave-hand { transform-origin:407px 220px; }
+.actor-rain { opacity:0; }
+.actor-lightning { opacity:0; }
+.actor-plant.active .actor-shuttle { animation:shuttle-land 1.7s cubic-bezier(.18,.73,.31,1) both; }
+.actor-plant.active .actor-body { animation:field-approach 1.5s ease-out both; }
+.actor-plant.active .actor-seedling { animation:seedling-rise 1.4s 1.15s cubic-bezier(.16,.8,.2,1) both; }
+.actor-storm.active .actor-body { animation:storm-stand 2.8s ease-in-out infinite alternate; }
+.actor-storm.active .actor-umbrella { animation:umbrella-open .9s .15s ease-out both, umbrella-sway 3.4s 1.05s ease-in-out infinite alternate; }
+.actor-storm.active .actor-rain { animation:rainfall .85s linear infinite; }
+.actor-storm.active .actor-lightning { animation:lightning 7s linear infinite; }
+.actor-wave.active .actor-body { animation:orbit-float 3.4s ease-in-out infinite alternate; }
+.actor-wave.active .actor-wave-hand { animation:wave-hello 1.15s 1s ease-in-out 5 alternate; }
+@keyframes shuttle-land { from { transform:translateY(-120px); opacity:0; } 70% {opacity:1} to {transform:translateY(0);opacity:1} }
+@keyframes field-approach { from {transform:translateX(90px); opacity:0} to {transform:translateX(0);opacity:1} }
+@keyframes seedling-rise { from {transform:scale(.05);opacity:0} to {transform:scale(1);opacity:1} }
+@keyframes storm-stand { from {transform:rotate(-.7deg)} to {transform:rotate(.7deg)} }
+@keyframes umbrella-open { from {transform:translateY(50px) scale(.28);opacity:0} to {transform:translateY(0) scale(1);opacity:1} }
+@keyframes umbrella-sway { from {transform:rotate(-2deg)} to {transform:rotate(2deg)} }
+@keyframes rainfall { from {transform:translate(0,-30px);opacity:0} 20% {opacity:.85} to {transform:translate(-25px,360px);opacity:0} }
+@keyframes lightning { 0%,12%,14%,16%,100% {opacity:0} 13%,15% {opacity:.9} }
+@keyframes orbit-float { from {transform:translateY(0)} to {transform:translateY(-6px)} }
+@keyframes wave-hello { from {transform:rotate(-8deg)} to {transform:rotate(13deg)} }
+@media (prefers-reduced-motion: reduce) {
+  .actor-shuttle,.actor-body,.actor-seedling,.actor-umbrella,.actor-wave-hand { animation:none !important; opacity:1 !important; }
+  .actor-rain,.actor-lightning { display:none; }
+}
+.science-band {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);
+  gap:clamp(30px,5vw,85px);
+  align-items:center;
+  padding:clamp(70px,7vw,110px) clamp(28px,7vw,130px);
+  background:#e9eee9;
+  color:#102936;
+}
+.science-band .eyebrow { color:#287b6c; }
+.science-band h2 { font:600 clamp(32px,3.6vw,55px)/1.08 'Space Grotesk',sans-serif; letter-spacing:-.055em; margin:16px 0; max-width:620px; }
+.science-band p { color:#3a5761; line-height:1.65; max-width:630px; font-size:clamp(16px,1.35vw,20px); }
+.science-flow { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.science-flow div { min-height:190px; display:flex; flex-direction:column; gap:14px; padding:24px 17px; background:#f8faf5; border-top:3px solid #75bc9d; box-shadow:0 14px 30px #153a3c13; }
+.science-flow svg { color:#2d7e72; }
+.science-flow strong { font-size:23px; letter-spacing:-.04em; }
+.science-flow span { font-size:12px; line-height:1.5; color:#537078; }
+.story-section { background:#07172b; }
+.story-section::after { opacity:.08; }
+.story-visual { border-radius:12px; }
+.story-visual::after { background:linear-gradient(180deg,#06112600 35%,#041123c9); }
+.story-visual .concept-note { background:#061726df; }
+.receipt-visual .receipt-head,.receipt-visual .receipt-row { max-width:62%; margin-left:auto; }
+.receipt-visual .receipt-head { font-size:16px; }
+.receipt-visual .receipt-row { width:62%; }
+.workspace-top h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(32px,3vw,48px); }
+.workspace-top p { font-size:15px; }
+.mission-strip { border-radius:14px; background:linear-gradient(95deg,#10323fef,#092339e9); }
+.control-rail,.evidence-rail,.panel-title,.series-panel,.map-panel,.map-legend { border-radius:13px; }
+.control-rail,.evidence-rail { padding:26px; }
+.panel-title { padding:24px; }
+.region-options button,.variable-options button { border-radius:8px; }
+.run-button,.receipt-button,.compare-button { border-radius:8px; }
+.big-number span { letter-spacing:-.055em; }
+.series-chart { max-height:280px; }
+@media (max-width:900px) {
+  .science-band { grid-template-columns:1fr; }
+}
+@media (max-width:620px) {
+  .science-band { padding:60px 20px; }
+  .science-flow { grid-template-columns:1fr; }
+  .science-flow div { min-height:105px; display:grid; grid-template-columns:30px 1fr; align-content:center; column-gap:14px; padding:16px; }
+  .science-flow strong { font-size:21px; }
+  .science-flow span { grid-column:2; }
+  .receipt-visual .receipt-head,.receipt-visual .receipt-row { max-width:none; width:100%; }
+  .receipt-visual .receipt-head { font-size:14px; }
+  .control-rail,.evidence-rail { padding:20px; }
+}
 
 /* Investigation workspace: a scientific console inside the same observatory. */
 .workspace {
@@ -1908,3 +2075,12 @@ select:focus-visible,
   .map-grid-note strong { font-size:12px; }
   .map-coordinate { left:12px; font-size:8px; }
 }
+.story-visual.region-visual::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  display:block;
+  background:linear-gradient(180deg,#05122420,#05122445),url('/mission-control-bg.png') center / cover no-repeat;
+}
+.story-visual.window-visual svg { display:block; opacity:.6; }

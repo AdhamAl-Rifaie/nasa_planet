@@ -21,4 +21,4 @@ const server = http.createServer((request, response) => {
     response.end(body);
   });
 });
-server.listen(4173, '127.0.0.1', () => console.log('Trend Detective offline demo: http://127.0.0.1:4173/'));
+server.listen(4173, '127.0.0.1', () => console.log('AstraVerd offline demo: http://127.0.0.1:4173/'));

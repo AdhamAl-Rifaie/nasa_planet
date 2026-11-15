@@ -1,14 +1,18 @@
-# Trend Detective React product
+# AstraVerd React product
 
 This is the new landing page and analysis workspace. The previous static UI
 remains at `/app/`; the backend root serves the React build at `/product/`.
 
-The landing hero, three illustrated story chapters, and investigation console
-share an astrobotany observatory art direction. The chapter illustration and
-console background live in `public/story-scenes-v2.png` and
-`public/mission-control-bg.png`. All headings, navigation, methods, numbers,
-and results are React elements rather than text embedded in those images.
-On a phone, the investigation has a fixed four-stage navigator.
+The landing hero, three story chapters, and investigation console share an
+astrobotany observatory art direction. The character in the chapters is a
+canvas sprite. Page scroll controls its travel between chapter anchors; a
+separate animation clock advances the plant, umbrella, and wave frames. The
+hero image is decorative. All headings, methods, numbers, and results are
+React elements. On a phone, a right swipe on the hero opens the investigation,
+and the investigation has a fixed four-stage navigator.
+
+The name AstraVerd is a provisional design name. The NASA data and analysis
+retain their existing scientific labels and provenance.
 
 ## Develop
 
@@ -42,7 +46,7 @@ labels offline results as precomputed and does not invent missing analyses.
 
 ## Scientific boundaries
 
-The hero art and landing illustrations are conceptual. Analysis numbers,
+The hero art, character, and landing illustrations are conceptual. Analysis numbers,
 series, sensitivity windows, spatial significance and explanations come from
 the existing API or its frozen offline snapshot. The spatial layer is the
 full-period reference product, even when an analysis uses another time window.
