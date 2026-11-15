@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import {ReferenceActors} from './ReferenceActors';
 import { GeoBackdrop, mapExtent } from "./GeoBackdrop";
 import { createRoot } from "react-dom/client";
 import {
@@ -213,6 +214,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
   };
   return (
     <main className="landing">
+      <ReferenceActors/>
 
       <section className="hero" aria-labelledby="hero-title"
         onTouchStart={(event) => { touchStart.current = { x: event.touches[0].clientX, y: event.touches[0].clientY }; }}

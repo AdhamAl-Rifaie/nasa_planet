@@ -1,4 +1,11 @@
 /* Shared product surfaces: observatory blue, vegetation green, paper evidence. */
+.reference-actor{position:absolute;width:135px;height:180px;pointer-events:none;z-index:5}
+.reference-actor.gardener{bottom:8px;left:39%}
+.landing section#story{padding-bottom:170px!important}
+.landing .story-visual.window-visual{overflow:visible;margin-top:100px}
+.reference-actor.seated{right:25px;top:-102px;width:75px;height:200px}
+.landing .window-visual .monitor-head{padding-right:145px}
+@media(max-width:760px){.reference-actor.gardener{left:calc(50% - 60px);width:120px;height:160px}.landing section#story{padding-bottom:175px!important}.reference-actor.seated{right:12px}.landing .window-visual .monitor-head{padding-right:130px;font-size:10px}}
 .landing section.story-section{padding-bottom:80px!important;min-height:640px!important}
 @media(max-width:760px){.landing section.story-section{padding-bottom:55px!important;min-height:0!important}}
 .landing .section-actor{position:absolute;left:36%;bottom:12px;width:210px;height:162px;pointer-events:none;z-index:3;contain:layout paint}
