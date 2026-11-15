@@ -4,6 +4,7 @@ const { chromium } = require('C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRu
   const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true });
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('http://127.0.0.1:4173/');
+  await page.waitForLoadState('networkidle');
   await page.screenshot({ path: '../product_mobile_navigation.png' });
   await page.screenshot({ path: '../product_mobile_landing_full_v2.png', fullPage: true });
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw Error('mobile horizontal overflow');
