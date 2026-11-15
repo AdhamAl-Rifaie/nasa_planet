@@ -1,9 +1,9 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 (Phase 3 checkpoint complete)
-Current phase: PHASE 3
-Current status: DONE_WAITING_APPROVAL
+Last updated: 2026-11-15 (Phase 4 research checkpoint; calibration failed)
+Current phase: PHASE 4
+Current status: DONE_WAITING_APPROVAL (research checkpoint; scientific acceptance not met)
 
-Current plan: [PLAN.md](PLAN.md), revision 2.4. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.5. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
@@ -11,13 +11,23 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 | 0 Input/plan alignment | DONE | 5/5 revised acceptance checks | [Replan report](phase_reports/PHASE_0_REPLAN_REPORT.md) | Current implementation request covered first input work |
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
 | 2 Time series and QA | DONE | Original implementation complete; 51 tests passed before Phase 3 | [Latest checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md), [approval](phase_reports/PHASE_2_APPROVAL.md) | User explicitly approved advancement; default unchanged |
-| 3 Trend estimation | DONE_WAITING_APPROVAL | 5/5 acceptance checks; 72 tests pass; 210 reference comparisons pass | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md) | Stop for review; Phase 4 not authorized |
-| 4 Significance | NOT_STARTED | 0/7 | ? | No |
+| 3 Trend estimation | DONE | 5/5 acceptance checks; 72 tests passed; 210 reference comparisons passed | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md), [approval](phase_reports/PHASE_3_APPROVAL.md) | User authorized Phase 4 |
+| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 85 software tests pass; null/coverage gates FAIL | [Phase 4 checkpoint](phase_reports/PHASE_4_REPORT.md) | Candidate rejected for release; further Phase 4 research needed; no Phase 5 authorization |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
 | 6 Integration | NOT_STARTED | 0/7 | ? | No |
 | 7 Final review | NOT_STARTED | 0/6 | ? | No |
 
 ## Verified completed work
+- Phase 4 research: 48 scenarios and 24,000 paired scenario-record evaluations;
+  7,000 distinct input series from 5,500 independent noise trajectories. Includes
+  nulls, known trends, seasonal annualization and block/record-length sensitivity.
+- 85 software tests pass (13 new inference tests); BH/BY adjusted-p calculations
+  match SciPy within 3.34e-16. FDR experiments use separate valid synthetic p-values.
+- Scientific calibration FAILED: four-year blocks on 24 annual observations
+  yield null false-positive rates 18.6%/25.0%/34.0% and nominal-95% coverage
+  82.4%/74.0%/65.8% for AR coefficients 0/.4/.7. No method release approved.
+- Preserved 98 earlier preparation/trend/approval files by SHA-256. The Phase 4
+  notebook is executed; all earlier notebooks and source artifacts are unchanged.
 - Phase 3 exact descriptive Theil-Sen kernel, explicit elapsed-year coordinates,
   shared scalar/grid guards and missing-pair preservation are implemented.
 - Twelve strict cases, separate Sahel Standard 100% and experimental Standard 95%
@@ -75,6 +85,23 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- User instructed "go to step 4"; authorization is recorded in
+  [PHASE_3_APPROVAL.md](phase_reports/PHASE_3_APPROVAL.md). The previous stop at
+  Phase 3 is superseded for inference research. No method release is assumed.
+- [PR #1](https://github.com/AdhamAl-Rifaie/nasa_planet/pull/1) is open on the
+  user's public fork, targeting its main branch, with the inference research.
+- Review [PHASE_4_REPORT.md](phase_reports/PHASE_4_REPORT.md),
+  [study evidence](phase_reports/PHASE_4_STUDY.json),
+  [validation](phase_reports/PHASE_4_VALIDATION.json), and
+  [decision](phase_reports/PHASE_4_DECISION.json). Reject this candidate for
+  release; retain descriptive Phase 3 outputs and continue Phase 4 research.
+- Real multiplicity, real-cell inference, all significance overlays and readiness
+  promotions remain withheld. Standard 95% has no inference output and its
+  incomplete cell-years are unchanged. Default preparation policy is unchanged.
+- Do not advance to Phase 5 or interpret small candidate p-values as evidence.
+  Software/reference agreement does not override failed null/coverage calibration.
+
+### Historical checkpoints (earlier advancement gates superseded above)
 - User approval of Stage 2 and Phase 3 authorization are recorded in
   [PHASE_2_APPROVAL.md](phase_reports/PHASE_2_APPROVAL.md). Earlier pending-review
   entries below are historical; this instruction supersedes the advancement gate.

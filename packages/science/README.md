@@ -4,8 +4,15 @@ New to weather data? Start with [Stage 2 explained](STAGE_2_EXPLAINED.md),
 the plain-language guide to variables, units, preparation, output fields,
 coverage percentages, figures and actual examples.
 
-Work branch: `codex/ml-statistics`, based on `origin/main` at
+Public work: [PR #1 on AdhamAl-Rifaie's fork](https://github.com/AdhamAl-Rifaie/nasa_planet/pull/1),
+branch `codex/ml-statistics`, originally based on upstream main at
 `ecf39088744c7ea01ae7d30d92e5ce6b91d24f6d`.
+
+**Latest checkpoint: [Phase 4 inference research](phase_reports/PHASE_4_REPORT.md).
+The tested bootstrap candidate FAILED calibration and is rejected for release.**
+85 software tests pass, but that does not establish scientific error control.
+Descriptive Phase 3 outputs remain available; no inference or significance maps
+are released. Phase 5 has not started.
 
 Read the revised `ML_STATISTICS_AGENT.md`, [PLAN.md](PLAN.md), this directory's
 `PROGRESS.md`, and its latest phase report at the start of a statistics session.
@@ -13,10 +20,12 @@ The repository-root `AGENT_BRIEF.md` and `PROGRESS.md` belong to Role 04 (RAG).
 The statistics brief and plan were revised under the user's 15 November request
 to use the actual data. The original brief/report remain in Git history.
 
-Phases 1 and 2 have passed their implementation checks. Stage 2 prepares all
-twelve variable-region pairs; its candidate QA/support policy awaits owner
-review. Existing inference code on another branch still needs review/repairs;
-backend schema sign-off is deferred to the integration phase.
+Phases 1-3 passed their implementation checks. Stage 2 prepares all twelve
+variable-region pairs, with approval to advance recorded separately from its
+unchanged policy bytes. Phase 3 implements validated descriptive regional/cell
+slopes; its approval to begin Phase 4 is also recorded. Standard 95% remains
+experimental and retains missing/incomplete records. Backend schema sign-off
+and legacy inference review are separate later gates.
 
 Install the input/exploration dependencies in a repository-local environment:
 
@@ -29,8 +38,8 @@ py -m venv .venv
 .\.venv\Scripts\python.exe tools/probe_existing_statistics.py --output data/derived/existing-method-probes.json
 ```
 
-The combined input/preparation suite has **38 tests** (16 earlier input checks,
-21 original Stage 2 checks and a diagnostic-metadata regression). The current input audit passes all twelve field/unit
+The current suite has **85 tests**, including the earlier 72 preparation/trend
+checks and 13 inference-mechanics/reference checks. The current input audit passes all twelve field/unit
 contracts. The inherited-method probe intentionally still exits **1**
 for the two uncorrected regression cases in its pinned historical commit. It
 does not test a repaired engine. Neither audit/probe edits source measurements.
@@ -46,6 +55,10 @@ See [the plan-alignment report](phase_reports/PHASE_0_REPLAN_REPORT.md) and
 The [original Phase 0 report](phase_reports/PHASE_0_REPORT.md) remains historical.
 
 ## Stage 2 reproduction
+
+These preparation commands are for a fresh workspace. In an existing reviewed
+workspace, read the saved artifacts and use the later review/validation commands
+below, preserving the original files and their checkpoint hashes.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s packages/science/tests -v
@@ -71,11 +84,60 @@ Open [02_preprocessing.ipynb](notebooks/02_preprocessing.ipynb),
 [the Stage 2 report](phase_reports/PHASE_2_REPORT.md).
 Strict complete-period support retains only 14.69% of selected native-cell area
 for Sahel NDVI; the standard comparison retains 82.59% but admits marginal data.
-Owner review is pending; no slopes or inferential claims are produced here.
+Stage 2 approval is recorded in [PHASE_2_APPROVAL.md](phase_reports/PHASE_2_APPROVAL.md).
+Preparation itself produces no slopes or inferential claims.
 
 Output metadata revision `1.1` corrects inherited unit labels on masks,
 fractions and normalized weights. These are dimensionless `1`; only the native
 cell solid angle uses `sr`. Annual/anomaly descriptions are explicit. All
 numeric/coordinate arrays in the twelve default and three comparison files
 were verified unchanged by this label correction. The preparation policy and
-pending strict/standard decision remain unchanged.
+strict preparation default remain unchanged.
+
+## Phase 3 descriptive slopes
+
+[Checkpoint](phase_reports/PHASE_3_REPORT.md) and
+[executed notebook](notebooks/03_trend_validation.ipynb): exact Theil-Sen regional
+and cell slopes, explicit monthly/annual elapsed-year axes, known-trend and
+missing/short-series checks, 210 independent slope-only reference comparisons.
+Strict 100%, Standard 100% and experimental Standard 95% remain separate.
+The commands below rebuild the Phase 3 checkpoint in a fresh workspace. For
+the existing reviewed outputs, open the saved notebook/reports; rebuilding
+creates new provenance records that must become a new review baseline.
+
+```powershell
+.\.venv\Scripts\python.exe tools/run_science_trends.py
+.\.venv\Scripts\python.exe tools/run_science_trend_notebook.py
+```
+
+The historical Phase 3 test manifest records its 72-test checkpoint. Current
+tests are run with the full discovery command above; the Phase 4 validator also
+checks preservation of the historical artifacts without overwriting them.
+
+## Phase 4 research and non-release decision
+
+[Checkpoint](phase_reports/PHASE_4_REPORT.md),
+[study evidence](phase_reports/PHASE_4_STUDY.json),
+[validation](phase_reports/PHASE_4_VALIDATION.json),
+[executed notebook](notebooks/04_inference_validation.ipynb).
+
+```powershell
+.\.venv\Scripts\python.exe tools/run_science_inference_study.py
+.\.venv\Scripts\python.exe tools/validate_inference_study.py
+.\.venv\Scripts\python.exe tools/run_science_inference_notebook.py
+```
+
+The study takes about six minutes locally. It evaluates correlated nulls,
+known positive/negative slopes, seasonal annualization, block sensitivity,
+interval coverage, and BH/BY against SciPy on valid synthetic p-values.
+The 24,000 scenario-record evaluations reuse records across block comparisons;
+they are not 24,000 independent datasets or additional NASA observations.
+
+The four-year candidate's false-positive rates of 18.6-34.0% and interval
+coverage of 65.8-82.4% at 24 years fail its gates. BH/BY reference agreement
+does not repair invalid individual p-values. NASA candidate calculations are
+quarantined research diagnostics, never application evidence. Real multiplicity,
+real-cell inference and significance classifications remain withheld.
+
+Sources, default preparation and Phase 3 descriptive results remain unchanged.
+Continue Phase 4 method research before authorizing Phase 5.

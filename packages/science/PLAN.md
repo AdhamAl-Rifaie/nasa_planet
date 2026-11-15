@@ -1,12 +1,13 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.4, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.5, 15 November 2026. Working branch: `codex/ml-statistics`.
 
-Current checkpoint: Stage 2 approval is recorded in
-[PHASE_2_APPROVAL.md](phase_reports/PHASE_2_APPROVAL.md). Phase 3 descriptive
-estimation is implemented and validated; see
-[PHASE_3_REPORT.md](phase_reports/PHASE_3_REPORT.md). Status:
-**DONE_WAITING_APPROVAL**. Phase 4 remains **NOT_STARTED**.
+Current checkpoint: the user approved advancement from Phase 3 in
+[PHASE_3_APPROVAL.md](phase_reports/PHASE_3_APPROVAL.md). Phase 4's first research
+study is complete; see [PHASE_4_REPORT.md](phase_reports/PHASE_4_REPORT.md).
+Status: **DONE_WAITING_APPROVAL** for the research checkpoint, with **scientific
+calibration FAILED**. The tested candidate is rejected for release. Phase 4
+scientific acceptance is not met; Phase 5 remains **NOT_STARTED**.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.
@@ -144,8 +145,9 @@ remote application branch as part of a data-loader change.
 The user explicitly approved the Stage 2 checkpoint and authorized Phase 3 on
 15 November 2026. The separate approval record preserves the existing preparation
 policy and data bytes, including their historical status metadata. Phase 3 is
-complete for the descriptive scope and stops at its checkpoint for review.
-Major method changes and inference release still require explicit review. Keep
+complete for the descriptive scope. The subsequent instruction to go to step 4
+authorized inference research; that study now stops at its failed-calibration
+checkpoint. Major method changes and inference release still require review. Keep
 tests/reports honest about implemented, failed, pending and unreviewed work.
 
 ## Stage 2 implemented preparation policy
@@ -250,5 +252,33 @@ calendar positions. The default and Stage 2 inputs remain unchanged.
 factor-of-twelve and scalar/grid length-policy regressions are addressed in the
 new shared library; the remote legacy inference wrappers remain unmodified.
 The Phase 3 report records limitations, units, preparation sensitivity, original
-hashes, source/code versions and reproduction commands. Stop for review before
-Phase 4; no uncertainty or significance method has been released.
+hashes, source/code versions and reproduction commands. The later Phase 3 approval
+authorized Phase 4; no uncertainty or significance method was thereby released.
+
+### Phase 4 inference research checkpoint (completed study; candidate rejected)
+
+Candidate `config/inference_policy.json`, revision inference-study-1.0, specifies
+complete consecutive annual inputs, a twenty-year admission guard, exact Sen
+point slopes, circular residual blocks, basic bootstrap intervals, plus-one
+absolute-tail p-values, and BH/BY correction mechanics. Standard 95% is excluded
+from inference because of changing support; its incomplete cell-years stay missing.
+The configuration remains experimental and its application-release flag is false.
+
+The study ran 48 scenarios with 500 independent records within each scenario:
+24,000 paired scenario-record evaluations over 7,000 distinct synthetic series
+and 5,500 independent noise trajectories. It covers correlated nulls, known
+positive/negative slopes, seasonal annualization, block lengths 1/3/4/6 and
+record lengths 24/48. Separate valid-p FDR simulations and a classical IID
+benchmark distinguish algorithm correctness from scientific calibration.
+
+85 software tests pass, with BH/BY reference error below 3.34e-16. However,
+the four-year candidate's null false-positive rates are 18.6%, 25.0% and 34.0%
+at 24 years, and interval coverage is 82.4%, 74.0% and 65.8%. All primary
+calibration screens fail. No method is frozen for scientific release. Real-cell
+inference, real multiplicity decisions and significance overlays remain withheld;
+prior preparation and descriptive trend artifacts are preserved.
+
+Continue Phase 4 candidate research after reviewing this checkpoint; do not
+advance to Phase 5 on the basis of software tests or favorable NASA p-values.
+Specify another candidate and independent validation before changing release
+status. No adjustment of alpha or coverage targets after seeing results is allowed.
