@@ -1,8 +1,14 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.7, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.8, 15 November 2026. Working branch: `codex/ml-statistics`.
 
-Latest checkpoint: [Sen-centered Berger--Boos](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
+Current authorization: [descriptive-only Phase 5](phase_reports/PHASE_5_APPROVAL.md).
+The user explicitly approves native-grid Sen maps, four descriptive directions,
+fixed-denominator shares, preparation-policy and actual-reference period sensitivity.
+Inference stays disabled. Phase 5 implementation is authorized; Phase 6 is not.
+This supersedes historical Phase 5 holds below without approving failed methods.
+
+Previous checkpoint: [Sen-centered Berger--Boos](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
 The focused confidence-set experiment failed the unchanged practical targets.
 The .005 nuisance / .045 trend budget keeps alpha .05; the correlation sets
 pass their diagnostic screen but remain too broad for useful calibrated Sen

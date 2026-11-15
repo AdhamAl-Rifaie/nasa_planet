@@ -1,5 +1,11 @@
 # ML/Statistics Agent - data-aligned brief v2.1
 
+Latest: [descriptive-only Phase 5](phase_reports/PHASE_5_REPORT.md), authorized in
+[PHASE_5_APPROVAL.md](phase_reports/PHASE_5_APPROVAL.md). Fourteen cases and four
+windows are implemented; 118 tests pass. Inference remains disabled, Strict is
+default, Standard 95% is experimental. Stop for user review before Phase 6.
+This supersedes historical Phase 5 holds below; it does not release inference.
+
 Updated 15 November 2026 under the user's instruction to adapt the plan to the
 available data and advance the solution. The canonical work plan is `PLAN.md`
 in this statistics workspace (`packages/science/PLAN.md` from the repository

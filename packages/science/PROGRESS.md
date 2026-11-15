@@ -1,9 +1,9 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 (Phase 4 research checkpoint; calibration failed)
-Current phase: PHASE 4
-Current status: DONE_WAITING_APPROVAL (research checkpoint; scientific acceptance not met)
+Last updated: 2026-11-15 (descriptive-only Phase 5 checkpoint)
+Current phase: PHASE 5
+Current status: DONE_WAITING_APPROVAL (descriptive Phase 5; inference disabled)
 
-Current plan: [PLAN.md](PLAN.md), revision 2.7. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.8. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
@@ -12,8 +12,8 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
 | 2 Time series and QA | DONE | Original implementation complete; 51 tests passed before Phase 3 | [Latest checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md), [approval](phase_reports/PHASE_2_APPROVAL.md) | User explicitly approved advancement; default unchanged |
 | 3 Trend estimation | DONE | 5/5 acceptance checks; 72 tests passed; 210 reference comparisons passed | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md), [approval](phase_reports/PHASE_3_APPROVAL.md) | User authorized Phase 4 |
-| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 110 software tests pass; scientific release gates unmet | [Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md) | Stop method search; review descriptive-only scope; inference disabled; no Phase 5 |
-| 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
+| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 110 software tests pass; scientific release gates unmet | [Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md) | Research complete for now; user approved descriptive Phase 5 only; inference disabled |
+| 5 Descriptive spatial analysis | DONE_WAITING_APPROVAL | 118 tests pass; 28 Phase 3 equalities; 112 independent regional-window checks | [Checkpoint](phase_reports/PHASE_5_REPORT.md) | Await user review before Phase 6 |
 | 6 Integration | NOT_STARTED | 0/7 | ? | No |
 | 7 Final review | NOT_STARTED | 0/6 | ? | No |
 
@@ -85,6 +85,17 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Phase 5 descriptive implementation complete under [explicit user approval](phase_reports/PHASE_5_APPROVAL.md).
+  Fourteen cases, four windows, native-grid slopes/directions/coverage, separate regional
+  slopes, fixed-denominator shares and Sahel three-policy comparisons are available.
+  Strict remains default; Standard 95% remains experimental with 5,157 missing eligible
+  cell-years preserved. 118/118 tests pass, 112 independent window checks pass, all 28
+  full-period grid/regional comparisons equal Phase 3, and 3,687 protected files remain
+  unchanged. Executed notebook and JSON artifacts accompany PHASE_5_REPORT.md.
+  Initial plotting API error was corrected; no unresolved test/numerical failure.
+  Inference stays disabled. Stop for owner review; Phase 6 is NOT_STARTED.
+
+### Earlier checkpoints (historical)
 - Newest: [Sen-centered Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
   Fixed gamma .005, alpha .05, 99.5% nuisance sets and unchanged scientific
   screens were specified before evaluation. Four independent cache/panel pairs,

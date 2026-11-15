@@ -1,5 +1,11 @@
 # Statistics workspace
 
+Latest: [descriptive-only Phase 5](phase_reports/PHASE_5_REPORT.md), authorized in
+[PHASE_5_APPROVAL.md](phase_reports/PHASE_5_APPROVAL.md). Fourteen cases and four
+windows are implemented; 118 tests pass. Inference remains disabled, Strict is
+default, Standard 95% is experimental. Stop for user review before Phase 6.
+This supersedes historical Phase 5 holds below; it does not release inference.
+
 Latest: [Sen-centered Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
 The focused confidence-set candidate failed practical calibration/power targets.
 110 software tests pass; source data, policies and previous results are preserved.
