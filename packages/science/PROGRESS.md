@@ -3,7 +3,7 @@ Last updated: 2026-11-15 (Phase 4 research checkpoint; calibration failed)
 Current phase: PHASE 4
 Current status: DONE_WAITING_APPROVAL (research checkpoint; scientific acceptance not met)
 
-Current plan: [PLAN.md](PLAN.md), revision 2.6. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.7. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
@@ -12,7 +12,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
 | 2 Time series and QA | DONE | Original implementation complete; 51 tests passed before Phase 3 | [Latest checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md), [approval](phase_reports/PHASE_2_APPROVAL.md) | User explicitly approved advancement; default unchanged |
 | 3 Trend estimation | DONE | 5/5 acceptance checks; 72 tests passed; 210 reference comparisons passed | [Phase 3 checkpoint](phase_reports/PHASE_3_REPORT.md), [approval](phase_reports/PHASE_3_APPROVAL.md) | User authorized Phase 4 |
-| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 99 software tests pass; scientific release gates unmet | [Latest diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md) | Further Phase 4 research needed; inference disabled; no Phase 5 |
+| 4 Inference validation | DONE_WAITING_APPROVAL (research) | 110 software tests pass; scientific release gates unmet | [Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md) | Stop method search; review descriptive-only scope; inference disabled; no Phase 5 |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
 | 6 Integration | NOT_STARTED | 0/7 | ? | No |
 | 7 Final review | NOT_STARTED | 0/6 | ? | No |
@@ -85,13 +85,25 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Newest: [Sen-centered Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
+  Fixed gamma .005, alpha .05, 99.5% nuisance sets and unchanged scientific
+  screens were specified before evaluation. Four independent cache/panel pairs,
+  176,000 unique noise records, 2,399,760 calibration records and 792 paired
+  scenario summaries compare the candidate with unchanged plug-in/full-grid
+  methods. Correlation-set screens pass, but the trend method fails practical
+  calibration/power: rho .7 false positives .74%/.61%, coverage 99.26%/99.39%
+  at 20/24 years; outside-grid .95 undercovers. 110 tests, 264 SciPy slope
+  comparisons and 3,683 preservation hashes pass. Recommend descriptive-only
+  application use; stop experimentation pending a new bounded decision. No
+  significance output, default promotion, Phase 5 or application release.
 - Newest: [Sen-aligned inference checkpoint](phase_reports/PHASE_4_SEN_REPORT.md).
   Point estimates now match the validated Sen kernel exactly. Contiguous
   subsampling fails short-record calibration; fitted-rho Sen simulation remains
   anti-conservative; a full nuisance-grid envelope is far too conservative.
   Recommend Sen-centered nuisance-aware Monte Carlo for further development,
-  with a validated nuisance confidence set/error budget as an untested next
-  extension. 103 tests pass, 118 prior files preserved. No release or Phase 5.
+  with a nuisance confidence set/error budget as the historical next proposal,
+  now tested in the newer checkpoint above. 103 tests passed, 118 prior files
+  preserved in that study. No release or Phase 5.
 - Latest: [double-bootstrap diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
   Eight independent caches per length/grid, fixed and fresh 1,000-record panels,
   fine/expanded grids, boundary and misspecification stresses confirm remaining

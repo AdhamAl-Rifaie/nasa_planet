@@ -1,6 +1,12 @@
 # Statistics workspace
 
-Latest: [estimand-aligned Sen uncertainty](phase_reports/PHASE_4_SEN_REPORT.md).
+Latest: [Sen-centered Berger--Boos checkpoint](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
+The focused confidence-set candidate failed practical calibration/power targets.
+110 software tests pass; source data, policies and previous results are preserved.
+Recommend descriptive-only use of existing Sen results and stop method searching
+at this checkpoint. Inference remains disabled; no Phase 5 work has started.
+
+Previous: [estimand-aligned Sen uncertainty](phase_reports/PHASE_4_SEN_REPORT.md).
 Sen-centered nuisance-aware Monte Carlo is recommended for further research;
 the tested grid envelope is too conservative and other candidates fail calibration.
 103 tests pass. No method is released and Phase 5 has not started.

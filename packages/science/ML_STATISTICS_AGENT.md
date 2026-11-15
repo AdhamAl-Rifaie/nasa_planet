@@ -8,10 +8,16 @@ it does not certify an inference method.
 
 ## Read first
 
-Newest checkpoint: `phase_reports/PHASE_4_SEN_REPORT.md`. Sen-aligned methods
+Newest checkpoint: `phase_reports/PHASE_4_BERGER_BOOS_REPORT.md`. The fixed
+Sen-centered confidence-set experiment failed practical targets. Read PLAN.md
+2.7 and current PROGRESS.md. Recommend descriptive-only use of existing outputs;
+stop method experimentation pending a new bounded scientific decision. Keep
+inference disabled, prior artifacts unchanged and Phase 5 NOT_STARTED.
+
+Previous checkpoint: `phase_reports/PHASE_4_SEN_REPORT.md`. Sen-aligned methods
 have been evaluated with fresh simulations, but none meets all release screens.
-The proposed next refinement is nuisance-confidence-set Monte Carlo inversion;
-it is not validated yet. Keep inference disabled and preserve prior artifacts.
+Its proposed nuisance-confidence-set refinement is evaluated in the newer
+checkpoint above. Keep inference disabled and preserve prior artifacts.
 
 Newest checkpoint: `phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md`. Repeated
 cache/grid/misspecification tests still do not support scientific release. Keep

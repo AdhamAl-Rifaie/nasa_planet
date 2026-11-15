@@ -1,14 +1,26 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.6, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.7, 15 November 2026. Working branch: `codex/ml-statistics`.
 
-Latest research: [Sen-centered inference](phase_reports/PHASE_4_SEN_REPORT.md).
+Latest checkpoint: [Sen-centered Berger--Boos](phase_reports/PHASE_4_BERGER_BOOS_REPORT.md).
+The focused confidence-set experiment failed the unchanged practical targets.
+The .005 nuisance / .045 trend budget keeps alpha .05; the correlation sets
+pass their diagnostic screen but remain too broad for useful calibrated Sen
+inference at 20/24 years. Outside-grid persistence also causes undercoverage.
+110 software tests pass; 3,683 existing files remain unchanged. Scientific
+release is withheld. Stop method experimentation at this checkpoint and review
+the report's descriptive-only application scope. No significance enablement,
+default-policy changes or Phase 5 work is approved. Further research requires
+a new bounded scientific decision; no automatic next candidate is scheduled.
+
+Previous research: [Sen-centered inference](phase_reports/PHASE_4_SEN_REPORT.md).
 Subsampling, fitted-correlation simulation and nuisance-grid Monte Carlo now
 use the Sen point estimator directly. None passes all unchanged screens.
 Recommended next research is confidence-set nuisance maximization with a stated
 error budget, not release of the tested overly conservative grid envelope.
-That refinement is proposed, not yet validated. 103 tests pass; all earlier
-NASA/preparation/trend artifacts remain unchanged. Inference stays disabled.
+That historical proposal is evaluated in the newer checkpoint above. Its 103
+tests passed; all earlier NASA/preparation/trend artifacts remain unchanged.
+Inference stays disabled.
 
 Latest authorized continuation: [double-bootstrap diagnostics](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
 Independent repeated caches, grid/boundary and model stresses do not establish
