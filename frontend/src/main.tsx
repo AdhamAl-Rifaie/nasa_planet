@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollJourney } from "./ScrollJourney";
+import { GeoBackdrop, mapExtent } from "./GeoBackdrop";
 import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
@@ -42,6 +43,7 @@ import {
   type VariableId,
 } from "./api";
 import "./style.css";
+import "./product-theme.css";
 
 const REGIONS: { id: RegionId; en: string; ar: string; caption: string }[] = [
   {
@@ -311,7 +313,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           </div>
           <h2>
             {lang === "en"
-              ? "WHERE DOES IT CHANGE?"
+              ? "Choose a place and NASA variable"
               : "أين يحدث التغير؟"}
           </h2>
           <p>
@@ -325,6 +327,9 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           </button>
         </div>
         <div className="story-visual region-visual">
+          <div className="observatory-title"><Satellite size={20}/> Earth observatory <span>01 / Choose data</span></div>
+          <div className="observatory-map"><GeoBackdrop/><span className="place-pin"><MapPinned size={25}/> Nile Corridor</span><small>NASA Blue Marble · Natural Earth boundaries</small></div>
+          <div className="observatory-controls"><span>Explore the connected Earth system</span><div>Temperature · Rainfall · Soil moisture · Vegetation</div><button onClick={onLaunch}>Choose your study area <ArrowRight size={17}/></button></div>
           <div className="visual-foot">
             <span>{lang === "en" ? "ARRIVE / SELECT A PLACE" : "الوصول / اختيار المكان"}</span>
             <span>{lang === "en" ? "PLANT ONE QUESTION" : "ازرع سؤالًا"}</span>
@@ -390,7 +395,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
           <div className="eyebrow">
             03 / {lang === "en" ? "PROOF" : "الدليل"}
           </div>
-          <h2>{lang === "en" ? "SHOW YOUR EVIDENCE" : "أظهر الدليل"}</h2>
+          <h2>{lang === "en" ? "Inspect the evidence" : "أظهر الدليل"}</h2>
           <p>
             {lang === "en"
               ? "The answer is more than a number. Inspect the source, trend method, confidence interval, valid coverage and limitations; then carry them with the claim."
@@ -417,7 +422,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
               <div className="receipt-row" key={label as string}>
                 <I size={20} />
                 <span>{label as string}</span>
-                <span className="receipt-dashes" />
+                <span className="receipt-detail">{label === 'SOURCE' ? 'NASA product & version' : label === 'METHOD' ? 'Trend method & time window' : label === 'UNCERTAINTY' ? '95% interval & valid coverage' : 'Resolution, gaps & assumptions'}</span>
               </div>
             );
           })}
@@ -429,7 +434,7 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
         </span>
         <h2>
           {lang === "en"
-            ? "What does the full picture show?"
+            ? "Explore Earth’s changing patterns with NASA data"
             : "ماذا تُظهر الصورة الكاملة؟"}
         </h2>
         <button className="launch big" onClick={onLaunch}>
@@ -599,14 +604,21 @@ function SpatialMap({
         s: north - y1 * (north - south),
       });
   };
+  const extent=mapExtent(spatial.bbox);
+  const [west,south,east,north]=extent;
   return (
-    <div className="spatial-wrap">
+    <div className="spatial-wrap geographic-map">
+      <GeoBackdrop bbox={extent}/>
       <div className="map-coordinate map-coordinate-top">{spatial.bbox[3].toFixed(2)}° N</div>
       <div className="map-coordinate map-coordinate-bottom">{spatial.bbox[1].toFixed(2)}° N</div>
       <div
         className="spatial-plot"
         style={{
           aspectRatio: `${spatial.grid.lon.length} / ${spatial.grid.lat.length}`,
+          left:`${(spatial.bbox[0]-west)/(east-west)*100}%`,
+          top:`${(north-spatial.bbox[3])/(north-south)*100}%`,
+          width:`${(spatial.bbox[2]-spatial.bbox[0])/(east-west)*100}%`,
+          height:`${(spatial.bbox[3]-spatial.bbox[1])/(north-south)*100}%`,
         }}
       >
         <canvas
@@ -652,6 +664,7 @@ function SpatialMap({
         <small>{lang === "en" ? "Cells shown at source resolution" : "الخلايا بدقة المصدر"}</small>
       </div>
       <div className="map-corner">
+        <span className="map-attribution">NASA Blue Marble · Natural Earth boundaries</span>
         {lang === "en" ? "DRAG TO SELECT AREA" : "اسحب لاختيار منطقة"}
       </div>
     </div>
@@ -1162,6 +1175,7 @@ function Explorer({ lang, onHome }: { lang: Lang; onHome: () => void }) {
                     {result?.product_id} v{result?.version}
                   </strong>
                 </div>
+                <div className="spatial-note">{lang === 'en' ? 'Map context: the spatial layer shows the full 2001–2024 reference period. A different analysis window can produce a different trend.' : 'الخريطة تعرض الفترة المرجعية الكاملة 2001–2024. قد تختلف نتيجة الاتجاه عند تغيير فترة التحليل.'}</div>
                 {analysis.explanation ? (
                   <div className="explanation">
                     <Sparkles size={17} />

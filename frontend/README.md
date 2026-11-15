@@ -14,6 +14,19 @@ and the investigation has a fixed four-stage navigator.
 The name AstraVerd is a provisional design name. The NASA data and analysis
 retain their existing scientific labels and provenance.
 
+## Implemented design
+
+The three landing chapters now use a shared expedition landscape, a geographic
+observatory preview, the period illustration, and a light evidence receipt.
+The dashboard has a setup rail, geographic trend map and time series, and a
+light evidence panel. `product-theme.css` owns this visual layer.
+`GeoBackdrop.tsx` draws a locally bundled NASA Blue Marble image with Natural
+Earth country outlines. The analysis canvas remains georeferenced to the
+returned bounding box, with unchanged scientific values. See
+`public/MAP_SOURCES.md` for asset provenance. The background is static context,
+not current satellite observations. The stored data still covers the three
+configured study regions; the visual design does not add global analysis.
+
 ## Develop
 
 ```powershell

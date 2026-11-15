@@ -51,7 +51,7 @@ export function ScrollJourney() {
       const actorWidth = node.offsetWidth;
       const actorHeight = node.offsetHeight;
       resizeCanvas();
-      anchors = cards.filter((card): card is HTMLElement => !!card).map((card, i) => {
+      anchors = cards.filter((card): card is HTMLElement => !!card).map((card) => {
         // Layout offsets exclude scroll-driven transforms on the scene cards.
         let localLeft = 0, localTop = 0;
         let parent: HTMLElement | null = card;
@@ -61,8 +61,8 @@ export function ScrollJourney() {
           parent = parent.offsetParent as HTMLElement | null;
         }
         return {
-          x: localLeft + card.offsetWidth * (i === 1 ? .73 : .67) - actorWidth / 2,
-          y: localTop + card.offsetHeight - actorHeight - 10,
+          x: innerWidth <= 760 ? localLeft + 16 : localLeft - actorWidth * .85,
+          y: innerWidth <= 760 ? localTop + card.offsetHeight + 10 : localTop + card.offsetHeight - actorHeight + 190,
           trigger: landingTop + localTop - innerHeight * .58,
         };
       });
