@@ -2084,3 +2084,45 @@ select:focus-visible,
   background:linear-gradient(180deg,#05122420,#05122445),url('/mission-control-bg.png') center / cover no-repeat;
 }
 .story-visual.window-visual svg { display:block; opacity:.6; }
+
+/* Progressive scroll choreography; unsupported browsers retain the full page. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .landing .story-text {
+      animation: chapter-copy linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 90%;
+    }
+    .landing .story-visual {
+      animation: chapter-instrument linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+    .landing .hero-art {
+      animation: observatory-departure linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 100%;
+    }
+    .landing .window-visual svg {
+      animation: signal-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 100%;
+    }
+  }
+}
+@keyframes chapter-copy {
+  from { opacity:.12; transform:translateY(44px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes chapter-instrument {
+  from { opacity:.2; transform:translateY(65px) scale(.96); }
+  to { opacity:1; transform:translateY(0) scale(1); }
+}
+@keyframes observatory-departure {
+  from { transform:translateY(0) scale(1); }
+  to { transform:translateY(12%) scale(1.08); }
+}
+@keyframes signal-reveal {
+  from { clip-path:inset(0 100% 0 0); }
+  to { clip-path:inset(0); }
+}

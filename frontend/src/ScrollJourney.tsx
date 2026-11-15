@@ -47,18 +47,23 @@ export function ScrollJourney() {
     const measure = () => {
       const cards = [".region-visual", ".window-visual", ".receipt-visual"]
         .map((selector) => landing.querySelector<HTMLElement>(selector));
-      const landingRect = landing.getBoundingClientRect();
+      const landingTop = landing.getBoundingClientRect().top + scrollY;
       const actorWidth = node.offsetWidth;
       const actorHeight = node.offsetHeight;
       resizeCanvas();
       anchors = cards.filter((card): card is HTMLElement => !!card).map((card, i) => {
-        const rect = card.getBoundingClientRect();
-        const localLeft = rect.left - landingRect.left;
-        const localTop = rect.top - landingRect.top;
+        // Layout offsets exclude scroll-driven transforms on the scene cards.
+        let localLeft = 0, localTop = 0;
+        let parent: HTMLElement | null = card;
+        while (parent && parent !== landing) {
+          localLeft += parent.offsetLeft;
+          localTop += parent.offsetTop;
+          parent = parent.offsetParent as HTMLElement | null;
+        }
         return {
-          x: localLeft + rect.width * (i === 1 ? .73 : .67) - actorWidth / 2,
-          y: localTop + rect.height - actorHeight - 10,
-          trigger: rect.top + scrollY - innerHeight * .58,
+          x: localLeft + card.offsetWidth * (i === 1 ? .73 : .67) - actorWidth / 2,
+          y: localTop + card.offsetHeight - actorHeight - 10,
+          trigger: landingTop + localTop - innerHeight * .58,
         };
       });
       sample();
