@@ -90,7 +90,7 @@ Normalize Arabic search forms consistently while preserving original display tex
 
 Do not add 6-8 unrelated variables to claim the system can answer any climate question. Focus on the four target variables. Additional documented topics need approved scope and clear non-executable status.
 
-Use one configurable LLM provider. Mistral may be selected if already agreed/configured, but no provider or model superiority is assumed. Verify current provider SDK/model details against official documentation at implementation time. Keep keys server-side; never commit or log them. Missing keys must not prevent building/testing retrieval and templates.
+Use one configurable LLM provider. Configured default (14 November 2026): Google Gemini via Google AI Studio (`LLM_PROVIDER=gemini`, `GEMINI_API_KEY`, model `gemini-2.5-flash` in `.env.example`), selected because the Mistral free tier is unavailable; Mistral is retained only as an optional legacy fallback environment variable. The provider stays configurable and no provider or model superiority is assumed. Verify current provider SDK/model details against official documentation at implementation time. Keep keys server-side; never commit or log them. Missing keys must not prevent building/testing retrieval and templates.
 
 Provider timeout, invalid JSON or validation failure triggers a bounded retry or deterministic local fallback. Local retrieval returns supported excerpts/templates or an honest abstention, not a guaranteed complete answer to every query. No live network dependency is allowed for the core offline demonstration.
 

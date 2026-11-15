@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-11-15T05:03:33.833463+00:00",
+  "builder": "packages/rag/semantic_corpus.py",
+  "builder_revision": "role04_phase1_v1",
+  "corpus_path": "data/nasa/rag/corpus_semantic.jsonl",
+  "chunk_count": 469,
+  "sources": [
+    "GLDAS",
+    "GLDAS_Models",
+    "GLDAS_NOAH025_M",
+    "GPM_3IMERGM",
+    "IMERG_V07_ATBD",
+    "M2TMNXSLV",
+    "MERRA2_README",
+    "MERRA2_Reprocessing",
+    "MERRA2_Specification",
+    "MOD13C2",
+    "MOD13_User_Guide_V61",
+    "pymannkendall.md",
+    "scipy_theilslopes.html",
+    "statsmodels_fdr.html"
+  ],
+  "input_files": [
+    "data/nasa/rag/corpus.jsonl",
+    "data/nasa/expanded_v2/docs/rag_additions.jsonl"
+  ],
+  "content_statement": "Chunks are verbatim excerpts of the recorded official source material, re-grouped by topic/paragraph with font-artifact character repair only. The builder is team-authored (Role 04); chunk content is not team-authored and not NASA-authored-by-this-team. Availability/readiness facts are never stored in chunks; they live only in the readiness registry module.",
+  "encoding_notes": "data/nasa/expanded_v2/docs/rag_additions.jsonl contains mixed UTF-8 and cp1252 bytes (raw 0xB0 degree signs inside UTF-8 text); decoded with a hybrid UTF-8/cp1252 decoder. PDF-extracted private-use-area glyphs were mapped through a documented table or dropped when unknown."
+}

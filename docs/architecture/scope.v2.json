@@ -51,12 +51,15 @@
       ],
       "status": "verified_cube_ready_parent_subset",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/M2TMNXSLV_Nile_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/M2TMNXSLV/nile/",
-      "cube_variable": "T2M",
-      "cube_units": "K"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#M2TMNXSLV/nile_corridor",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/M2TMNXSLV_nile_corridor.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "soil_moisture",
@@ -76,12 +79,15 @@
       ],
       "status": "verified_cube_ready_parent_subset",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Nile_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GLDAS_NOAH025_M/nile/",
-      "cube_variable": "SoilMoi0_10cm_inst",
-      "cube_units": "kg m-2"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GLDAS_NOAH025_M/nile_corridor",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GLDAS_NOAH025_M_nile_corridor.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "precipitation",
@@ -101,12 +107,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GPM_3IMERGM_Nile_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GPM_3IMERGM/nile/",
-      "cube_variable": "precipitation",
-      "cube_units": "mm/hr"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GPM_3IMERGM/nile_corridor",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GPM_3IMERGM_nile_corridor.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "vegetation_greenness",
@@ -126,12 +135,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/MOD13C2_Nile_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/MOD13C2/nile/",
-      "cube_variable": "NDVI",
-      "cube_units": "1"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#MOD13C2/nile_corridor",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/MOD13C2_nile_corridor.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "air_temperature",
@@ -151,12 +163,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/M2TMNXSLV_Morocco_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/M2TMNXSLV/morocco/",
-      "cube_variable": "T2M",
-      "cube_units": "K"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#M2TMNXSLV/morocco_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/M2TMNXSLV_morocco_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "soil_moisture",
@@ -176,12 +191,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Morocco_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GLDAS_NOAH025_M/morocco/",
-      "cube_variable": "SoilMoi0_10cm_inst",
-      "cube_units": "kg m-2"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GLDAS_NOAH025_M/morocco_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GLDAS_NOAH025_M_morocco_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "precipitation",
@@ -201,12 +219,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GPM_3IMERGM_Morocco_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GPM_3IMERGM/morocco/",
-      "cube_variable": "precipitation",
-      "cube_units": "mm/hr"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GPM_3IMERGM/morocco_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GPM_3IMERGM_morocco_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "vegetation_greenness",
@@ -226,12 +247,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/MOD13C2_Morocco_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/MOD13C2/morocco/",
-      "cube_variable": "NDVI",
-      "cube_units": "1"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#MOD13C2/morocco_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/MOD13C2_morocco_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "air_temperature",
@@ -251,12 +275,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/M2TMNXSLV_Sahel_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/M2TMNXSLV/sahel/",
-      "cube_variable": "T2M",
-      "cube_units": "K"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#M2TMNXSLV/sahel_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/M2TMNXSLV_sahel_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "soil_moisture",
@@ -276,12 +303,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Sahel_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GLDAS_NOAH025_M/sahel/",
-      "cube_variable": "SoilMoi0_10cm_inst",
-      "cube_units": "kg m-2"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GLDAS_NOAH025_M/sahel_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GLDAS_NOAH025_M_sahel_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "precipitation",
@@ -301,12 +331,15 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/GPM_3IMERGM_Sahel_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/GPM_3IMERGM/sahel/",
-      "cube_variable": "precipitation",
-      "cube_units": "mm/hr"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#GPM_3IMERGM/sahel_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/GPM_3IMERGM_sahel_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     },
     {
       "variable_id": "vegetation_greenness",
@@ -326,18 +359,17 @@
       ],
       "status": "verified_cube_ready",
       "measurement_ready": true,
-      "method_ready": false,
-      "app_available": false,
+      "method_ready": true,
+      "app_available": true,
       "cube_file": "data/nasa/measurements/MOD13C2_Sahel_2001_2024.nc",
       "monthly_subsets": "data/nasa/regional/MOD13C2/sahel/",
-      "cube_variable": "NDVI",
-      "cube_units": "1"
+      "method_revision": "m2-1.0.0",
+      "evidence_card": "data/nasa/analysis/evidence_cards.json#MOD13C2/sahel_comparison",
+      "spatial_trend": "data/nasa/analysis/spatial_trends/MOD13C2_sahel_comparison.npz",
+      "app_signed_off_by": "Member 6",
+      "app_signed_off_at": "2026-11-14T21:40:00+02:00"
     }
   ],
-  "input_contract_revision": "1.0",
-  "reference_period": [
-    "2001-01",
-    "2024-12"
-  ],
-  "field_identity_note": "source_variable is the original provider field; cube_variable is the field in the bundled processed NetCDF cube."
+  "method_status": "frozen m2-1.0.0; 9/9 synthetic checks pass; scipy/pyMannKendall/POWER agreement recorded",
+  "app_status": "signed off after 15/15 release checks (docs/acceptance_report.json)"
 }
