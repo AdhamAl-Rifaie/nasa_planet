@@ -1,6 +1,6 @@
 # Statistics implementation plan — current data revision
 
-Revision: 2.2, 15 November 2026. Working branch: `codex/ml-statistics`.
+Revision: 2.3, 15 November 2026. Working branch: `codex/ml-statistics`.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.
@@ -205,6 +205,24 @@ This supplement changes the proposed handoff, not the existing default policy.
   is authorized by the experimental coverage policies.
 
 Stage 3 remains **NOT_STARTED** pending the checkpoint decision.
+
+### Standard 95% monthly/annual review (completed)
+
+[The additional checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md) verifies
+missingness by calendar month, pooled season and year, all 288 monthly valid-area
+records, and both regional and cell annual completeness. All three policy inputs
+and earlier artifacts remain unchanged. Seven additional tests bring the suite
+to 51 passing tests.
+
+The Phase 3 handoff must distinguish a day-weighted annual mean of twelve
+changing-support regional monthly means from an area mean over complete cell-years.
+Standard 95% has 5,157 incomplete eligible cell-years despite 24 finite regional
+annual values. Its complete-cell-year diagnostic differs most from its monthly-
+regional annual estimate in 2015 (0.003971 NDVI). Preserve both definitions as
+explicitly labeled sensitivity evidence; never fill incomplete cell-years or
+silently substitute one annual estimate for the other. Standard 100% remains the
+constant-footprint comparison and strict 100% remains the default/control.
+No new coverage cutoff, default promotion or Phase 3 implementation is implied.
 
 Review the Stage 2 policy, support maps and QA sensitivity table. Once the next
 checkpoint is authorized, start Stage 3: review/repair the shared Theil–Sen

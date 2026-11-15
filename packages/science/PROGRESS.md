@@ -1,16 +1,16 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 (Sahel preprocessing notebook comparison)
+Last updated: 2026-11-15 (Standard 95% monthly/annual checkpoint)
 Current phase: PHASE 2
 Current status: DONE_WAITING_APPROVAL
 
-Current plan: [PLAN.md](PLAN.md), revision 2.2. This tracker owns statistics
+Current plan: [PLAN.md](PLAN.md), revision 2.3. This tracker owns statistics
 work; the repository-root PROGRESS.md owns Role 04 (RAG).
 
 | Phase | Status | Tests passed / total | Report | Approved to proceed? |
 |---|---|---|---|---|
 | 0 Input/plan alignment | DONE | 5/5 revised acceptance checks | [Replan report](phase_reports/PHASE_0_REPLAN_REPORT.md) | Current implementation request covered first input work |
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
-| 2 Time series and QA | DONE_WAITING_APPROVAL | Original implementation complete; 44 combined tests pass after QA review | [Original report](phase_reports/PHASE_2_REPORT.md), [Sahel checkpoint](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md) | Recommendations ready; default unchanged; Stage 3 decision pending |
+| 2 Time series and QA | DONE_WAITING_APPROVAL | Original implementation complete; 51 combined tests pass | [Original report](phase_reports/PHASE_2_REPORT.md), [latest monthly/annual checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md) | Recommendations ready; three policies available; default unchanged; Stage 3 decision pending |
 | 3 Trend estimation | NOT_STARTED | 0/5 | ? | No |
 | 4 Significance | NOT_STARTED | 0/7 | ? | No |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
@@ -57,8 +57,27 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   All earlier notebook cells and their embedded outputs are preserved exactly.
   Three new figures use a separate derived folder. Refresh just this section with
   `.\.venv\Scripts\python.exe tools/run_science_preprocessing.py --sahel-only`.
+- Completed the requested Standard 95% pre-Phase-3 review. Verified 288 monthly
+  coverage records, month/season/year missingness, changing monthly geography,
+  original Standard 100% annual reproduction, and missing-preserving cell annuals.
+  Seven new tests pass (51 total), with independent year-specific coverage checks.
+  The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Latest evidence: [Standard 95% monthly/annual checkpoint](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.md),
+  [all 288 monthly coverage records](phase_reports/SAHEL_NDVI_STANDARD95_MONTHLY_COVERAGE.md),
+  and [full JSON](phase_reports/SAHEL_NDVI_STANDARD95_REVIEW.json).
+- Standard 95% has 5,279 missing eligible cell-months (96.65% in JJA), 5,157
+  incomplete eligible cell-years and zero incomplete regional annual records.
+  Finite regional annual values do not imply complete spatial observations.
+- Annual comparisons use actual calendar-day weights. The Standard 95% minus
+  Standard 100% annual regional difference averages 0.009738 NDVI; common-footprint
+  monthly and annual means recover Standard 100% within 1e-12. Its 2015 annual
+  estimate differs by 0.003971 NDVI when restricted to complete cell-years.
+- Recommendation remains three explicit inputs: strict default/control, Standard
+  100% fixed-footprint comparison and Standard 95% experimental sensitivity.
+  Phase 3 must keep the annual definitions and changing support explicit.
+  No missing values were filled, no default changed, no trend/inference released.
 - Stage 2 Sahel QA review complete under the user's explicit request. See
   [the checkpoint](phase_reports/SAHEL_NDVI_POLICY_CHECKPOINT.md): monthly/seasonal
   detailed QA, geographic selection, regional series, and separate strict/standard
@@ -92,7 +111,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   processed NDVI mapping resolves the original three field issues.
 - Precipitation conversion: mean mm/hr x actual Gregorian calendar-month hours
   -> monthly mm. Annual totals require complete eligible monthly amounts;
-  annual aggregation has not yet been implemented.
+  annual preparation was implemented in Stage 2. Slope estimation is pending.
 - Candidate preparation policy: config/preparation_policy.json, prep-1.0.0.
   Strict MODIS good-quality/reliability only; optional standard mode admits
   marginal values. Historical estimation/cloud/snow/fill excluded. IMERG quality
