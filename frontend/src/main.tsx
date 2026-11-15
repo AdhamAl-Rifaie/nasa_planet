@@ -300,6 +300,13 @@ function ScrollCompanion() {
 }
 
 function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
+  const dragStart = useRef<number | null>(null);
+  const [dragProgress, setDragProgress] = useState(0);
+  const finishDrag = (clientX: number) => {
+    if (dragStart.current !== null && clientX - dragStart.current > 85) onLaunch();
+    dragStart.current = null;
+    setDragProgress(0);
+  };
   return (
     <main className="landing">
       <ScrollCompanion />
@@ -341,8 +348,30 @@ function Landing({ lang, onLaunch }: { lang: Lang; onLaunch: () => void }) {
             {lang === "en" ? "Inspect the evidence" : "افحص الدليل"}
           </div>
         </div>
+        <button
+          className="investigate-rail"
+          onClick={onLaunch}
+          onPointerDown={(event) => {
+            dragStart.current = event.clientX;
+            event.currentTarget.setPointerCapture(event.pointerId);
+          }}
+          onPointerMove={(event) => {
+            if (dragStart.current !== null)
+              setDragProgress(Math.min(1, Math.max(0, (event.clientX - dragStart.current) / 110)));
+          }}
+          onPointerUp={(event) => finishDrag(event.clientX)}
+          onPointerCancel={() => { dragStart.current = null; setDragProgress(0); }}
+          style={{ "--drag-progress": dragProgress } as React.CSSProperties}
+          aria-label={lang === "en" ? "Open the investigation. Drag right or tap." : "افتح التحقيق. اسحب لليمين أو اضغط."}
+        >
+          <span className="rail-icon"><ArrowRight size={19} /></span>
+          <span className="rail-copy">
+            <strong>{lang === "en" ? "INVESTIGATE" : "ابدأ التحقيق"}</strong>
+            <small>{lang === "en" ? "DRAG RIGHT OR TAP" : "اسحب لليمين أو اضغط"}</small>
+          </span>
+        </button>
         <a className="scroll-hint" href="#story">
-          {lang === "en" ? "Scroll to investigate" : "انزل لتبدأ التحقيق"}{" "}
+          {lang === "en" ? "Scroll down to learn how it works" : "انزل لتعرف كيف تعمل الأداة"}{" "}
           <ChevronDown size={25} />
         </a>
         <span className="art-note">
