@@ -1,4 +1,7 @@
 # Phase 0 — Repository audit and contract lock — Checkpoint Report
+> Historical initial audit. The input mapping and phase scheduling were revised
+> under the user's subsequent instruction; see `PHASE_0_REPLAN_REPORT.md` and
+> the current statistics tracker. The observations below are retained unchanged.
 Date/time: 2026-11-15 02:51 Africa/Cairo
 Status: BLOCKED
 Base revision: `ecf39088744c7ea01ae7d30d92e5ce6b91d24f6d`

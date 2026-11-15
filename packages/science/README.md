@@ -3,31 +3,38 @@
 Work branch: `codex/ml-statistics`, based on `origin/main` at
 `ecf39088744c7ea01ae7d30d92e5ce6b91d24f6d`.
 
-Read `ML_STATISTICS_AGENT.md`, this directory's `PROGRESS.md`, and its latest
-phase report at the start of a statistics session. The repository-root
-`AGENT_BRIEF.md` and `PROGRESS.md` belong to Role 04 (RAG); the user assigned
-this workspace the separate ML/statistics brief. A copy is retained here with
-trailing whitespace normalized and its instructions preserved. Paths in that brief are adapted to the
-repository's documented `packages/science/` ownership boundary.
+Read the revised `ML_STATISTICS_AGENT.md`, [PLAN.md](PLAN.md), this directory's
+`PROGRESS.md`, and its latest phase report at the start of a statistics session.
+The repository-root `AGENT_BRIEF.md` and `PROGRESS.md` belong to Role 04 (RAG).
+The statistics brief and plan were revised under the user's 15 November request
+to use the actual data. The original brief/report remain in Git history.
 
-Phase 0 is blocked by recorded source-field and integration-contract issues.
-An existing statistics implementation was discovered on another branch; it
-must be reviewed rather than independently reimplemented or treated as validated.
+The input mapping is resolved and Phase 1 input exploration has passed its
+checkpoint checks. Existing inference code on another branch still needs
+review/repairs; backend schema sign-off is deferred to the integration phase.
 
-Install the audit dependencies in a repository-local virtual environment:
+Install the input/exploration dependencies in a repository-local environment:
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r packages/science/requirements-audit.txt
-.\.venv\Scripts\python.exe tools/audit_science_inputs.py --output packages/science/phase_reports/input_audit.json
-.\.venv\Scripts\python.exe tools/probe_existing_statistics.py --output packages/science/phase_reports/existing_method_probes.json
+.\.venv\Scripts\python.exe -m pip install -r packages/science/requirements.txt
+.\.venv\Scripts\python.exe -m unittest discover -s packages/science/tests -v
+.\.venv\Scripts\python.exe tools/audit_science_inputs.py --output data/derived/input-audit.json
+.\.venv\Scripts\python.exe tools/run_science_exploration.py
+.\.venv\Scripts\python.exe tools/probe_existing_statistics.py --output data/derived/existing-method-probes.json
 ```
 
-Both checks currently exit **1** because they reproduce documented problems:
-three catalog/source-field mismatches and two failed synthetic method invariants.
-Neither script edits measurements, readiness flags or the reviewed branch.
-The probes use the exact recorded commit, not a moving branch tip.
+The input suite has **16 tests**, and the current input audit passes all twelve
+field/unit contracts. The inherited-method probe intentionally still exits **1**
+for the two uncorrected regression cases in its pinned historical commit. It
+does not test a repaired engine. Neither audit/probe edits source measurements.
 
-See [Phase 0 report](phase_reports/PHASE_0_REPORT.md) for the contract table,
-observations, open decisions and next steps. No new statistical method or
-inference release has been approved by this audit.
+Explore [notebooks/01_exploration.ipynb](notebooks/01_exploration.ipynb). It writes
+a map/cell-series image to `data/derived/science/phase_1/` and a provenance
+summary to `phase_reports/PHASE_1_INPUT_METADATA.json`. This is descriptive input
+exploration, with GPM ancillary fields retained and no additional quality-index
+cutoff; regional aggregation, product QA policy and inference are later gates.
+
+See [the plan-alignment report](phase_reports/PHASE_0_REPLAN_REPORT.md) and
+[Phase 1 report](phase_reports/PHASE_1_REPORT.md) for evidence and remaining work.
+The [original Phase 0 report](phase_reports/PHASE_0_REPORT.md) remains historical.

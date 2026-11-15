@@ -50,6 +50,7 @@ def inspect_entry(root: Path, entry: dict) -> dict:
         for key in ("variable_id", "region_id", "product_id", "version",
                     "source_variable", "cube_file", "period", "bbox")
     }
+    result["cube_variable"] = entry.get("cube_variable", entry["source_variable"])
     result.update({"issues": [], "qa_applied_by_audit": False})
     if not path.is_file():
         result["issues"].append("cube_file_missing")
@@ -74,8 +75,11 @@ def inspect_entry(root: Path, entry: dict) -> dict:
                 "missing_count_before_product_qa": int((~finite).sum()),
                 "source_fill_minus_9999_count": int((values == -9999).sum()),
             }
-        if entry["source_variable"] not in ds.data_vars:
-            result["issues"].append("catalog_source_variable_absent_from_cube")
+        cube_variable = result["cube_variable"]
+        if cube_variable not in ds.data_vars:
+            result["issues"].append("catalog_cube_variable_absent_from_cube")
+        elif "cube_units" in entry and ds[cube_variable].attrs.get("units") != entry["cube_units"]:
+            result["issues"].append("catalog_cube_units_differ_from_cube")
         if ds.attrs.get("product") != entry["product_id"]:
             result["issues"].append("catalog_product_differs_from_cube_attribute")
         if "time" not in ds.coords:
