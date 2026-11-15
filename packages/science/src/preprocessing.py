@@ -148,6 +148,8 @@ def annual_summary(monthly: xr.DataArray, variable_id: str) -> xr.DataArray:
     result = result.where(count == 12)
     result.attrs = {**monthly.attrs, "annual_aggregation": aggregation,
                     "required_valid_months": 12, "time_basis": "actual calendar year coordinate"}
+    result.attrs["long_name"] = ("annual accumulated precipitation" if variable_id == "precipitation"
+                                 else f"calendar-day-weighted annual mean {variable_id.replace('_', ' ')}")
     result.name = "annual"
     return result
 
@@ -172,5 +174,6 @@ def calendar_anomalies(monthly: xr.DataArray, reference: xr.DataArray) -> xr.Dat
     result.attrs = {**monthly.attrs, "anomaly_baseline_start": labels[0],
                     "anomaly_baseline_end": labels[-1],
                     "anomaly_method": "fixed-reference calendar-month arithmetic mean"}
+    result.attrs["long_name"] = "departure from the fixed-reference mean for the matching calendar month"
     result.name = "monthly_anomaly"
     return result

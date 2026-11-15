@@ -4,6 +4,11 @@ Date: 15 November 2026, Africa/Cairo
 Status: DONE_WAITING_APPROVAL (implementation tested; candidate policy requires owner review)
 Branch: codex/ml-statistics
 
+Current follow-up: **38 tests pass**, and output metadata revision `1.1`
+corrects diagnostic unit labels without changing numeric values. See the
+beginner-guide/metadata follow-up at the end; the original checkpoint record
+below is preserved as history.
+
 ## Goal and acceptance criteria
 
 Prepare reproducible regional and per-cell monthly/annual series from the
@@ -204,3 +209,27 @@ handle missing/short/constant cases, and keep significance unavailable.
 Review candidate `prep-1.0.0` and its documented strict/default versus standard
 MODIS coverage. The statistics brief requires this phase checkpoint before
 Stage 3; no scientific approval is inferred from passing code tests.
+
+## Beginner guide and metadata correction follow-up
+
+The user subsequently requested a complete beginner's explanation. Added
+`packages/science/STAGE_2_EXPLAINED.md` covering the variables/units, processing
+steps, prepared-array and JSON dictionaries, actual examples and figures.
+
+Direct inspection of stored field attributes exposed a metadata regression:
+`fixed_support` and coverage fractions inherited physical weather units, while
+normalized weights inherited `sr`. Added a regression test and observed four
+failing unit subchecks before the fix. Corrected those diagnostic units to `1`,
+retained `sr` on the real solid-angle field, and made annual/anomaly descriptions
+explicit. Output metadata revision is `1.1`; QA/support policy `prep-1.0.0`
+is unchanged. No new phase, inference or policy approval is implied.
+
+Reran the suite: **38/38 tests passed** (6.445 seconds observed). Regenerated
+the 12 default and 3 standard files, reran the 12-file round-trip verification
+with new unit-label checks, and executed the notebook successfully. Compared
+numeric/coordinate fingerprints for every array in all 15 files against a
+pre-fix snapshot: **all unchanged**. Source hashes still match the original
+source inventory. Artifact hashes change because file metadata changed.
+
+The original 37-test execution above remains a historical test record. The
+current beginner guide and statistics tracker use the updated 38-test count.

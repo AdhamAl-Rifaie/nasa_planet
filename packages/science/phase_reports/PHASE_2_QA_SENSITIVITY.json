@@ -5,6 +5,7 @@
   "inference_status": "not_computed",
   "entries": [
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "nile_corridor",
@@ -100,9 +101,10 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Nile_2001_2024.nc",
       "source_cube_sha256": "78427f6651ddc8ac129d89d6bb9903f59a020a47a10827f6f184ccafb290188c",
       "artifact": "data/derived/science/phase_2_standard/vegetation_greenness__nile_corridor.nc",
-      "artifact_sha256": "f3f876609cf36dd2a163b32cf2ca60d9a43bd9a376b20389566a23f2ed79f6a8"
+      "artifact_sha256": "446841f33debe6395de2166950d5a33aa7633a2834d64893143fbfa05ab80fea"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "morocco_comparison",
@@ -198,9 +200,10 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Morocco_2001_2024.nc",
       "source_cube_sha256": "aad8265db99b64eaeafa12d5d09f9ca2ba8e813b9ccc070613987fa97cb5c7e8",
       "artifact": "data/derived/science/phase_2_standard/vegetation_greenness__morocco_comparison.nc",
-      "artifact_sha256": "dd8a9a3373e232e338bc3ef42941661195e0a9d82395fa58f2d59999164824c0"
+      "artifact_sha256": "114d43ef8111a13be600218109d884731a3e57bf6e8313dbbc56d5be96871c24"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "sahel_comparison",
@@ -296,7 +299,7 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Sahel_2001_2024.nc",
       "source_cube_sha256": "063eeb3002c6f769b2389236626569d60f053a2a08f92500597d837222b1b02a",
       "artifact": "data/derived/science/phase_2_standard/vegetation_greenness__sahel_comparison.nc",
-      "artifact_sha256": "67be7219d31d2b87afc2c2aa950ad4f6c7ff0b2df5b92db2124a7d192a4c07a8"
+      "artifact_sha256": "ff40e267a9b1f0b1f2a08e3181d4ff3e05c3a02f5580ebd75508784d30adbb32"
     }
   ],
   "documentation": [

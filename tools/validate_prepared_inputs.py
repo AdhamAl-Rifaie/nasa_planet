@@ -37,6 +37,9 @@ def main() -> None:
                                       "lon": entry["selected_grid"]["lon_count"], "year": 24}
             np.testing.assert_array_equal(ds.year, np.arange(2001, 2025))
             assert ds.attrs["policy_sha256"] == manifest["policy_sha256"]
+            for field in ("fixed_support", "normalized_support_weight", "qa_valid_fraction_by_cell", "qa_valid_area_fraction_by_month", "qa_accepted"):
+                assert ds[field].attrs["units"] == "1", f"Dimensionless field has incorrect units: {field}"
+            assert ds.native_cell_solid_angle.attrs["units"] == "sr"
             support = ds.fixed_support.values.astype(bool)
             assert int(support.sum()) == entry["eligible_fixed_support_cells"]
             np.testing.assert_array_equal(np.isfinite(ds.cell_monthly).all("time"), support)

@@ -1,5 +1,5 @@
 # ML/Statistics Engine - Progress
-Last updated: 2026-11-15 04:12 Africa/Cairo
+Last updated: 2026-11-15 04:33 Africa/Cairo
 Current phase: PHASE 2
 Current status: DONE_WAITING_APPROVAL
 
@@ -10,7 +10,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 |---|---|---|---|---|
 | 0 Input/plan alignment | DONE | 5/5 revised acceptance checks | [Replan report](phase_reports/PHASE_0_REPLAN_REPORT.md) | Current implementation request covered first input work |
 | 1 Data exploration | DONE | 5/5 acceptance checks; 16 automated tests passed | [Report](phase_reports/PHASE_1_REPORT.md) | User authorized Phase 2 |
-| 2 Time series and QA | DONE_WAITING_APPROVAL | 6/6 implementation checks; 37 combined tests pass | [Report](phase_reports/PHASE_2_REPORT.md) | Policy/Stage 3 review pending |
+| 2 Time series and QA | DONE_WAITING_APPROVAL | 6/6 implementation checks; 38 combined tests pass | [Report](phase_reports/PHASE_2_REPORT.md) | Policy/Stage 3 review pending |
 | 3 Trend estimation | NOT_STARTED | 0/5 | ? | No |
 | 4 Significance | NOT_STARTED | 0/7 | ? | No |
 | 5 Spatial analysis | NOT_STARTED | 0/5 | ? | No |
@@ -44,7 +44,8 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   288 months, 24 years, fixed support/weights, source/artifact hashes verified.
 - Strict MODIS preparation and a three-region standard-mode comparison are
   recorded. Policy remains candidate_pending_owner_review; no release flags changed.
-- Combined suite: 37 tests pass (16 earlier input tests plus 21 Stage 2 checks).
+- Combined suite: 38 tests pass (16 earlier input tests, 21 original Stage 2
+  checks and one diagnostic-metadata regression).
 - Executed 02_preprocessing.ipynb and visually inspected all four diagnostics.
 
 ## Current task / next action
@@ -102,7 +103,7 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   the catalog, source data or plan already present in the repository.
 
 ## Failed tests and regression issues
-- Current combined suite: 37/37 pass; twelve-entry audit: 0 issues; generated artifacts: 12/12 round-trip checks pass.
+- Current combined suite: 38/38 pass; twelve-entry audit: 0 issues; generated artifacts: 12/12 round-trip checks pass.
 - The original input_audit.json remains historical (three old mapping errors).
   input_audit_current.json describes the corrected metadata contract.
 - existing_method_probes.json remains 0/2 at pinned React commit 486fe73.
@@ -120,6 +121,11 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
 - Stage 2 is authorized and implemented. Policy adoption/Stage 3 follow the checkpoint protocol in the revised brief.
 
 ## Phase history
+- Beginner-guide follow-up: metadata labels for diagnostic masks/fractions and
+  weights were reopened after direct inspection, reproduced with a failing
+  test, corrected, and revalidated. All numeric/coordinate arrays in 15
+  regenerated files are unchanged. Output metadata revision 1.1; policy choices
+  and the Stage 3 checkpoint remain pending. Added STAGE_2_EXPLAINED.md.
 - Initial parent workspace audit: source data absent; historical report kept.
 - Repository audit: 3/5 original Phase 0 checks passed; explicit mapping and
   incompatible-interface issues discovered with synthetic engine regressions.

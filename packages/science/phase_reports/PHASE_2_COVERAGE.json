@@ -5,6 +5,7 @@
   "inference_status": "not_computed",
   "entries": [
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "air_temperature",
       "region_id": "nile_corridor",
@@ -100,9 +101,10 @@
       "source_cube_file": "data/nasa/measurements/M2TMNXSLV_Nile_2001_2024.nc",
       "source_cube_sha256": "5db8a5afe85560aad3e3f847c5ddfb2c75309dad7f89fbd3002a4c0c07c1e8cb",
       "artifact": "data/derived/science/phase_2/air_temperature__nile_corridor.nc",
-      "artifact_sha256": "75e21ee8e31105f1cc930d6fa58c0c852fab690780e4f9c5bcd6b9fbbfbdcd90"
+      "artifact_sha256": "77ed7a528ec10cdc95ae79034f58009ee492e03a8da6810a75df2db23a998d37"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "soil_moisture",
       "region_id": "nile_corridor",
@@ -198,9 +200,10 @@
       "source_cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Nile_2001_2024.nc",
       "source_cube_sha256": "55a5194144348ff668cbdcc1485493422797d2206aa0535846d8a8f2feb121cc",
       "artifact": "data/derived/science/phase_2/soil_moisture__nile_corridor.nc",
-      "artifact_sha256": "af56503d87fa6e00ad85651e198e64dbea28541a42cff37fc580055da8de9522"
+      "artifact_sha256": "655374d5e782d9938d37e1b93d06229fea9ad40042955e30b0d934ee63e15b5e"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "precipitation",
       "region_id": "nile_corridor",
@@ -296,9 +299,10 @@
       "source_cube_file": "data/nasa/measurements/GPM_3IMERGM_Nile_2001_2024.nc",
       "source_cube_sha256": "967131aec4bdb0fa98ffc6ec9c9340cde164f5704be8f861c7ee02c130d6e219",
       "artifact": "data/derived/science/phase_2/precipitation__nile_corridor.nc",
-      "artifact_sha256": "ae97ad80960d4ed8b5e57408ff144541a766b83d9ec872e47d1be6f34d53c452"
+      "artifact_sha256": "ab3ef38d54bd0302534b0726fc6c6bc1ffa366f9d35e597db008d7a840c67066"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "nile_corridor",
@@ -394,9 +398,10 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Nile_2001_2024.nc",
       "source_cube_sha256": "78427f6651ddc8ac129d89d6bb9903f59a020a47a10827f6f184ccafb290188c",
       "artifact": "data/derived/science/phase_2/vegetation_greenness__nile_corridor.nc",
-      "artifact_sha256": "f31e1fe08a1b8b44490b6ac787f86c0ff9a5a2ba8ebca3ee200f3f25390f68d3"
+      "artifact_sha256": "8929660caddee1dae5a60e968af9dfe08dcabe20c8e382e040016c343fa075fe"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "air_temperature",
       "region_id": "morocco_comparison",
@@ -492,9 +497,10 @@
       "source_cube_file": "data/nasa/measurements/M2TMNXSLV_Morocco_2001_2024.nc",
       "source_cube_sha256": "c8801417edb435606a6c9621fa127f817dbe86c160a266a5d864c085a8199e40",
       "artifact": "data/derived/science/phase_2/air_temperature__morocco_comparison.nc",
-      "artifact_sha256": "4e8e76af33805ef6da4c0eea3c77b3f17235a6cfb8364f394f4a57833cca2f8e"
+      "artifact_sha256": "5a81dc2ef4538c51db309ce58baaf3f0775ffe964ad3c96c4749afe69f2ac4eb"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "soil_moisture",
       "region_id": "morocco_comparison",
@@ -590,9 +596,10 @@
       "source_cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Morocco_2001_2024.nc",
       "source_cube_sha256": "a58c21ca540b3d008c45f8342548aab18689e4417169edd3ebcb43246c3fcb74",
       "artifact": "data/derived/science/phase_2/soil_moisture__morocco_comparison.nc",
-      "artifact_sha256": "d0946a9356a449f43d2fd8e3fa73d7d1ec6290d1ea37c614d437521a7f4151d9"
+      "artifact_sha256": "30e9f7958b4d65442f6459836618269046fd35aed28ab301612e2d9286b62999"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "precipitation",
       "region_id": "morocco_comparison",
@@ -688,9 +695,10 @@
       "source_cube_file": "data/nasa/measurements/GPM_3IMERGM_Morocco_2001_2024.nc",
       "source_cube_sha256": "95f3e53659dd4593e585031c3eb8d1b1ee8dfd1c30060cfa7d28a3a26969465b",
       "artifact": "data/derived/science/phase_2/precipitation__morocco_comparison.nc",
-      "artifact_sha256": "776ece6e5c4f5613faaa6a5a44a7b03ecb0fd1123ca91d7df819597ed973333f"
+      "artifact_sha256": "a44700160db0f2dbc15c9150b984d7735fce482cd97ecce7a9516a2bc8fab91d"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "morocco_comparison",
@@ -786,9 +794,10 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Morocco_2001_2024.nc",
       "source_cube_sha256": "aad8265db99b64eaeafa12d5d09f9ca2ba8e813b9ccc070613987fa97cb5c7e8",
       "artifact": "data/derived/science/phase_2/vegetation_greenness__morocco_comparison.nc",
-      "artifact_sha256": "767eb3617da15b937fb3ef6a84128ec61cb73365560c6eef5b5fbf04f6dd91f0"
+      "artifact_sha256": "26fd56f343ea3a2d6deabfc49be555915eb9746f917b9c9b67428ebab242a349"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "air_temperature",
       "region_id": "sahel_comparison",
@@ -884,9 +893,10 @@
       "source_cube_file": "data/nasa/measurements/M2TMNXSLV_Sahel_2001_2024.nc",
       "source_cube_sha256": "14cdb693d945c73f570b296b85cfae3177258e848e078170fa46e608a16cb987",
       "artifact": "data/derived/science/phase_2/air_temperature__sahel_comparison.nc",
-      "artifact_sha256": "bbff2adc5b4fb4c1ae5c94eb62d5216fddffc6c87c0719fbf68ae56d7ea40b95"
+      "artifact_sha256": "536ff9d48651e7798fa56cd48b1cd5e1abd0fbd3de8adfb8dc468a5b4450e529"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "soil_moisture",
       "region_id": "sahel_comparison",
@@ -982,9 +992,10 @@
       "source_cube_file": "data/nasa/measurements/GLDAS_NOAH025_M_Sahel_2001_2024.nc",
       "source_cube_sha256": "fd9dc0ccb3667a5987dfd7853db26cb4e8e7cdf7dddc686fb72bcf816750b273",
       "artifact": "data/derived/science/phase_2/soil_moisture__sahel_comparison.nc",
-      "artifact_sha256": "6650cab953c1ecb4dbdd3e57c8f182428a222980bdceec7d000cfea6cd348178"
+      "artifact_sha256": "14e8d4e44c8807dda5f2ae4fe3885fd229ef6734b24b5b354e750963c54a7ae5"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "precipitation",
       "region_id": "sahel_comparison",
@@ -1080,9 +1091,10 @@
       "source_cube_file": "data/nasa/measurements/GPM_3IMERGM_Sahel_2001_2024.nc",
       "source_cube_sha256": "e515e68076c1639263ba3fe81a390d946c866595d7faee622f26128a579a974f",
       "artifact": "data/derived/science/phase_2/precipitation__sahel_comparison.nc",
-      "artifact_sha256": "b699c119e06fe56e386c69f1b0b1d1e5dcc0c0b1bd37021e63bf6322060515c2"
+      "artifact_sha256": "0972ca3149a7eec8eb2a827634d90795a6b59f03c8bb407e181eb45aa046f3fe"
     },
     {
+      "output_metadata_revision": "1.1",
       "preparation_state": "prepared",
       "variable_id": "vegetation_greenness",
       "region_id": "sahel_comparison",
@@ -1178,7 +1190,7 @@
       "source_cube_file": "data/nasa/measurements/MOD13C2_Sahel_2001_2024.nc",
       "source_cube_sha256": "063eeb3002c6f769b2389236626569d60f053a2a08f92500597d837222b1b02a",
       "artifact": "data/derived/science/phase_2/vegetation_greenness__sahel_comparison.nc",
-      "artifact_sha256": "8a0383a4cee155468e57e3d8d3df32c1fa8a70b573d678bd05a960cef01bb474"
+      "artifact_sha256": "7ee3f6dc68875eb980944b9e7e8ad89d10e7d66d339d8661efd12a9210abf9b2"
     }
   ],
   "documentation": [

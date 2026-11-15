@@ -123,6 +123,19 @@ class QualityTests(unittest.TestCase):
 
 
 class SupportTests(unittest.TestCase):
+    def test_diagnostic_metadata_is_dimensionless(self):
+        data = series(np.array([[[10.0, 20.0]], [[12.0, 22.0]]]))
+        data.attrs["long_name"] = "air temperature"
+        weights = xr.ones_like(data.isel(time=0, drop=True))
+        weights.attrs = {"units": "sr", "long_name": "native cell area"}
+        result = fixed_support_mean(data, weights)
+        for field in ("fixed_support", "normalized_support_weight", "qa_valid_fraction_by_cell", "qa_valid_area_fraction_by_month"):
+            with self.subTest(field=field):
+                self.assertEqual(result[field].attrs["units"], "1")
+                self.assertNotEqual(result[field].attrs.get("long_name"), "air temperature")
+        self.assertEqual(result.native_cell_solid_angle.attrs["units"], "sr")
+        self.assertEqual(result.regional_monthly.attrs["units"], "K")
+
     def test_fixed_support_prevents_composition_change(self):
         data = series(np.array([[[0.0, 10.0]], [[100.0, np.nan]]]))
         weights = xr.ones_like(data.isel(time=0, drop=True))

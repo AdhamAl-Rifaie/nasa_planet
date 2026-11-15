@@ -60,6 +60,7 @@ def prepare_series(ds: xr.Dataset, entry: dict, *, policy: dict | None = None,
     fraction = float(weights.where(support.fixed_support.astype(bool), 0).sum() / weights.sum())
     state = "prepared" if eligible else "insufficient_data"
     output.attrs = {
+        "output_metadata_revision": "1.1",
         "preparation_state": state, "variable_id": variable,
         "region_id": entry["region_id"], "product_id": entry["product_id"],
         "product_version": entry["version"], "source_variable": entry["source_variable"],

@@ -1,5 +1,9 @@
 # Statistics workspace
 
+New to weather data? Start with [Stage 2 explained](STAGE_2_EXPLAINED.md),
+the plain-language guide to variables, units, preparation, output fields,
+coverage percentages, figures and actual examples.
+
 Work branch: `codex/ml-statistics`, based on `origin/main` at
 `ecf39088744c7ea01ae7d30d92e5ce6b91d24f6d`.
 
@@ -25,8 +29,8 @@ py -m venv .venv
 .\.venv\Scripts\python.exe tools/probe_existing_statistics.py --output data/derived/existing-method-probes.json
 ```
 
-The combined input/preparation suite has **37 tests** (16 earlier input checks
-plus 21 Stage 2 checks). The current input audit passes all twelve field/unit
+The combined input/preparation suite has **38 tests** (16 earlier input checks,
+21 original Stage 2 checks and a diagnostic-metadata regression). The current input audit passes all twelve field/unit
 contracts. The inherited-method probe intentionally still exits **1**
 for the two uncorrected regression cases in its pinned historical commit. It
 does not test a repaired engine. Neither audit/probe edits source measurements.
@@ -68,3 +72,10 @@ Open [02_preprocessing.ipynb](notebooks/02_preprocessing.ipynb),
 Strict complete-period support retains only 14.69% of selected native-cell area
 for Sahel NDVI; the standard comparison retains 82.59% but admits marginal data.
 Owner review is pending; no slopes or inferential claims are produced here.
+
+Output metadata revision `1.1` corrects inherited unit labels on masks,
+fractions and normalized weights. These are dimensionless `1`; only the native
+cell solid angle uses `sr`. Annual/anomaly descriptions are explicit. All
+numeric/coordinate arrays in the twelve default and three comparison files
+were verified unchanged by this label correction. The preparation policy and
+pending strict/standard decision remain unchanged.

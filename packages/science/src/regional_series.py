@@ -81,7 +81,7 @@ def fixed_support_mean(reference: xr.DataArray, weights: xr.DataArray) -> xr.Dat
     region.attrs = dict(reference.attrs)
     selected_area = weights.sum()
     before_fraction = weights.where(valid, 0).sum(("lat", "lon")) / selected_area
-    return xr.Dataset({
+    result = xr.Dataset({
         "cell_monthly": cells, "regional_monthly": region,
         "fixed_support": support.astype("int8"),
         "normalized_support_weight": normalized,
@@ -89,3 +89,17 @@ def fixed_support_mean(reference: xr.DataArray, weights: xr.DataArray) -> xr.Dat
         "qa_valid_fraction_by_cell": valid.mean("time"),
         "qa_valid_area_fraction_by_month": before_fraction,
     }, attrs={"support_rule": "valid in every full registered reference month; unchanged for subperiod requests"})
+    result.fixed_support.attrs = {
+        "units": "1", "long_name": "fixed reference support mask",
+        "flag_values": np.array([0, 1], dtype="int8"), "flag_meanings": "excluded retained",
+    }
+    result.normalized_support_weight.attrs = {
+        "units": "1", "long_name": "fractional contribution to the fixed-support regional mean",
+    }
+    result.qa_valid_fraction_by_cell.attrs = {
+        "units": "1", "long_name": "fraction of reference months with a QA-valid value in each cell",
+    }
+    result.qa_valid_area_fraction_by_month.attrs = {
+        "units": "1", "long_name": "QA-valid fraction of selected native-cell area in each month",
+    }
+    return result
