@@ -1,5 +1,10 @@
 # Statistics workspace
 
+Latest: [estimand-aligned Sen uncertainty](phase_reports/PHASE_4_SEN_REPORT.md).
+Sen-centered nuisance-aware Monte Carlo is recommended for further research;
+the tested grid envelope is too conservative and other candidates fail calibration.
+103 tests pass. No method is released and Phase 5 has not started.
+
 Latest checkpoint: [double-bootstrap diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
 Repeated cache/grid/misspecification experiments confirm remaining failures;
 regression inference and Sen descriptions have distinct estimands. 99 tests pass,

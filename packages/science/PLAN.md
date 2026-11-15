@@ -2,6 +2,14 @@
 
 Revision: 2.6, 15 November 2026. Working branch: `codex/ml-statistics`.
 
+Latest research: [Sen-centered inference](phase_reports/PHASE_4_SEN_REPORT.md).
+Subsampling, fitted-correlation simulation and nuisance-grid Monte Carlo now
+use the Sen point estimator directly. None passes all unchanged screens.
+Recommended next research is confidence-set nuisance maximization with a stated
+error budget, not release of the tested overly conservative grid envelope.
+That refinement is proposed, not yet validated. 103 tests pass; all earlier
+NASA/preparation/trend artifacts remain unchanged. Inference stays disabled.
+
 Latest authorized continuation: [double-bootstrap diagnostics](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
 Independent repeated caches, grid/boundary and model stresses do not establish
 release suitability. Inference targets a model-specific regression coefficient;

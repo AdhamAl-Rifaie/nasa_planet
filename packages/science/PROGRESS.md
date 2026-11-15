@@ -85,6 +85,13 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Newest: [Sen-aligned inference checkpoint](phase_reports/PHASE_4_SEN_REPORT.md).
+  Point estimates now match the validated Sen kernel exactly. Contiguous
+  subsampling fails short-record calibration; fitted-rho Sen simulation remains
+  anti-conservative; a full nuisance-grid envelope is far too conservative.
+  Recommend Sen-centered nuisance-aware Monte Carlo for further development,
+  with a validated nuisance confidence set/error budget as an untested next
+  extension. 103 tests pass, 118 prior files preserved. No release or Phase 5.
 - Latest: [double-bootstrap diagnosis](phase_reports/PHASE_4_DOUBLE_DIAGNOSIS_REPORT.md).
   Eight independent caches per length/grid, fixed and fresh 1,000-record panels,
   fine/expanded grids, boundary and misspecification stresses confirm remaining
