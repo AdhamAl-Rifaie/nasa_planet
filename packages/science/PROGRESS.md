@@ -85,6 +85,13 @@ work; the repository-root PROGRESS.md owns Role 04 (RAG).
   The review preserved 62 existing files; annual arrays and figures are isolated.
 
 ## Current task / next action
+- Latest: [dependence-uncertainty research](phase_reports/PHASE_4_UNCERTAINTY_REPORT.md).
+  REML small-sample t, refitted parametric bootstrap-t and a separately specified
+  double-bootstrap correction use independent pilot/final streams. Alpha remains
+  .05; no NASA p-values enter selection. Bootstrap-t improves the 24-year/.7 null
+  to 5.5% rejection and 94.1% coverage, but the 20-year case still fails.
+  All methods miss at least one required screen. Ninety-four software tests pass;
+  inference stays disabled and Phase 5 is not started. Earlier artifacts preserved.
 - Latest: [Phase 4 follow-up](phase_reports/PHASE_4_FOLLOWUP_REPORT.md).
   Prespecified adjusted MK and AR(1) regression both fail fresh holdout screens
   (24/36 and 29/36 scenarios respectively). Ninety software tests pass. The

@@ -8,6 +8,11 @@ it does not certify an inference method.
 
 ## Read first
 
+Latest authorized continuation: read `phase_reports/PHASE_4_UNCERTAINTY_REPORT.md`.
+REML and refitted parametric simulation research is complete for the tested
+candidates, with remaining holdout failures. Keep inference disabled, do not
+advance Phase 5, and preserve earlier failed references and descriptive estimates.
+
 Current authorization: the user instructed "go to step 4", recorded in
 `phase_reports/PHASE_3_APPROVAL.md`. Read `phase_reports/PHASE_4_REPORT.md`:
 the research study is complete but its candidate FAILED calibration and is

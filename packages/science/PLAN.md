@@ -15,6 +15,14 @@ then tested on independent holdout runs at 20/24 years, with seasonal patterns,
 correlated nulls, known trends and interval coverage. Both fail release screens.
 The failed bootstrap reference and validated slopes are unchanged. Ninety tests
 pass; scientific acceptance remains unmet. Continue Phase 4, not Phase 5.
+
+Further authorized research: [REML and parametric calibration checkpoint](phase_reports/PHASE_4_UNCERTAINTY_REPORT.md).
+Small-sample REML, fully refitted parametric bootstrap-t and double-bootstrap
+prepivoting improve calibration but fail the complete prespecified holdout
+screens. Nominal alpha .05/confidence .95 are unchanged. Finite correlation-grid
+and shared simulation-cache uncertainty require additional sensitivity studies.
+94 software tests pass. No method is selected using NASA results; inference and
+Phase 5 remain disabled. Prior source/policy/Sen artifacts remain unchanged.
 This replaces the original statistics brief's hypothetical inputs and the
 architecture's outdated acquisition assumptions. It is an implementation plan,
 not a claim that an inference method or application has passed review.

@@ -1,5 +1,10 @@
 # Statistics workspace
 
+Newest research: [short-record dependence uncertainty](phase_reports/PHASE_4_UNCERTAINTY_REPORT.md).
+REML and refitted/double parametric bootstrap substantially improve calibration,
+but no candidate passes all required scenarios. 94 tests pass; inference remains
+disabled. NASA data, default policies and validated descriptive slopes are preserved.
+
 Latest: [Phase 4 follow-up](phase_reports/PHASE_4_FOLLOWUP_REPORT.md) compares
 adjusted Mann-Kendall and AR(1) regression on fresh holdout simulations. Both
 fail calibration; 90 software tests pass. Inference remains disabled, all
